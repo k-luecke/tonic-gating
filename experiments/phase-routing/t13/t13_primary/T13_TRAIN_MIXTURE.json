@@ -1,0 +1,113 @@
+{
+  "C_match": 4210688,
+  "G9": {
+    "checks": [
+      "NaN",
+      "non-finite",
+      "explosive_grads"
+    ],
+    "fail_reasons": [],
+    "grad_explode_threshold": 10000.0,
+    "loss_explode_threshold": 1000000.0,
+    "refuse_primary_if_fail": true,
+    "status": "PASS"
+  },
+  "affinity_sha256": "7dae877a3975c1ba4ca264f03f572d6749cce39a114ea3adbcffc010c7852c50",
+  "arm": "moe_of_loops_slices",
+  "checkpoint": "/workspace/scp/experiments/phase-routing/t13/results/checkpoints/mixture_seed20260928.npz",
+  "eval_acc": 0.03125,
+  "eval_nll": 3.7331369621496178,
+  "final_acc": 0.0,
+  "final_nll": 3.694058985222838,
+  "frozen_at_pt": "2026-09-24 08:36:45 PT",
+  "history": [
+    {
+      "acc": 0.0,
+      "grad_norm": 0.07675929772080824,
+      "nll": 5.548830316807469,
+      "step": 1
+    },
+    {
+      "acc": 0.0625,
+      "grad_norm": 0.07942581466521449,
+      "nll": 5.528331263312229,
+      "step": 200
+    },
+    {
+      "acc": 0.03125,
+      "grad_norm": 0.12160731104281078,
+      "nll": 5.493118060275405,
+      "step": 400
+    },
+    {
+      "acc": 0.0,
+      "grad_norm": 0.23445840872371884,
+      "nll": 5.301884219669416,
+      "step": 600
+    },
+    {
+      "acc": 0.0,
+      "grad_norm": 0.48764913857689385,
+      "nll": 4.622493432475823,
+      "step": 800
+    },
+    {
+      "acc": 0.0625,
+      "grad_norm": 0.426730737779151,
+      "nll": 3.894398628145811,
+      "step": 1000
+    },
+    {
+      "acc": 0.0625,
+      "grad_norm": 0.44843943729030367,
+      "nll": 3.8260484758738187,
+      "step": 1200
+    },
+    {
+      "acc": 0.0,
+      "grad_norm": 0.5270409817258539,
+      "nll": 3.748729728807711,
+      "step": 1400
+    },
+    {
+      "acc": 0.03125,
+      "grad_norm": 0.667907851013619,
+      "nll": 4.031729914214582,
+      "step": 1600
+    },
+    {
+      "acc": 0.0625,
+      "grad_norm": 0.5645637702859594,
+      "nll": 3.8214962051726458,
+      "step": 1800
+    },
+    {
+      "acc": 0.0,
+      "grad_norm": 0.5439437145760391,
+      "nll": 3.694058985222838,
+      "step": 2000
+    }
+  ],
+  "max_grad_norm": 0.8262282643338025,
+  "phases": [
+    0.27570203917807695,
+    5.575338229183298,
+    2.3248925223835366,
+    2.5202677785657106
+  ],
+  "phases_sha256": "64fb0c3cc38fee6c22608c4a20574d4cc671cdaab19f69064b66218abae1162f",
+  "pins": {
+    "affinity_sha": "7dae877a3975c1ba4ca264f03f572d6749cce39a114ea3adbcffc010c7852c50",
+    "expected_affinity": "7dae877a3975c1ba4ca264f03f572d6749cce39a114ea3adbcffc010c7852c50",
+    "expected_prereg": "3176eb5ea3458047b820ff5511644d20a697a7a9485d5118560ff7b71e1f981d",
+    "ok": true,
+    "prereg_sha": "3176eb5ea3458047b820ff5511644d20a697a7a9485d5118560ff7b71e1f981d",
+    "prereg_sha_file": "3176eb5ea3458047b820ff5511644d20a697a7a9485d5118560ff7b71e1f981d"
+  },
+  "prereg_sha256": "3176eb5ea3458047b820ff5511644d20a697a7a9485d5118560ff7b71e1f981d",
+  "scale": "mythos_tiny",
+  "seed": 20260928,
+  "steps": 2000,
+  "steps_completed": 2000,
+  "ticket": "t13"
+}

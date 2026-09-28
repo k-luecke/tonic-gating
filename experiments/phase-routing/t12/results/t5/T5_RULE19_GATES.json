@@ -1,0 +1,169 @@
+{
+  "rule": "19_t12_t5",
+  "ticket": "T5",
+  "all_pass": true,
+  "pt": "2026-09-23 19:29 PT",
+  "expected_draft_sha": "8e04b801d9da5e1c94221ecff07d3555dc3c4f630599434160173f61388ffbd1",
+  "gates": [
+    {
+      "name": "draft_content_sha",
+      "pass": true,
+      "detail": "got 8e04b801d9da5e1c\u2026 want 8e04b801d9da5e1c\u2026",
+      "metrics": {
+        "sha256": "8e04b801d9da5e1c94221ecff07d3555dc3c4f630599434160173f61388ffbd1",
+        "expected": "8e04b801d9da5e1c94221ecff07d3555dc3c4f630599434160173f61388ffbd1"
+      }
+    },
+    {
+      "name": "affinity_c3_hum_untouched",
+      "pass": true,
+      "detail": "Affinity/C\u2083/hum shas match frozen baseline",
+      "metrics": {
+        "shas": {
+          "hum_measure/__init__.py": "b51cda27b48e7ce29c801b5a86bb8f613a38cb4ba261e40459dbdb842b56721a",
+          "hum_measure/affinity_inputs.py": "7dae877a3975c1ba4ca264f03f572d6749cce39a114ea3adbcffc010c7852c50",
+          "hum_measure/COUPLING_HASHES.json": "482fb1b53bfddc0e771145a0783f3b65104231d537cbba507d4783d13a27902b",
+          "C_n3": "40e3c0c95849ad67af6738e7842c1a4d24783dafa742ed247d03391db37a1493",
+          "hum_state.py": "03ab651db94e87e99e9d560b2e374ccc9dd6e90251422b2364b007089cfd0637"
+        },
+        "expected": {
+          "hum_measure/__init__.py": "b51cda27b48e7ce29c801b5a86bb8f613a38cb4ba261e40459dbdb842b56721a",
+          "hum_measure/affinity_inputs.py": "7dae877a3975c1ba4ca264f03f572d6749cce39a114ea3adbcffc010c7852c50",
+          "hum_measure/COUPLING_HASHES.json": "482fb1b53bfddc0e771145a0783f3b65104231d537cbba507d4783d13a27902b",
+          "C_n3": "40e3c0c95849ad67af6738e7842c1a4d24783dafa742ed247d03391db37a1493",
+          "hum_state.py": "03ab651db94e87e99e9d560b2e374ccc9dd6e90251422b2364b007089cfd0637"
+        },
+        "mismatches": {}
+      }
+    },
+    {
+      "name": "hum_import",
+      "pass": true,
+      "detail": "test_hum_import rc=0 symlink_ok=True",
+      "metrics": {
+        "returncode": 0,
+        "symlink_ok": true,
+        "stdout_tail": "import OK: hum_measure\n  path: /workspace/scp/t11/imports/hum_measure\n",
+        "stderr_tail": ""
+      }
+    },
+    {
+      "name": "shift_regression_lock",
+      "pass": true,
+      "detail": "T4 regression_locks.pass=True; T8_RERUN present ok=True",
+      "metrics": {
+        "t4_regression_locks": {
+          "available": true,
+          "detail_tail": "T8 rerun persistence check: PASS\n  [PASS] artifacts_present: PRIMARY=/workspace/scp/experiments/phase-routing/t8/results/primary\n  [PASS] prereg_sha: got prereg_sha256=d975d96cf281badd2c0a6fc3986518b6338511cfcb7a9a9bf18be6b5e060b395\n  [PASS] hum_T_hold_seed_mean: got 26.846875 ref 26.846875\n  [PASS] hum_delta_L_shift_0.3: got 0.01707748666642206 (T8 shift regression lock reference)\n  [PASS] H2_verdict: verdicts=supported H2.verdict=supported\n  [PASS] H2_lambda_monotone_means: lambda_means={'0.012740234375': 28.461328125, '0.02548046875': 26.846875, '0.0509609375': 24.23359375}\n  [PASS] dynamics_acceptance_T_hold: got 39.0 (ref homog 39 \u2248 1/\u03bb)\n  [PASS] dynamics_acceptance_verdict: verdict=PASS\nWrote /workspace/scp/experiments/phase-routing/t12/results/t0/T8_RERUN_PERSISTENCE_CHECK.json\n",
+          "note": "T8 shift \u0394L + hum persistence regression lock",
+          "pass": true,
+          "returncode": 0
+        },
+        "t8_path": "/workspace/scp/experiments/phase-routing/t12/results/t0/T8_RERUN_PERSISTENCE_CHECK.json"
+      }
+    },
+    {
+      "name": "calibration_bounds",
+      "pass": true,
+      "detail": "C\u0304=7.0 within_tol=True; ACT/BP centers 4.0/10.0; Fixed T=7; status=PASS",
+      "metrics": {
+        "primary_mean_C_bar": 7.0,
+        "checks": {
+          "act_C_bar": true,
+          "conv_C_bar": true,
+          "coord_C_bar": true,
+          "easy_hard_separation_retained": true,
+          "fixed_C_bar": true
+        },
+        "lock": {
+          "c_bar_target": 7.0,
+          "c_bar_tol": 0.25,
+          "act_t_max": 12,
+          "act_prior_mean": 7.0,
+          "act_easy_center": 4.0,
+          "act_hard_center": 10.0,
+          "conv_t_max": 12,
+          "conv_eps": 0.05,
+          "conv_tau_easy": 1.335,
+          "conv_tau_hard": 3.337,
+          "conv_tau_default": 2.336,
+          "fixed_t": 7,
+          "t_star_easy": 4,
+          "t_star_hard": 10,
+          "t_star_gap": 6,
+          "note": "T3 lock amended 2026-09-23 PT: C\u0304=7\u00b10.25; ACT easy/hard centers 4/10 (T1 T*); CONV \u03b5=0.05 tau_e/h=1.335/3.337; Fixed T=7. Soft-hard-to-8 removed. Affinity/C\u2083/hum untouched."
+        }
+      }
+    },
+    {
+      "name": "arm_parity_smoke",
+      "pass": true,
+      "detail": "parity.pass=True arms=['act', 'convergence', 'coordinator_regime', 'fixed_t7', 'stateless_regime'] status=PASS",
+      "metrics": {
+        "arms": [
+          "act",
+          "convergence",
+          "coordinator_regime",
+          "fixed_t7",
+          "stateless_regime"
+        ],
+        "required": [
+          "act",
+          "convergence",
+          "coordinator_regime",
+          "fixed_t7",
+          "stateless_regime"
+        ]
+      }
+    },
+    {
+      "name": "tickets_T0_T4_PASS",
+      "pass": true,
+      "detail": "T0=PASS; T1=PASS; T2=PASS; T3=PASS; T4=PASS",
+      "metrics": {
+        "T0": {
+          "pass": true,
+          "status": "PASS",
+          "path": "/workspace/scp/experiments/phase-routing/t12/results/t0/T0_SUMMARY.json"
+        },
+        "T1": {
+          "pass": true,
+          "status": "PASS",
+          "path": "/workspace/scp/experiments/phase-routing/t12/results/t1/T1_SWEEP_RECEIPT.json"
+        },
+        "T2": {
+          "pass": true,
+          "status": "PASS",
+          "path": "/workspace/scp/experiments/phase-routing/t12/results/t2/T2_HARNESS_RECEIPT.json"
+        },
+        "T3": {
+          "pass": true,
+          "status": "PASS",
+          "path": "/workspace/scp/experiments/phase-routing/t12/results/t3/T3_CALIBRATION_RECEIPT.json"
+        },
+        "T4": {
+          "pass": true,
+          "status": "PASS",
+          "path": "/workspace/scp/experiments/phase-routing/t12/results/t4/T4_MEASURES_RECEIPT.json"
+        }
+      }
+    },
+    {
+      "name": "parent_prereg_untouched",
+      "pass": true,
+      "detail": "T11.2=593762c4c19e\u2026 T11.3=27ab4a9573ec\u2026",
+      "metrics": {
+        "t11_2_md": "593762c4c19e85d1720f6b46edbb93869258c4047ad023e42e144416aaed20d1",
+        "t11_3_md": "27ab4a9573ec8c01ed043d72ef6c83ba47fdd4a764a373acb7453381bb9bd442",
+        "t11_2_sha_file": "593762c4c19e85d1720f6b46edbb93869258c4047ad023e42e144416aaed20d1",
+        "t11_3_sha_file": "27ab4a9573ec8c01ed043d72ef6c83ba47fdd4a764a373acb7453381bb9bd442"
+      }
+    }
+  ],
+  "hash_emitted": true,
+  "prereg_sha256": "bf757ee4fc01e5c40b45f035150e7b716d12f7d8b30d745b9a7669f79bbf307c",
+  "t11_2_prereg_untouched": "593762c4c19e85d1720f6b46edbb93869258c4047ad023e42e144416aaed20d1",
+  "t11_3_prereg_untouched": "27ab4a9573ec8c01ed043d72ef6c83ba47fdd4a764a373acb7453381bb9bd442",
+  "affinity_c3_hum": "UNTOUCHED",
+  "prereg_path": "/workspace/scp/experiments/phase-routing/t12/PREREG.md"
+}

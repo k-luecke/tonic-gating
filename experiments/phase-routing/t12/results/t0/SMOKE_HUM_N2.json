@@ -1,0 +1,69 @@
+{
+  "verdict": "PASS",
+  "created_pt": "2026-09-23T18:28:54 PT",
+  "n": 2,
+  "labels": {
+    "0": "easy",
+    "1": "hard"
+  },
+  "locks": {
+    "hum_n": 2,
+    "high_pass_every_drive": true,
+    "hp_period": 64,
+    "hp_source": "T8 FilterStack roofing stage (filters.py HP_PERIOD=64)",
+    "amplitude_readout_never_phase_gated": true,
+    "affinity_all_untouched": true,
+    "c3_untouched": true,
+    "t11_n3_package_untouched": true
+  },
+  "coupling": {
+    "seed": 20260921,
+    "target_radius": 0.0149999971,
+    "rho_C": 0.0149999971,
+    "rho_C_ok": true,
+    "effective_linear_rho": 0.9891373213926433,
+    "effective_linear_rho_lt_1": true,
+    "sha256_C_float64_tobytes": "c7bf348a38fffc30217cd657ff00f2fb3ab6cf316ea4cbfc0ea01f46b87a545f",
+    "policy": "rebuild via make_coupling(n=2); NOT submatrix of n=3/n=8; Affinity __all__ not edited"
+  },
+  "homogeneous_T_hold_1e": 39.0,
+  "homogeneous_target_rule": "|T_hold - 41| <= 5",
+  "homogeneous_hold_pass": true,
+  "inv_lambda": 39.245745822474326,
+  "coupled_diagnostic_T_hold_1e": 62.0,
+  "operating_hp": {
+    "easy_unit0": {
+      "T_hold": 9.0,
+      "excess0": 12.026557687608898,
+      "amp_at_silence": 12.126557687608898,
+      "regime_top": 0,
+      "gate_gains": [
+        0.281905499499345,
+        0.718094500500655
+      ],
+      "gate_top": 1,
+      "gate_k": 2,
+      "gate_uses_phase": false,
+      "hp_period": 64
+    },
+    "hard_unit1": {
+      "T_hold": 9.0,
+      "excess0": 11.933744000012204,
+      "amp_at_silence": 12.033744000012204,
+      "regime_top": 1,
+      "gate_gains": [
+        0.22289076100017277,
+        0.7771092389998273
+      ],
+      "gate_top": 1,
+      "gate_k": 2,
+      "gate_uses_phase": false,
+      "hp_period": 64
+    }
+  },
+  "a0": 0.1,
+  "amp_gate_threshold": 0.05,
+  "lambda_leak": 0.02548046875,
+  "hum_state_sha256": "03ab651db94e87e99e9d560b2e374ccc9dd6e90251422b2364b007089cfd0637",
+  "hum_dir": "/workspace/scp/experiments/phase-routing/t11/hum"
+}

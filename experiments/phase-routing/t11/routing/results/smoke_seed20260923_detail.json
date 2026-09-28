@@ -1,0 +1,5912 @@
+{
+  "arm_details": [
+    {
+      "M1_CSR": 1.0,
+      "M1_by_type": {
+        "Ambiguous": 1.0,
+        "Clean": 1.0,
+        "Distraction": 1.0,
+        "Renewal": 1.0,
+        "Window-break": 1.0
+      },
+      "M1_counts": {
+        "abstentions": 0,
+        "correct": 49,
+        "total": 49
+      },
+      "M2_thrash_distraction": 0,
+      "M3_switch_latency": {
+        "latencies": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean": 0.0
+      },
+      "M4_renewal_recall": 1.0,
+      "M6": {
+        "classifier-buffer|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "classifier-buffer|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "cold|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "cold|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "context-carry|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 67.0,
+          "M6c_csr_per_byte": 0.014925373134328358,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "context-carry|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 65.0,
+          "M6c_csr_per_byte": 0.015384615384615385,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "hum-state|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "hum-state|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        }
+      },
+      "M6d_stale_break": {
+        "classifier-buffer": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "cold": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "context-carry": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "hum-state": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        }
+      },
+      "arm": "hand_rule",
+      "by_type_raw": {
+        "Ambiguous": {
+          "abstain": 0,
+          "correct": 4,
+          "total": 4
+        },
+        "Clean": {
+          "abstain": 0,
+          "correct": 4,
+          "total": 4
+        },
+        "Distraction": {
+          "abstain": 0,
+          "correct": 4,
+          "total": 4
+        },
+        "Renewal": {
+          "abstain": 0,
+          "correct": 5,
+          "total": 5
+        },
+        "Window-break": {
+          "abstain": 0,
+          "correct": 32,
+          "total": 32
+        }
+      },
+      "disclosure": null,
+      "n_sequences": 12,
+      "per_sequence": [
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 0,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 2,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 3,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": null,
+          "oracles": [
+            "General",
+            "Structured",
+            "Browser",
+            "General"
+          ],
+          "preds": [
+            "General",
+            "Structured",
+            "Browser",
+            "General"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Clean",
+          "window_break": null
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 1,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 2,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": null,
+          "oracles": [
+            "Browser",
+            "General",
+            "Structured",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "General",
+            "Structured",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Ambiguous",
+          "window_break": null
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 0,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 1,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 2,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 3,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": null,
+          "oracles": [
+            "Structured",
+            "General",
+            "Browser",
+            "Structured"
+          ],
+          "preds": [
+            "Structured",
+            "General",
+            "Browser",
+            "Structured"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Distraction",
+          "window_break": null
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 2,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 4,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": null,
+          "oracles": [
+            "Browser",
+            "Structured",
+            "Structured",
+            "Browser",
+            "General"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "Structured",
+            "Browser",
+            "General"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Renewal",
+          "window_break": null
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 0,
+              "carry_mode": "hum-state",
+              "note": "hand_rule ignores non-context carry (acts as cold)",
+              "tokens_carried": 0
+            },
+            "carry_mode": "hum-state",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "at_task_boundary",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "hum-state",
+            "placement": "at_task_boundary"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 0,
+              "carry_mode": "hum-state",
+              "note": "hand_rule ignores non-context carry (acts as cold)",
+              "tokens_carried": 0
+            },
+            "carry_mode": "hum-state",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "inside_task",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "hum-state",
+            "placement": "inside_task"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 0,
+              "carry_mode": "classifier-buffer",
+              "note": "hand_rule ignores non-context carry (acts as cold)",
+              "tokens_carried": 0
+            },
+            "carry_mode": "classifier-buffer",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "at_task_boundary",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "classifier-buffer",
+            "placement": "at_task_boundary"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 0,
+              "carry_mode": "classifier-buffer",
+              "note": "hand_rule ignores non-context carry (acts as cold)",
+              "tokens_carried": 0
+            },
+            "carry_mode": "classifier-buffer",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "inside_task",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "classifier-buffer",
+            "placement": "inside_task"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": true
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 67,
+              "carry_mode": "context-carry",
+              "tokens_carried": 10
+            },
+            "carry_mode": "context-carry",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "at_task_boundary",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "context-carry",
+            "placement": "at_task_boundary"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": true
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 65,
+              "carry_mode": "context-carry",
+              "tokens_carried": 12
+            },
+            "carry_mode": "context-carry",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "inside_task",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "context-carry",
+            "placement": "inside_task"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 0,
+              "carry_mode": "cold",
+              "note": "hand_rule ignores non-context carry (acts as cold)",
+              "tokens_carried": 0
+            },
+            "carry_mode": "cold",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "at_task_boundary",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "cold",
+            "placement": "at_task_boundary"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 0,
+              "carry_mode": "cold",
+              "note": "hand_rule ignores non-context carry (acts as cold)",
+              "tokens_carried": 0
+            },
+            "carry_mode": "cold",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "inside_task",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "cold",
+            "placement": "inside_task"
+          }
+        }
+      ],
+      "smoke_pass": true,
+      "status": "full"
+    },
+    {
+      "M1_CSR": 1.0,
+      "M1_by_type": {
+        "Ambiguous": 1.0,
+        "Clean": 1.0,
+        "Distraction": 1.0,
+        "Renewal": 1.0,
+        "Window-break": 1.0
+      },
+      "M1_counts": {
+        "abstentions": 0,
+        "correct": 49,
+        "total": 49
+      },
+      "M2_thrash_distraction": 0,
+      "M3_switch_latency": {
+        "latencies": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean": 0.0
+      },
+      "M4_renewal_recall": 1.0,
+      "M6": {
+        "classifier-buffer|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 24.0,
+          "M6c_csr_per_byte": 0.041666666666666664,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "classifier-buffer|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 24.0,
+          "M6c_csr_per_byte": 0.041666666666666664,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "cold|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "cold|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "context-carry|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 67.0,
+          "M6c_csr_per_byte": 0.014925373134328358,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "context-carry|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 65.0,
+          "M6c_csr_per_byte": 0.015384615384615385,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "hum-state|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "hum-state|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        }
+      },
+      "M6d_stale_break": {
+        "classifier-buffer": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "cold": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "context-carry": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "hum-state": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        }
+      },
+      "arm": "classifier_stub",
+      "by_type_raw": {
+        "Ambiguous": {
+          "abstain": 0,
+          "correct": 4,
+          "total": 4
+        },
+        "Clean": {
+          "abstain": 0,
+          "correct": 4,
+          "total": 4
+        },
+        "Distraction": {
+          "abstain": 0,
+          "correct": 4,
+          "total": 4
+        },
+        "Renewal": {
+          "abstain": 0,
+          "correct": 5,
+          "total": 5
+        },
+        "Window-break": {
+          "abstain": 0,
+          "correct": 32,
+          "total": 32
+        }
+      },
+      "disclosure": "untrained keyword-count argmax on first-32 tokens; alphabetical tie-break; optional EMA buffer for classifier-buffer carry; NOT a calibrated context classifier",
+      "n_sequences": 12,
+      "per_sequence": [
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 0,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 2,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 3,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": null,
+          "oracles": [
+            "General",
+            "Structured",
+            "Browser",
+            "General"
+          ],
+          "preds": [
+            "General",
+            "Structured",
+            "Browser",
+            "General"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Clean",
+          "window_break": null
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 1,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 2,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": null,
+          "oracles": [
+            "Browser",
+            "General",
+            "Structured",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "General",
+            "Structured",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Ambiguous",
+          "window_break": null
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 0,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 1,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 2,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 3,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": null,
+          "oracles": [
+            "Structured",
+            "General",
+            "Browser",
+            "Structured"
+          ],
+          "preds": [
+            "Structured",
+            "General",
+            "Browser",
+            "Structured"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Distraction",
+          "window_break": null
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 2,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 4,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": null,
+          "oracles": [
+            "Browser",
+            "Structured",
+            "Structured",
+            "Browser",
+            "General"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "Structured",
+            "Browser",
+            "General"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Renewal",
+          "window_break": null
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 0,
+              "carry_mode": "hum-state",
+              "note": "classifier_stub treats hum-state/cold as cold",
+              "tokens_carried": 0
+            },
+            "carry_mode": "hum-state",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "at_task_boundary",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "hum-state",
+            "placement": "at_task_boundary"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 0,
+              "carry_mode": "hum-state",
+              "note": "classifier_stub treats hum-state/cold as cold",
+              "tokens_carried": 0
+            },
+            "carry_mode": "hum-state",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "inside_task",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "hum-state",
+            "placement": "inside_task"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": true
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "buffer": {
+                "Browser": 2.0,
+                "General": 0.0,
+                "Structured": 1.0
+              },
+              "bytes_carried": 24,
+              "carry_mode": "classifier-buffer",
+              "tokens_carried": 0
+            },
+            "carry_mode": "classifier-buffer",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "at_task_boundary",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "classifier-buffer",
+            "placement": "at_task_boundary"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": true
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "buffer": {
+                "Browser": 3.0,
+                "General": 0.0,
+                "Structured": 0.0
+              },
+              "bytes_carried": 24,
+              "carry_mode": "classifier-buffer",
+              "tokens_carried": 0
+            },
+            "carry_mode": "classifier-buffer",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "inside_task",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "classifier-buffer",
+            "placement": "inside_task"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": true
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 67,
+              "carry_mode": "context-carry",
+              "tokens_carried": 10
+            },
+            "carry_mode": "context-carry",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "at_task_boundary",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "context-carry",
+            "placement": "at_task_boundary"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": true
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 65,
+              "carry_mode": "context-carry",
+              "tokens_carried": 12
+            },
+            "carry_mode": "context-carry",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "inside_task",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "context-carry",
+            "placement": "inside_task"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 0,
+              "carry_mode": "cold",
+              "note": "classifier_stub treats hum-state/cold as cold",
+              "tokens_carried": 0
+            },
+            "carry_mode": "cold",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "at_task_boundary",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "cold",
+            "placement": "at_task_boundary"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 0,
+              "carry_mode": "cold",
+              "note": "classifier_stub treats hum-state/cold as cold",
+              "tokens_carried": 0
+            },
+            "carry_mode": "cold",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "inside_task",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "cold",
+            "placement": "inside_task"
+          }
+        }
+      ],
+      "smoke_pass": true,
+      "status": "stub"
+    },
+    {
+      "M1_CSR": 1.0,
+      "M1_by_type": {
+        "Ambiguous": 1.0,
+        "Clean": 1.0,
+        "Distraction": 1.0,
+        "Renewal": 1.0,
+        "Window-break": 1.0
+      },
+      "M1_counts": {
+        "abstentions": 0,
+        "correct": 49,
+        "total": 49
+      },
+      "M2_thrash_distraction": 0,
+      "M3_switch_latency": {
+        "latencies": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean": 0.0
+      },
+      "M4_renewal_recall": 1.0,
+      "M6": {
+        "classifier-buffer|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 760.0,
+          "M6c_csr_per_byte": 0.0013157894736842105,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "classifier-buffer|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 760.0,
+          "M6c_csr_per_byte": 0.0013157894736842105,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "cold|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "cold|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "context-carry|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 67.0,
+          "M6c_csr_per_byte": 0.014925373134328358,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "context-carry|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 65.0,
+          "M6c_csr_per_byte": 0.015384615384615385,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "hum-state|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "hum-state|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        }
+      },
+      "M6d_stale_break": {
+        "classifier-buffer": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "cold": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "context-carry": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "hum-state": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        }
+      },
+      "arm": "classifier_mlp",
+      "by_type_raw": {
+        "Ambiguous": {
+          "abstain": 0,
+          "correct": 4,
+          "total": 4
+        },
+        "Clean": {
+          "abstain": 0,
+          "correct": 4,
+          "total": 4
+        },
+        "Distraction": {
+          "abstain": 0,
+          "correct": 4,
+          "total": 4
+        },
+        "Renewal": {
+          "abstain": 0,
+          "correct": 5,
+          "total": 5
+        },
+        "Window-break": {
+          "abstain": 0,
+          "correct": 32,
+          "total": 32
+        }
+      },
+      "disclosure": "Calibrated 2-layer MLP on first-32 token features (HAND_RULE lexicon counts + train-only unigram bag). Disjoint from smoke seed 20260923. Base form stateless; classifier-buffer carry uses EMA of feature vectors.",
+      "n_sequences": 12,
+      "per_sequence": [
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 0,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 2,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 3,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": null,
+          "oracles": [
+            "General",
+            "Structured",
+            "Browser",
+            "General"
+          ],
+          "preds": [
+            "General",
+            "Structured",
+            "Browser",
+            "General"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Clean",
+          "window_break": null
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 1,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 2,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": null,
+          "oracles": [
+            "Browser",
+            "General",
+            "Structured",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "General",
+            "Structured",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Ambiguous",
+          "window_break": null
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 0,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 1,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 2,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 3,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": null,
+          "oracles": [
+            "Structured",
+            "General",
+            "Browser",
+            "Structured"
+          ],
+          "preds": [
+            "Structured",
+            "General",
+            "Browser",
+            "Structured"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Distraction",
+          "window_break": null
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 2,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 4,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": null,
+          "oracles": [
+            "Browser",
+            "Structured",
+            "Structured",
+            "Browser",
+            "General"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "Structured",
+            "Browser",
+            "General"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Renewal",
+          "window_break": null
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 0,
+              "carry_mode": "hum-state",
+              "note": "classifier_mlp treats hum-state/cold as cold",
+              "tokens_carried": 0
+            },
+            "carry_mode": "hum-state",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "at_task_boundary",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "hum-state",
+            "placement": "at_task_boundary"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 0,
+              "carry_mode": "hum-state",
+              "note": "classifier_mlp treats hum-state/cold as cold",
+              "tokens_carried": 0
+            },
+            "carry_mode": "hum-state",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "inside_task",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "hum-state",
+            "placement": "inside_task"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": true
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "buffer_dim": 95,
+              "bytes_carried": 760,
+              "carry_mode": "classifier-buffer",
+              "tokens_carried": 0
+            },
+            "carry_mode": "classifier-buffer",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "at_task_boundary",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "classifier-buffer",
+            "placement": "at_task_boundary"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": true
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "buffer_dim": 95,
+              "bytes_carried": 760,
+              "carry_mode": "classifier-buffer",
+              "tokens_carried": 0
+            },
+            "carry_mode": "classifier-buffer",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "inside_task",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "classifier-buffer",
+            "placement": "inside_task"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": true
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 67,
+              "carry_mode": "context-carry",
+              "tokens_carried": 10
+            },
+            "carry_mode": "context-carry",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "at_task_boundary",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "context-carry",
+            "placement": "at_task_boundary"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": true
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 65,
+              "carry_mode": "context-carry",
+              "tokens_carried": 12
+            },
+            "carry_mode": "context-carry",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "inside_task",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "context-carry",
+            "placement": "inside_task"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 0,
+              "carry_mode": "cold",
+              "note": "classifier_mlp treats hum-state/cold as cold",
+              "tokens_carried": 0
+            },
+            "carry_mode": "cold",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "at_task_boundary",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "cold",
+            "placement": "at_task_boundary"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 0,
+              "carry_mode": "cold",
+              "note": "classifier_mlp treats hum-state/cold as cold",
+              "tokens_carried": 0
+            },
+            "carry_mode": "cold",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "inside_task",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "cold",
+            "placement": "inside_task"
+          }
+        }
+      ],
+      "smoke_pass": true,
+      "status": "calibrated"
+    },
+    {
+      "M1_CSR": 0.7755102040816326,
+      "M1_by_type": {
+        "Ambiguous": 1.0,
+        "Clean": 0.75,
+        "Distraction": 0.75,
+        "Renewal": 0.6,
+        "Window-break": 0.78125
+      },
+      "M1_counts": {
+        "abstentions": 0,
+        "correct": 38,
+        "total": 49
+      },
+      "M2_thrash_distraction": 0,
+      "M3_switch_latency": {
+        "latencies": [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          2,
+          1
+        ],
+        "mean": 0.6666666666666666
+      },
+      "M4_renewal_recall": 0.0,
+      "M6": {
+        "classifier-buffer|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "classifier-buffer|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "cold|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "cold|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "context-carry|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 67.0,
+          "M6c_csr_per_byte": 0.014925373134328358,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "context-carry|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 65.0,
+          "M6c_csr_per_byte": 0.015384615384615385,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "hum-state|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 60.0,
+          "M6c_csr_per_byte": 0.016666666666666666,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "hum-state|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 60.0,
+          "M6c_csr_per_byte": 0.016666666666666666,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        }
+      },
+      "M6d_stale_break": {
+        "classifier-buffer": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "cold": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "context-carry": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "hum-state": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        }
+      },
+      "arm": "hum_local",
+      "by_type_raw": {
+        "Ambiguous": {
+          "abstain": 0,
+          "correct": 4,
+          "total": 4
+        },
+        "Clean": {
+          "abstain": 0,
+          "correct": 3,
+          "total": 4
+        },
+        "Distraction": {
+          "abstain": 0,
+          "correct": 3,
+          "total": 4
+        },
+        "Renewal": {
+          "abstain": 0,
+          "correct": 3,
+          "total": 5
+        },
+        "Window-break": {
+          "abstain": 0,
+          "correct": 25,
+          "total": 32
+        }
+      },
+      "disclosure": "HumState n=3 + keyword-projection drive on first-32 tokens; tiering k=2/m=4 draft; no GNURadio ckpt/measure API",
+      "n_sequences": 12,
+      "per_sequence": [
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 0,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 2,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 3,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": null,
+          "oracles": [
+            "General",
+            "Structured",
+            "Browser",
+            "General"
+          ],
+          "preds": [
+            "General",
+            "Structured",
+            "Structured",
+            "General"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Clean",
+          "window_break": null
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 1,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 2,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": null,
+          "oracles": [
+            "Browser",
+            "General",
+            "Structured",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "General",
+            "Structured",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Ambiguous",
+          "window_break": null
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 0,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 1,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 2,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 3,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": null,
+          "oracles": [
+            "Structured",
+            "General",
+            "Browser",
+            "Structured"
+          ],
+          "preds": [
+            "Structured",
+            "Structured",
+            "Browser",
+            "Structured"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Distraction",
+          "window_break": null
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 2,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 4,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": null,
+          "oracles": [
+            "Browser",
+            "Structured",
+            "Structured",
+            "Browser",
+            "General"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "Structured",
+            "Structured",
+            "Structured"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Renewal",
+          "window_break": null
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": true
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 60,
+              "bytes_json": 452,
+              "carry_mode": "hum-state",
+              "state": {
+                "amp": [
+                  2.659938185801978,
+                  0.14324752624540987,
+                  0.38623169356004927
+                ],
+                "phase": [
+                  -0.00026243725939443244,
+                  3.008857563305012,
+                  -0.05392489206219232
+                ],
+                "tier": {
+                  "Browser": "hot",
+                  "General": "warm",
+                  "Structured": "warm"
+                },
+                "unselected": {
+                  "Browser": 0,
+                  "General": 1,
+                  "Structured": 1
+                }
+              },
+              "tokens_carried": 0
+            },
+            "carry_mode": "hum-state",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "at_task_boundary",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "Structured",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "hum-state",
+            "placement": "at_task_boundary"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": true
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 60,
+              "bytes_json": 446,
+              "carry_mode": "hum-state",
+              "state": {
+                "amp": [
+                  2.8769815750826444,
+                  0.8705186550095027,
+                  0.20839474526061424
+                ],
+                "phase": [
+                  0.001919164791599311,
+                  2.1547629474785452,
+                  -0.41504169157100906
+                ],
+                "tier": {
+                  "Browser": "hot",
+                  "General": "warm",
+                  "Structured": "warm"
+                },
+                "unselected": {
+                  "Browser": 0,
+                  "General": 1,
+                  "Structured": 1
+                }
+              },
+              "tokens_carried": 0
+            },
+            "carry_mode": "hum-state",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "inside_task",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "Structured",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "hum-state",
+            "placement": "inside_task"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 0,
+              "carry_mode": "classifier-buffer",
+              "note": "hum_local treats classifier-buffer/cold as cold reset",
+              "tokens_carried": 0
+            },
+            "carry_mode": "classifier-buffer",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "at_task_boundary",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "Structured",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "classifier-buffer",
+            "placement": "at_task_boundary"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 0,
+              "carry_mode": "classifier-buffer",
+              "note": "hum_local treats classifier-buffer/cold as cold reset",
+              "tokens_carried": 0
+            },
+            "carry_mode": "classifier-buffer",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "inside_task",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "Structured",
+            "Structured"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "classifier-buffer",
+            "placement": "inside_task"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": true
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 67,
+              "carry_mode": "context-carry",
+              "tokens_carried": 10
+            },
+            "carry_mode": "context-carry",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "at_task_boundary",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "Structured",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "context-carry",
+            "placement": "at_task_boundary"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": true
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 65,
+              "carry_mode": "context-carry",
+              "tokens_carried": 12
+            },
+            "carry_mode": "context-carry",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "inside_task",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "context-carry",
+            "placement": "inside_task"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 0,
+              "carry_mode": "cold",
+              "note": "hum_local treats classifier-buffer/cold as cold reset",
+              "tokens_carried": 0
+            },
+            "carry_mode": "cold",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "at_task_boundary",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "Structured",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "cold",
+            "placement": "at_task_boundary"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 0,
+              "carry_mode": "cold",
+              "note": "hum_local treats classifier-buffer/cold as cold reset",
+              "tokens_carried": 0
+            },
+            "carry_mode": "cold",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "inside_task",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "cold",
+            "placement": "inside_task"
+          }
+        }
+      ],
+      "smoke_pass": true,
+      "status": "local_dynamics_smoke"
+    },
+    {
+      "M1_CSR": 0.8163265306122449,
+      "M1_by_type": {
+        "Ambiguous": 1.0,
+        "Clean": 0.75,
+        "Distraction": 1.0,
+        "Renewal": 0.6,
+        "Window-break": 0.8125
+      },
+      "M1_counts": {
+        "abstentions": 0,
+        "correct": 40,
+        "total": 49
+      },
+      "M2_thrash_distraction": 0,
+      "M3_switch_latency": {
+        "latencies": [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          1
+        ],
+        "mean": 0.4166666666666667
+      },
+      "M4_renewal_recall": 0.0,
+      "M6": {
+        "classifier-buffer|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "classifier-buffer|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "cold|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "cold|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "context-carry|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 67.0,
+          "M6c_csr_per_byte": 0.014925373134328358,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "context-carry|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 65.0,
+          "M6c_csr_per_byte": 0.015384615384615385,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "hum-state|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 60.0,
+          "M6c_csr_per_byte": 0.016666666666666666,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "hum-state|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 60.0,
+          "M6c_csr_per_byte": 0.016666666666666666,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        }
+      },
+      "M6d_stale_break": {
+        "classifier-buffer": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "cold": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "context-carry": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "hum-state": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        }
+      },
+      "arm": "hum",
+      "by_type_raw": {
+        "Ambiguous": {
+          "abstain": 0,
+          "correct": 4,
+          "total": 4
+        },
+        "Clean": {
+          "abstain": 0,
+          "correct": 3,
+          "total": 4
+        },
+        "Distraction": {
+          "abstain": 0,
+          "correct": 4,
+          "total": 4
+        },
+        "Renewal": {
+          "abstain": 0,
+          "correct": 3,
+          "total": 5
+        },
+        "Window-break": {
+          "abstain": 0,
+          "correct": 26,
+          "total": 32
+        }
+      },
+      "disclosure": "HumState n=3 + AffinityProvider level-2 (KeywordAffinityProvider labeled fallback) + RegimeProbe level-1 on segment open; H5 typed_goal when family present; schema_version+n serialize; no T8 MoE .pt",
+      "n_sequences": 12,
+      "per_sequence": [
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 0,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 2,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 3,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": null,
+          "oracles": [
+            "General",
+            "Structured",
+            "Browser",
+            "General"
+          ],
+          "preds": [
+            "General",
+            "Structured",
+            "Structured",
+            "General"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Clean",
+          "window_break": null
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 1,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 2,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": null,
+          "oracles": [
+            "Browser",
+            "General",
+            "Structured",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "General",
+            "Structured",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Ambiguous",
+          "window_break": null
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 0,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 1,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 2,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 3,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": null,
+          "oracles": [
+            "Structured",
+            "General",
+            "Browser",
+            "Structured"
+          ],
+          "preds": [
+            "Structured",
+            "General",
+            "Browser",
+            "Structured"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Distraction",
+          "window_break": null
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 2,
+              "oracle": "Structured",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 4,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": null,
+          "oracles": [
+            "Browser",
+            "Structured",
+            "Structured",
+            "Browser",
+            "General"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "Structured",
+            "Structured",
+            "Structured"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Renewal",
+          "window_break": null
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": true
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 60,
+              "bytes_json": 475,
+              "carry_mode": "hum-state",
+              "n": 3,
+              "schema_version": 1,
+              "state": {
+                "amp": [
+                  5.002640288630931,
+                  0.36968209958730414,
+                  1.0901223899317019
+                ],
+                "n": 3,
+                "phase": [
+                  -0.0001654112651473816,
+                  3.086032639298282,
+                  -0.0208506824631373
+                ],
+                "schema_version": 1,
+                "tier": {
+                  "Browser": "hot",
+                  "General": "warm",
+                  "Structured": "warm"
+                },
+                "unselected": {
+                  "Browser": 0,
+                  "General": 1,
+                  "Structured": 1
+                }
+              },
+              "tokens_carried": 0
+            },
+            "carry_mode": "hum-state",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "at_task_boundary",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "Structured",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "hum-state",
+            "placement": "at_task_boundary"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": true
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 60,
+              "bytes_json": 467,
+              "carry_mode": "hum-state",
+              "n": 3,
+              "schema_version": 1,
+              "state": {
+                "amp": [
+                  5.056613417706722,
+                  1.7355005805791035,
+                  1.1039527088977514
+                ],
+                "n": 3,
+                "phase": [
+                  0.002614341497619547,
+                  2.256952149561913,
+                  -0.15220958617469635
+                ],
+                "schema_version": 1,
+                "tier": {
+                  "Browser": "hot",
+                  "General": "warm",
+                  "Structured": "warm"
+                },
+                "unselected": {
+                  "Browser": 0,
+                  "General": 1,
+                  "Structured": 1
+                }
+              },
+              "tokens_carried": 0
+            },
+            "carry_mode": "hum-state",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "inside_task",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "Structured",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "hum-state",
+            "placement": "inside_task"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 0,
+              "carry_mode": "classifier-buffer",
+              "note": "hum treats classifier-buffer/cold as cold reset",
+              "tokens_carried": 0
+            },
+            "carry_mode": "classifier-buffer",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "at_task_boundary",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "Structured",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "classifier-buffer",
+            "placement": "at_task_boundary"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 0,
+              "carry_mode": "classifier-buffer",
+              "note": "hum treats classifier-buffer/cold as cold reset",
+              "tokens_carried": 0
+            },
+            "carry_mode": "classifier-buffer",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "inside_task",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "Structured",
+            "Structured"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "classifier-buffer",
+            "placement": "inside_task"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": true
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 67,
+              "carry_mode": "context-carry",
+              "tokens_carried": 10
+            },
+            "carry_mode": "context-carry",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "at_task_boundary",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "context-carry",
+            "placement": "at_task_boundary"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": true
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 65,
+              "carry_mode": "context-carry",
+              "tokens_carried": 12
+            },
+            "carry_mode": "context-carry",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "inside_task",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "context-carry",
+            "placement": "inside_task"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 0,
+              "carry_mode": "cold",
+              "note": "hum treats classifier-buffer/cold as cold reset",
+              "tokens_carried": 0
+            },
+            "carry_mode": "cold",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "at_task_boundary",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "Structured",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "cold",
+            "placement": "at_task_boundary"
+          }
+        },
+        {
+          "details": [
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 0,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "structured",
+              "i": 1,
+              "oracle": "Structured",
+              "post_break": true,
+              "pred": "Structured",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "general",
+              "i": 2,
+              "oracle": "General",
+              "post_break": false,
+              "pred": "General",
+              "used_carry": false
+            },
+            {
+              "abstain": false,
+              "abstain_reason": null,
+              "family": "browser",
+              "i": 3,
+              "oracle": "Browser",
+              "post_break": false,
+              "pred": "Browser",
+              "used_carry": false
+            }
+          ],
+          "first_post_break": {
+            "abstain": false,
+            "carry": {
+              "bytes_carried": 0,
+              "carry_mode": "cold",
+              "note": "hum treats classifier-buffer/cold as cold reset",
+              "tokens_carried": 0
+            },
+            "carry_mode": "cold",
+            "correct": true,
+            "oracle": "Structured",
+            "placement": "inside_task",
+            "pred": "Structured"
+          },
+          "oracles": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "preds": [
+            "Browser",
+            "Structured",
+            "General",
+            "Browser"
+          ],
+          "seed": 20260923,
+          "sequence_type": "Window-break",
+          "window_break": {
+            "at": 1,
+            "carry_mode": "cold",
+            "placement": "inside_task"
+          }
+        }
+      ],
+      "smoke_pass": true,
+      "status": "gnuradio_hum_measure"
+    }
+  ],
+  "arms": [
+    {
+      "M1_CSR": 1.0,
+      "M1_by_type": {
+        "Ambiguous": 1.0,
+        "Clean": 1.0,
+        "Distraction": 1.0,
+        "Renewal": 1.0,
+        "Window-break": 1.0
+      },
+      "M1_counts": {
+        "abstentions": 0,
+        "correct": 49,
+        "total": 49
+      },
+      "M2_thrash_distraction": 0,
+      "M3_mean_latency": 0.0,
+      "M4_renewal_recall": 1.0,
+      "M6": {
+        "classifier-buffer|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "classifier-buffer|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "cold|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "cold|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "context-carry|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 67.0,
+          "M6c_csr_per_byte": 0.014925373134328358,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "context-carry|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 65.0,
+          "M6c_csr_per_byte": 0.015384615384615385,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "hum-state|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "hum-state|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        }
+      },
+      "M6d_stale_break": {
+        "classifier-buffer": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "cold": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "context-carry": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "hum-state": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        }
+      },
+      "arm": "hand_rule",
+      "disclosure": null,
+      "smoke_pass": true,
+      "status": "full"
+    },
+    {
+      "M1_CSR": 1.0,
+      "M1_by_type": {
+        "Ambiguous": 1.0,
+        "Clean": 1.0,
+        "Distraction": 1.0,
+        "Renewal": 1.0,
+        "Window-break": 1.0
+      },
+      "M1_counts": {
+        "abstentions": 0,
+        "correct": 49,
+        "total": 49
+      },
+      "M2_thrash_distraction": 0,
+      "M3_mean_latency": 0.0,
+      "M4_renewal_recall": 1.0,
+      "M6": {
+        "classifier-buffer|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 24.0,
+          "M6c_csr_per_byte": 0.041666666666666664,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "classifier-buffer|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 24.0,
+          "M6c_csr_per_byte": 0.041666666666666664,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "cold|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "cold|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "context-carry|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 67.0,
+          "M6c_csr_per_byte": 0.014925373134328358,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "context-carry|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 65.0,
+          "M6c_csr_per_byte": 0.015384615384615385,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "hum-state|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "hum-state|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        }
+      },
+      "M6d_stale_break": {
+        "classifier-buffer": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "cold": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "context-carry": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "hum-state": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        }
+      },
+      "arm": "classifier_stub",
+      "disclosure": "untrained keyword-count argmax on first-32 tokens; alphabetical tie-break; optional EMA buffer for classifier-buffer carry; NOT a calibrated context classifier",
+      "smoke_pass": true,
+      "status": "stub"
+    },
+    {
+      "M1_CSR": 1.0,
+      "M1_by_type": {
+        "Ambiguous": 1.0,
+        "Clean": 1.0,
+        "Distraction": 1.0,
+        "Renewal": 1.0,
+        "Window-break": 1.0
+      },
+      "M1_counts": {
+        "abstentions": 0,
+        "correct": 49,
+        "total": 49
+      },
+      "M2_thrash_distraction": 0,
+      "M3_mean_latency": 0.0,
+      "M4_renewal_recall": 1.0,
+      "M6": {
+        "classifier-buffer|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 760.0,
+          "M6c_csr_per_byte": 0.0013157894736842105,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "classifier-buffer|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 760.0,
+          "M6c_csr_per_byte": 0.0013157894736842105,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "cold|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "cold|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "context-carry|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 67.0,
+          "M6c_csr_per_byte": 0.014925373134328358,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "context-carry|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 65.0,
+          "M6c_csr_per_byte": 0.015384615384615385,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "hum-state|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "hum-state|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        }
+      },
+      "M6d_stale_break": {
+        "classifier-buffer": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "cold": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "context-carry": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "hum-state": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        }
+      },
+      "arm": "classifier_mlp",
+      "disclosure": "Calibrated 2-layer MLP on first-32 token features (HAND_RULE lexicon counts + train-only unigram bag). Disjoint from smoke seed 20260923. Base form stateless; classifier-buffer carry uses EMA of feature vectors.",
+      "smoke_pass": true,
+      "status": "calibrated"
+    },
+    {
+      "M1_CSR": 0.7755102040816326,
+      "M1_by_type": {
+        "Ambiguous": 1.0,
+        "Clean": 0.75,
+        "Distraction": 0.75,
+        "Renewal": 0.6,
+        "Window-break": 0.78125
+      },
+      "M1_counts": {
+        "abstentions": 0,
+        "correct": 38,
+        "total": 49
+      },
+      "M2_thrash_distraction": 0,
+      "M3_mean_latency": 0.6666666666666666,
+      "M4_renewal_recall": 0.0,
+      "M6": {
+        "classifier-buffer|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "classifier-buffer|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "cold|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "cold|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "context-carry|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 67.0,
+          "M6c_csr_per_byte": 0.014925373134328358,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "context-carry|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 65.0,
+          "M6c_csr_per_byte": 0.015384615384615385,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "hum-state|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 60.0,
+          "M6c_csr_per_byte": 0.016666666666666666,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "hum-state|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 60.0,
+          "M6c_csr_per_byte": 0.016666666666666666,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        }
+      },
+      "M6d_stale_break": {
+        "classifier-buffer": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "cold": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "context-carry": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "hum-state": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        }
+      },
+      "arm": "hum_local",
+      "disclosure": "HumState n=3 + keyword-projection drive on first-32 tokens; tiering k=2/m=4 draft; no GNURadio ckpt/measure API",
+      "smoke_pass": true,
+      "status": "local_dynamics_smoke"
+    },
+    {
+      "M1_CSR": 0.8163265306122449,
+      "M1_by_type": {
+        "Ambiguous": 1.0,
+        "Clean": 0.75,
+        "Distraction": 1.0,
+        "Renewal": 0.6,
+        "Window-break": 0.8125
+      },
+      "M1_counts": {
+        "abstentions": 0,
+        "correct": 40,
+        "total": 49
+      },
+      "M2_thrash_distraction": 0,
+      "M3_mean_latency": 0.4166666666666667,
+      "M4_renewal_recall": 0.0,
+      "M6": {
+        "classifier-buffer|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "classifier-buffer|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "cold|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "cold|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "context-carry|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 67.0,
+          "M6c_csr_per_byte": 0.014925373134328358,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "context-carry|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 65.0,
+          "M6c_csr_per_byte": 0.015384615384615385,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "hum-state|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 60.0,
+          "M6c_csr_per_byte": 0.016666666666666666,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "hum-state|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 60.0,
+          "M6c_csr_per_byte": 0.016666666666666666,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        }
+      },
+      "M6d_stale_break": {
+        "classifier-buffer": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "cold": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "context-carry": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "hum-state": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        }
+      },
+      "arm": "hum",
+      "disclosure": "HumState n=3 + AffinityProvider level-2 (KeywordAffinityProvider labeled fallback) + RegimeProbe level-1 on segment open; H5 typed_goal when family present; schema_version+n serialize; no T8 MoE .pt",
+      "smoke_pass": true,
+      "status": "gnuradio_hum_measure"
+    }
+  ],
+  "batch_id": "t11-counting-sealed-v1",
+  "blockers": [
+    "classifier_stub retained as disclosed untrained baseline (calibrated arm present)",
+    "hum_local retained as disclosed keyword-drive baseline (real hum arm present)",
+    "side-channel disclosure check COMPLETE \u2014 see t11/docs/T11_SIDE_CHANNEL_DISCLOSURE_RECEIPT.md (pass with labeled interim channels; PREREG still draft \u2014 do not freeze)"
+  ],
+  "created": "2026-09-23T14:54:47 PT",
+  "gnuradio_handoff": [
+    "hum arm wired to t11/imports/hum_measure: L1 probe c3d70ed6\u2026, AffinityProvider (Keyword fallback labeled), C_n3 40e3c0c9\u2026, schema 4b55f40b\u2026.",
+    "H5: typed_goal additive on sealed segments; typed_goal_family omitted (identity lock) \u2192 H5 inactive, L1 fallback.",
+    "hum_local retained as disclosed keyword-drive baseline beside real hum arm.",
+    "classifier_mlp calibrated + hashed (d482216c\u2026); stub retained as disclosed baseline.",
+    "Window-break carry modes are harness conditions; score M6a/M6c/M6d \u2014 hum has no special standing.",
+    "T8 MoE .pt NOT loaded into T11 hum arm."
+  ],
+  "hum_measure_refs": {
+    "affinity_provider": "KeywordAffinityProvider (label=keyword_fallback)",
+    "classifier_mlp_v1_json_sha256": "d482216ce91423658851529cf78653cbebb034abe516d1a4d9c0402c0e490a59",
+    "coupling_n3_sha256": "40e3c0c95849ad67af6738e7842c1a4d24783dafa742ed247d03391db37a1493",
+    "coupling_n8_sha256": "7dce0b7ee119add91859eb46a82fa2e94c821f7394468800a7f45a52e7ae2c8e",
+    "probe_definition_sha256": "c3d70ed6778d6e6076add14144d0195e1f91888a8a50fb6f0b1c1e6657345fed",
+    "schema_json_sha256": "4b55f40b9c87225926a7160974ad99f27ac5403cb7d99392c43172e87208f814"
+  },
+  "n_sequences": 12,
+  "prereg_frozen": false,
+  "ready_for_multi_seed": false,
+  "ready_notes": "One-seed smoke with calibrated classifier + real hum arm. Multi-seed still blocked on: (1) side-channel disclosure completed (labeled interim L2/stubs; see receipt), (2) PREREG still draft \u2014 do not freeze. GNURadio hum_measure package is landed and wired; KeywordAffinityProvider is labeled interim L2.",
+  "seals": {
+    "ALL_SEQUENCES.jsonl": {
+      "expected": "8f4d11bd961018c6fa39670271872e9a6fa4efebc36de7224138376addff6720",
+      "ok": true,
+      "path": "/workspace/scp/experiments/phase-routing/t11/generators/sealed/ALL_SEQUENCES.jsonl",
+      "sha256": "8f4d11bd961018c6fa39670271872e9a6fa4efebc36de7224138376addff6720"
+    },
+    "HAND_RULE.md": {
+      "expected": "28a3d07295ddf6558261b2f8c5065d6cf4934bc2c8457ef45cbbf081bc281334",
+      "ok": true,
+      "path": "/workspace/scp/t11/HAND_RULE.md",
+      "sha256": "28a3d07295ddf6558261b2f8c5065d6cf4934bc2c8457ef45cbbf081bc281334"
+    },
+    "SEALED_MANIFEST.json": {
+      "expected": "c9e8336e9da7db8302c0aeb9b247fed42bcb7416c09c102bad397fb0837b28f1",
+      "ok": true,
+      "path": "/workspace/scp/experiments/phase-routing/t11/generators/sealed/SEALED_MANIFEST.json",
+      "sha256": "c9e8336e9da7db8302c0aeb9b247fed42bcb7416c09c102bad397fb0837b28f1"
+    }
+  },
+  "seed": 20260923,
+  "sequence_types": [
+    "Ambiguous",
+    "Clean",
+    "Distraction",
+    "Renewal",
+    "Window-break"
+  ],
+  "smoke_id": "t11-routing-smoke-one-seed-v3-hum-measure",
+  "stub_to_calibrated_delta": {
+    "classifier_mlp_M1": 1.0,
+    "classifier_stub_M1": 1.0,
+    "delta_M1": 0.0,
+    "note": "Positive delta = calibrated MLP higher CSR than untrained stub on same smoke seed"
+  }
+}

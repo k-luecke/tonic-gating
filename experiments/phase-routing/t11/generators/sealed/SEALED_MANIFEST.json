@@ -1,0 +1,160 @@
+{
+  "ALL_SEQUENCES_sha256": "305c446f4e773bafe6c77d4224e7ba3978cb354cd7f2f9dbfa2e18156eca8da1",
+  "all_sequences": {
+    "bytes": 93991,
+    "n_segments": 257,
+    "n_sequences": 60,
+    "path": "/workspace/scp/experiments/phase-routing/t11/generators/sealed/ALL_SEQUENCES.jsonl",
+    "relpath": "sealed/ALL_SEQUENCES.jsonl",
+    "sha256": "8f4d11bd961018c6fa39670271872e9a6fa4efebc36de7224138376addff6720"
+  },
+  "batch_id": "t11-counting-sealed-v1",
+  "batch_schema": "t11-counting-sealed-v1+typed_goal",
+  "created_pt": "2026-09-23T14:38:21-05:00",
+  "created_utc": "2026-09-23T19:38:21+00:00",
+  "date": "2026-09-23",
+  "files": [
+    {
+      "bytes": 7732,
+      "n_browser_episodes": 7,
+      "n_segments": 24,
+      "n_sequences": 5,
+      "path": "/workspace/scp/experiments/phase-routing/t11/generators/sealed/clean.jsonl",
+      "relpath": "sealed/clean.jsonl",
+      "sha256": "e5c9813a55be1272d4ceee8fdfbc715973f8df70c97e0a817517746c573aee7a"
+    },
+    {
+      "bytes": 9752,
+      "n_browser_episodes": 0,
+      "n_segments": 24,
+      "n_sequences": 5,
+      "path": "/workspace/scp/experiments/phase-routing/t11/generators/sealed/ambiguous.jsonl",
+      "relpath": "sealed/ambiguous.jsonl",
+      "sha256": "cd191933098b31f2690c62fd8d7256f88283a1dd7aa73e9041ff242114e2a15e"
+    },
+    {
+      "bytes": 11364,
+      "n_browser_episodes": 9,
+      "n_segments": 24,
+      "n_sequences": 5,
+      "path": "/workspace/scp/experiments/phase-routing/t11/generators/sealed/distraction.jsonl",
+      "relpath": "sealed/distraction.jsonl",
+      "sha256": "5f4cc0925c3daeac134528cbbf5279a95251fb6701d6f04f1d8b15d619751376"
+    },
+    {
+      "bytes": 7850,
+      "n_browser_episodes": 7,
+      "n_segments": 25,
+      "n_sequences": 5,
+      "path": "/workspace/scp/experiments/phase-routing/t11/generators/sealed/renewal.jsonl",
+      "relpath": "sealed/renewal.jsonl",
+      "sha256": "78ac24c610afec950802ca9b6ac11280aee261715bbacf897250bcd978711171"
+    },
+    {
+      "bytes": 57293,
+      "n_browser_episodes": 80,
+      "n_segments": 160,
+      "n_sequences": 40,
+      "path": "/workspace/scp/experiments/phase-routing/t11/generators/sealed/window_break.jsonl",
+      "relpath": "sealed/window_break.jsonl",
+      "sha256": "ef05c9f1c4494e66b441f4f9fb25536a83cdc25ca2b9830b4e11604fb28a6bcf"
+    }
+  ],
+  "generators_dir": "/workspace/scp/experiments/phase-routing/t11/generators",
+  "geometry": {
+    "ambiguous": 5,
+    "carry_modes": [
+      "hum-state",
+      "classifier-buffer",
+      "context-carry",
+      "cold"
+    ],
+    "clean": 5,
+    "distraction": 5,
+    "n_seeds": 5,
+    "placements": [
+      "at_task_boundary",
+      "inside_task"
+    ],
+    "renewal": 5,
+    "seeds": [
+      20260923,
+      20260924,
+      20260925,
+      20260926,
+      20260927
+    ],
+    "window_break": 40
+  },
+  "inputs": {
+    "HAND_RULE.md": {
+      "path": "/workspace/scp/t11/HAND_RULE.md",
+      "sha256": "28a3d07295ddf6558261b2f8c5065d6cf4934bc2c8457ef45cbbf081bc281334"
+    },
+    "MINIWOB25_SEALED.json": {
+      "episode_seeds": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110
+      ],
+      "note": "enter-password omitted from browser prompts (HAND_RULE refuse word)",
+      "num_seeds": 10,
+      "num_tasks": 25,
+      "path": "/workspace/scp/MINIWOB25_SEALED.json",
+      "sha256": "c59eccc8df283d577a6bd6a6fd13e1ae46dd01fa9576f1aaf58b9b1bc046b091"
+    }
+  },
+  "notes": [
+    "Content-defined oracle_specialist; no planted tags in segment text.",
+    "Refuse-list validated at write time (assert_no_refuse_cues).",
+    "Window-break carry_mode/placement are harness metadata only.",
+    "Browser segments link sealed MiniWoB task+episode seed when use_miniwob.",
+    "Do NOT freeze PREREG yet \u2014 this batch enables routing smoke next."
+  ],
+  "output_dir": "/workspace/scp/experiments/phase-routing/t11/generators/sealed",
+  "prereg_frozen": false,
+  "ready_for_routing_smoke": true,
+  "schema_additive": {
+    "added_pt": "2026-09-23T14:51:40 PT",
+    "breaking": false,
+    "fields_added": [
+      "typed_goal"
+    ],
+    "fields_intentionally_omitted": [
+      "typed_goal_family"
+    ],
+    "n_segments_updated": 257,
+    "prior_ALL_SEQUENCES_sha256": "305c446f4e773bafe6c77d4224e7ba3978cb354cd7f2f9dbfa2e18156eca8da1",
+    "prior_SEALED_MANIFEST_sha256": "40dec447b03e0684097915db8a6655c8932227849259eaa7aed72d57ecb2ee86",
+    "typed_goal_policy": "typed_goal = segment text (harness task-marker copy for sealed batch). typed_goal_family omitted: family/oracle_specialist are scoring labels (T10 identity lock / H5 must not invent family from oracle). H5 level-0 therefore inactive on sealed batch; arm falls back to L1 RegimeProbe."
+  },
+  "schema_version_note": "v1 + additive typed_goal (non-breaking)",
+  "seeds": [
+    20260923,
+    20260924,
+    20260925,
+    20260926,
+    20260927
+  ],
+  "sequence_types": [
+    "Clean",
+    "Ambiguous",
+    "Distraction",
+    "Renewal",
+    "Window-break"
+  ],
+  "status": "sealed",
+  "totals": {
+    "browser_episodes_linked": 103,
+    "segments": 257,
+    "sequences": 60
+  },
+  "work_tree": "/workspace/scp"
+}

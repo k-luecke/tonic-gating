@@ -1,0 +1,11 @@
+# Python & Bytecode
+__pycache__/
+*.pyc
+*.npz
+*.pt
+*.pth
+
+# Environments & Keys
+.env
+.venv/
+*.log

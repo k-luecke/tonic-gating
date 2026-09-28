@@ -1,0 +1,123 @@
+{
+  "arm_status": {
+    "classifier_mlp": "calibrated",
+    "classifier_stub": "stub",
+    "hand_rule": "full",
+    "hum": "gnuradio_hum_measure",
+    "hum_local": "local_dynamics_smoke"
+  },
+  "arms": [
+    "hand_rule",
+    "classifier_stub",
+    "classifier_mlp",
+    "hum_local",
+    "hum"
+  ],
+  "batch_id": "t11-counting-sealed-v1",
+  "classifier_split": {
+    "held_out": [
+      20260923
+    ],
+    "note": "Pooled primary includes train/val seeds for classifier_mlp \u2014 disclosed contamination",
+    "train": [
+      20260924,
+      20260925,
+      20260926
+    ],
+    "val": 20260927
+  },
+  "detail_sha256": "42d5aa7930867eba3747916999402d1fb673c1b924acc1f04adb3d4f9221f0c7",
+  "disclosures": [
+    "classifier_stub: untrained keyword baseline (retained)",
+    "hum_local: keyword-drive local baseline (retained)",
+    "hum: GNURadio hum_measure; KeywordAffinityProvider labeled L2 fallback",
+    "H5 inactive (no typed_goal_family on sealed)",
+    "Oracle = scoring only, not an arm",
+    "side-channel disclosure PASS (receipt pin refreshed)"
+  ],
+  "experiment": "T11",
+  "handoff_sha256": "056be9628d3a07edd9fa0a2bff32b7e01ebb8fdd9a36b7b66d0ec5f7e39c8eaf",
+  "mode": "routing_primary_multi_seed",
+  "n_sequences_pooled": 60,
+  "operating": {
+    "T_hold_n3": 65,
+    "distraction_spans": [
+      6,
+      8,
+      9
+    ],
+    "rho_eff": 0.9891373214
+  },
+  "pins": {
+    "ALL_SEQUENCES.jsonl": {
+      "expected": "8f4d11bd961018c6fa39670271872e9a6fa4efebc36de7224138376addff6720",
+      "ok": true,
+      "path": "/workspace/scp/experiments/phase-routing/t11/generators/sealed/ALL_SEQUENCES.jsonl",
+      "sha256": "8f4d11bd961018c6fa39670271872e9a6fa4efebc36de7224138376addff6720"
+    },
+    "HANDOFF.md": {
+      "expected": "056be9628d3a07edd9fa0a2bff32b7e01ebb8fdd9a36b7b66d0ec5f7e39c8eaf",
+      "ok": true,
+      "path": "/workspace/scp/t11/HANDOFF.md",
+      "sha256": "056be9628d3a07edd9fa0a2bff32b7e01ebb8fdd9a36b7b66d0ec5f7e39c8eaf"
+    },
+    "HAND_RULE.md": {
+      "expected": "28a3d07295ddf6558261b2f8c5065d6cf4934bc2c8457ef45cbbf081bc281334",
+      "ok": true,
+      "path": "/workspace/scp/t11/HAND_RULE.md",
+      "sha256": "28a3d07295ddf6558261b2f8c5065d6cf4934bc2c8457ef45cbbf081bc281334"
+    },
+    "PREREG.md": {
+      "expected": "c62bfda8bab88df14677e47e20f28c99ba20595bc0f9273050484d4ae92e079a",
+      "ok": true,
+      "path": "/workspace/scp/t11/PREREG.md",
+      "sha256": "c62bfda8bab88df14677e47e20f28c99ba20595bc0f9273050484d4ae92e079a"
+    },
+    "SEALED_MANIFEST.json": {
+      "expected": "c9e8336e9da7db8302c0aeb9b247fed42bcb7416c09c102bad397fb0837b28f1",
+      "ok": true,
+      "path": "/workspace/scp/experiments/phase-routing/t11/generators/sealed/SEALED_MANIFEST.json",
+      "sha256": "c9e8336e9da7db8302c0aeb9b247fed42bcb7416c09c102bad397fb0837b28f1"
+    },
+    "T11_SIDE_CHANNEL_DISCLOSURE_RECEIPT.md": {
+      "expected": "01e73af4ffad4490a3c71a203df0c7182be07ba8ec2343efce77b81ef4f00f81",
+      "ok": true,
+      "path": "/workspace/scp/t11/docs/T11_SIDE_CHANNEL_DISCLOSURE_RECEIPT.md",
+      "sha256": "01e73af4ffad4490a3c71a203df0c7182be07ba8ec2343efce77b81ef4f00f81"
+    },
+    "classifier_mlp_v1.json": {
+      "expected": "d482216ce91423658851529cf78653cbebb034abe516d1a4d9c0402c0e490a59",
+      "ok": true,
+      "path": "/workspace/scp/experiments/phase-routing/t11/routing/artifacts/classifier_mlp_v1.json",
+      "sha256": "d482216ce91423658851529cf78653cbebb034abe516d1a4d9c0402c0e490a59"
+    }
+  },
+  "prereg_frozen": true,
+  "prereg_sha256": "c62bfda8bab88df14677e47e20f28c99ba20595bc0f9273050484d4ae92e079a",
+  "prereg_untouched": true,
+  "primary_end_pt": "2026-09-23T15:16:57 PT",
+  "primary_id": "t11-routing-primary-v1",
+  "primary_start_pt": "2026-09-23T15:16:57 PT",
+  "score_summary_sha256": "abda25202c3c6350e53fac9ae39bc43ca6cf27b9bbaffeb64af76f1c2d045dc0",
+  "sealed_untouched": true,
+  "seeds": [
+    20260923,
+    20260924,
+    20260925,
+    20260926,
+    20260927
+  ],
+  "specialist_model_calls": false,
+  "timezone": "Pacific/Easter (PT)",
+  "verdicts": {
+    "H1": "null",
+    "H2": "inconclusive_zero_thrash",
+    "H3": "supported",
+    "H4": "report-only-null",
+    "H5": "not_active",
+    "H6": "report-only",
+    "persistence_tradeoff_observed": false
+  },
+  "wall_clock_minutes": 0.011,
+  "wall_clock_seconds": 0.6641053759994975
+}

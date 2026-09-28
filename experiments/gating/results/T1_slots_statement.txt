@@ -1,0 +1,8 @@
+PREDICTION: 4 to 8 slots per cycle at σ_j = 0.05
+MEASURED: at σ_j=0.05, SNR=+10 dB → 8.35 slots/cycle (usable separation 43.1°)
+DETAIL: slots/cycle by σ_j (SNR +10 / 0 dB):
+  σ_j=0.00: 15.65 / 12.09
+  σ_j=0.02: 11.82 / 10.91
+  σ_j=0.05: 8.35 / 7.65
+  σ_j=0.10: 4.30 / 4.11
+SUPPORTS_PREDICTION: marginal — SNR +10 dB gives 8.35 (just above 4–8); SNR 0 dB gives 7.65 (inside 4–8). Trend matches handoff: jitter pulls slots toward biology's 4–8.

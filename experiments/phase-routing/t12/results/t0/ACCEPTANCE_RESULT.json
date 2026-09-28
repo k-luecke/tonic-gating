@@ -1,0 +1,95 @@
+{
+  "verdict": "PASS",
+  "draft_X": {
+    "hold_rule": "|T_hold - 41.0| <= 5.0",
+    "scaling_rule": "1/\u03bb direction + approx magnitude on >=2 \u03bb values"
+  },
+  "T_hold": 39.0,
+  "T_hold_target": 41.0,
+  "T_hold_delta": -2.0,
+  "hold_pass": true,
+  "scaling_pass": true,
+  "scaling": {
+    "monotone_decreasing": true,
+    "product_magnitude_ok": true,
+    "ratio_ok": true,
+    "products_T_times_lambda": {
+      "0.012740234375": 0.99373828125,
+      "0.02548046875": 0.99373828125,
+      "0.0509609375": 1.0192187499999998
+    },
+    "pair_details": [
+      {
+        "lam_i": 0.012740234375,
+        "lam_j": 0.02548046875,
+        "hold_ratio": 2.0,
+        "inv_lambda_ratio": 2.0,
+        "rel_err": 0.0
+      },
+      {
+        "lam_i": 0.012740234375,
+        "lam_j": 0.0509609375,
+        "hold_ratio": 3.9,
+        "inv_lambda_ratio": 4.0,
+        "rel_err": 0.025000000000000022
+      },
+      {
+        "lam_i": 0.02548046875,
+        "lam_j": 0.0509609375,
+        "hold_ratio": 1.95,
+        "inv_lambda_ratio": 2.0,
+        "rel_err": 0.025000000000000022
+      }
+    ],
+    "passed": true
+  },
+  "lambda_frozen": 0.02548046875,
+  "inv_lambda": 39.245745822474326,
+  "lambda_sweep": {
+    "0.012740234375": {
+      "T_hold": 78.0,
+      "inv_lambda": 78.49149164494865,
+      "T_hold_coupled_diag": 56.0
+    },
+    "0.02548046875": {
+      "T_hold": 39.0,
+      "inv_lambda": 39.245745822474326,
+      "T_hold_coupled_diag": 34.0
+    },
+    "0.0509609375": {
+      "T_hold": 20.0,
+      "inv_lambda": 19.622872911237163,
+      "T_hold_coupled_diag": 19.0
+    }
+  },
+  "coupling_check": {
+    "rho_C": 0.014999997099999978,
+    "rho_C_target": 0.0149999971,
+    "rho_C_ok": true,
+    "effective_linear_rho": 0.9891373213926428,
+    "effective_linear_rho_target": 0.989137341,
+    "effective_linear_rho_ok": true
+  },
+  "coupled_diagnostic_T_hold_1e": 34.0,
+  "probe": {
+    "name": "drive_then_silence_excess_1e",
+    "drive_tokens": 64,
+    "silence_tokens_budget": 256,
+    "drive_unit": 0,
+    "drive_scale": 1.0,
+    "homogeneous_for_counting_hold": true,
+    "note": "Original T8 H2 used MoE top-1 after control silence@64 (L1/L1' zeroed; seed-mean Hum T_hold\u224840.65). Original t8/ tree missing; this acceptance uses dynamics-only excess 1/e hold with coupling ablated for the scalar so T_hold tracks 1/\u03bb\u224839.2 (HUM_PARAMS). Coupled 1/e reported as diagnostic."
+  },
+  "params_path": "/workspace/phase-routing/t11/imports/HUM_PARAMS.json",
+  "params_prereg_sha256": "d975d96cf281badd2c0a6fc3986518b6338511cfcb7a9a9bf18be6b5e060b395",
+  "a0": 0.1,
+  "amp_gate_threshold": 0.05,
+  "hum_state_sha256": "03ab651db94e87e99e9d560b2e374ccc9dd6e90251422b2364b007089cfd0637",
+  "acceptance_script_sha256": "48e7ce052682625ff7fe352c1300f2a1df7b5dddce8721563d3fd316e424d8fb",
+  "ambiguities_prereg_2_5": [
+    "\u00a72.5 lists order leak\u2192idling\u2192coupling\u2192tonic\u00d7drive but not algebraic forms; reimpl uses s\u2190(1-\u03bb)s; s\u2190s+\u03bb\u00b7a0\u00b7e^{i\u03c6}; s\u2190(I+C)s; s\u2190s+g_tonic\u00b7drive.",
+    "T_hold in PREREG measures = top-1 regime leave after L1 silence; acceptance probe uses excess-amp 1/e after full drive silence (documented).",
+    "Idle floor a0=0.1 > amp_gate_threshold=0.05 so raw amp never crosses threshold under idle; threshold gate still implemented for sub-threshold index -1."
+  ],
+  "created_pt": "2026-09-23T18:28:54 PT"
+}

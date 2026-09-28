@@ -1,0 +1,702 @@
+{
+  "arms": [
+    {
+      "M1_CSR": 1.0,
+      "M1_by_type": {
+        "Ambiguous": 1.0,
+        "Clean": 1.0,
+        "Distraction": 1.0,
+        "Renewal": 1.0,
+        "Window-break": 1.0
+      },
+      "M1_counts": {
+        "abstentions": 0,
+        "correct": 52,
+        "total": 52
+      },
+      "M2_thrash_distraction": 0,
+      "M3_mean_latency": 0.0,
+      "M3_switch_latency": {
+        "latencies": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean": 0.0
+      },
+      "M4_renewal_recall": 1.0,
+      "M6": {
+        "classifier-buffer|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "classifier-buffer|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "cold|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "cold|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "context-carry|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 59.0,
+          "M6c_csr_per_byte": 0.01694915254237288,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "context-carry|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 61.0,
+          "M6c_csr_per_byte": 0.01639344262295082,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "hum-state|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "hum-state|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        }
+      },
+      "M6d_stale_break": {
+        "classifier-buffer": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "cold": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "context-carry": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "hum-state": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        }
+      },
+      "arm": "hand_rule",
+      "disclosure": null,
+      "n_sequences": 12,
+      "smoke_pass": true,
+      "status": "full"
+    },
+    {
+      "M1_CSR": 1.0,
+      "M1_by_type": {
+        "Ambiguous": 1.0,
+        "Clean": 1.0,
+        "Distraction": 1.0,
+        "Renewal": 1.0,
+        "Window-break": 1.0
+      },
+      "M1_counts": {
+        "abstentions": 0,
+        "correct": 52,
+        "total": 52
+      },
+      "M2_thrash_distraction": 0,
+      "M3_mean_latency": 0.0,
+      "M3_switch_latency": {
+        "latencies": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean": 0.0
+      },
+      "M4_renewal_recall": 1.0,
+      "M6": {
+        "classifier-buffer|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 24.0,
+          "M6c_csr_per_byte": 0.041666666666666664,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "classifier-buffer|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 24.0,
+          "M6c_csr_per_byte": 0.041666666666666664,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "cold|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "cold|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "context-carry|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 59.0,
+          "M6c_csr_per_byte": 0.01694915254237288,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "context-carry|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 61.0,
+          "M6c_csr_per_byte": 0.01639344262295082,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "hum-state|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "hum-state|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        }
+      },
+      "M6d_stale_break": {
+        "classifier-buffer": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "cold": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "context-carry": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "hum-state": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        }
+      },
+      "arm": "classifier_stub",
+      "disclosure": "untrained keyword-count argmax on first-32 tokens; alphabetical tie-break; optional EMA buffer for classifier-buffer carry; NOT a calibrated context classifier",
+      "n_sequences": 12,
+      "smoke_pass": true,
+      "status": "stub"
+    },
+    {
+      "M1_CSR": 0.9807692307692307,
+      "M1_by_type": {
+        "Ambiguous": 1.0,
+        "Clean": 1.0,
+        "Distraction": 1.0,
+        "Renewal": 1.0,
+        "Window-break": 0.96875
+      },
+      "M1_counts": {
+        "abstentions": 0,
+        "correct": 51,
+        "total": 52
+      },
+      "M2_thrash_distraction": 0,
+      "M3_mean_latency": 0.0,
+      "M3_switch_latency": {
+        "latencies": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean": 0.0
+      },
+      "M4_renewal_recall": 1.0,
+      "M6": {
+        "classifier-buffer|at_task_boundary": {
+          "M6a": 0.0,
+          "M6b_bytes_mean": 760.0,
+          "M6c_csr_per_byte": 0.0,
+          "carry_mode": "classifier-buffer",
+          "correct": 0,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "classifier-buffer|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 760.0,
+          "M6c_csr_per_byte": 0.0013157894736842105,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "cold|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "cold|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "context-carry|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 59.0,
+          "M6c_csr_per_byte": 0.01694915254237288,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "context-carry|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 61.0,
+          "M6c_csr_per_byte": 0.01639344262295082,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "hum-state|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "hum-state|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        }
+      },
+      "M6d_stale_break": {
+        "classifier-buffer": {
+          "M6a_at_task_boundary": 0.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": -1.0
+        },
+        "cold": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "context-carry": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "hum-state": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        }
+      },
+      "arm": "classifier_mlp",
+      "disclosure": "Calibrated 2-layer MLP on first-32 token features (HAND_RULE lexicon counts + train-only unigram bag). Disjoint from smoke seed 20260923. Base form stateless; classifier-buffer carry uses EMA of feature vectors.",
+      "n_sequences": 12,
+      "smoke_pass": true,
+      "status": "calibrated"
+    },
+    {
+      "M1_CSR": 0.8269230769230769,
+      "M1_by_type": {
+        "Ambiguous": 1.0,
+        "Clean": 1.0,
+        "Distraction": 0.8,
+        "Renewal": 0.6,
+        "Window-break": 0.8125
+      },
+      "M1_counts": {
+        "abstentions": 0,
+        "correct": 43,
+        "total": 52
+      },
+      "M2_thrash_distraction": 0,
+      "M3_mean_latency": 0.3333333333333333,
+      "M3_switch_latency": {
+        "latencies": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          1
+        ],
+        "mean": 0.3333333333333333
+      },
+      "M4_renewal_recall": 0.0,
+      "M6": {
+        "classifier-buffer|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "classifier-buffer|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "cold|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "cold|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "context-carry|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 59.0,
+          "M6c_csr_per_byte": 0.01694915254237288,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "context-carry|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 61.0,
+          "M6c_csr_per_byte": 0.01639344262295082,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "hum-state|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 60.0,
+          "M6c_csr_per_byte": 0.016666666666666666,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "hum-state|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 60.0,
+          "M6c_csr_per_byte": 0.016666666666666666,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        }
+      },
+      "M6d_stale_break": {
+        "classifier-buffer": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "cold": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "context-carry": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "hum-state": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        }
+      },
+      "arm": "hum_local",
+      "disclosure": "HumState n=3 + keyword-projection drive on first-32 tokens; tiering k=2/m=4 draft; no GNURadio ckpt/measure API",
+      "n_sequences": 12,
+      "smoke_pass": true,
+      "status": "local_dynamics_smoke"
+    },
+    {
+      "M1_CSR": 0.8846153846153846,
+      "M1_by_type": {
+        "Ambiguous": 1.0,
+        "Clean": 1.0,
+        "Distraction": 0.8,
+        "Renewal": 0.6,
+        "Window-break": 0.90625
+      },
+      "M1_counts": {
+        "abstentions": 0,
+        "correct": 46,
+        "total": 52
+      },
+      "M2_thrash_distraction": 0,
+      "M3_mean_latency": 0.3333333333333333,
+      "M3_switch_latency": {
+        "latencies": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          1
+        ],
+        "mean": 0.3333333333333333
+      },
+      "M4_renewal_recall": 0.0,
+      "M6": {
+        "classifier-buffer|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "classifier-buffer|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "classifier-buffer",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "cold|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "cold|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 0.0,
+          "M6c_csr_per_byte": null,
+          "carry_mode": "cold",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "context-carry|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 59.0,
+          "M6c_csr_per_byte": 0.01694915254237288,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "context-carry|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 61.0,
+          "M6c_csr_per_byte": 0.01639344262295082,
+          "carry_mode": "context-carry",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        },
+        "hum-state|at_task_boundary": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 60.0,
+          "M6c_csr_per_byte": 0.016666666666666666,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "at_task_boundary"
+        },
+        "hum-state|inside_task": {
+          "M6a": 1.0,
+          "M6b_bytes_mean": 60.0,
+          "M6c_csr_per_byte": 0.016666666666666666,
+          "carry_mode": "hum-state",
+          "correct": 1,
+          "n": 1,
+          "placement": "inside_task"
+        }
+      },
+      "M6d_stale_break": {
+        "classifier-buffer": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "cold": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "context-carry": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        },
+        "hum-state": {
+          "M6a_at_task_boundary": 1.0,
+          "M6a_inside_task": 1.0,
+          "stale_penalty_boundary_minus_inside": 0.0
+        }
+      },
+      "arm": "hum",
+      "disclosure": "HumState n=3 + AffinityProvider level-2 (KeywordAffinityProvider labeled fallback) + RegimeProbe level-1 on segment open; H5 typed_goal when family present; schema_version+n serialize; no T8 MoE .pt",
+      "n_sequences": 12,
+      "smoke_pass": true,
+      "status": "gnuradio_hum_measure"
+    }
+  ],
+  "classifier_mlp_role": "train",
+  "n_sequences": 12,
+  "seed": 20260924
+}

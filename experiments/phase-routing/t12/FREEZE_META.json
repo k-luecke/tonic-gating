@@ -1,0 +1,13 @@
+{
+  "ticket": "t12",
+  "status": "FROZEN",
+  "frozen_at_pt": "2026-09-23 19:29 PT",
+  "prereg_path": "/workspace/scp/experiments/phase-routing/t12/PREREG.md",
+  "prereg_sha256": "bf757ee4fc01e5c40b45f035150e7b716d12f7d8b30d745b9a7669f79bbf307c",
+  "draft_content_sha_at_freeze": "8e04b801d9da5e1c94221ecff07d3555dc3c4f630599434160173f61388ffbd1",
+  "rule19": "PASS",
+  "rule19_script": "/workspace/scp/experiments/phase-routing/t12/scripts/rule19_freeze_gates.py",
+  "t11_2_prereg_untouched": "593762c4c19e85d1720f6b46edbb93869258c4047ad023e42e144416aaed20d1",
+  "t11_3_prereg_untouched": "27ab4a9573ec8c01ed043d72ef6c83ba47fdd4a764a373acb7453381bb9bd442",
+  "note": "Emitted only via freeze_prereg.py after Rule 19 PASS; hum/provider/C3 untouched. Option-1 C\u0304=7\u00b10.25; ACT/BP 4/10; Fixed T=7."
+}

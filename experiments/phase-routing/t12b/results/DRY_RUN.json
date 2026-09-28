@@ -1,0 +1,124 @@
+{
+  "ALL_SEQUENCES_sha256": "646df30bbeacdc77432e9cb1daa366640ca0cfeb2e01216d4cb5f03a9df404c6",
+  "ALL_SEQUENCES_sha256_match": true,
+  "G9_refuse_stub_callable": true,
+  "G9_stub_refused_on_primary_factory": true,
+  "affinity_c3_untouched": true,
+  "arm_smoke": {
+    "HumMeasureOrchestrator_error": null,
+    "HumMeasureOrchestrator_importable": true,
+    "arms": [
+      "hum_measure",
+      "stateless_argmax",
+      "one_step_memory",
+      "majority_k3"
+    ],
+    "gap": {
+      "hum_measure": "Browser",
+      "majority_k3": "Browser",
+      "one_step_memory": "Browser",
+      "stateless_argmax": null
+    },
+    "hum_class": "HumMeasureArm",
+    "hum_counted": true,
+    "live": {
+      "hum_measure": "Browser",
+      "majority_k3": "Browser",
+      "one_step_memory": "Browser",
+      "stateless_argmax": "Browser"
+    },
+    "majority_k3_labeled_secondary": true,
+    "mode": "primary",
+    "primary_arms": [
+      "hum_measure",
+      "stateless_argmax",
+      "one_step_memory"
+    ],
+    "secondary_arms": [
+      "majority_k3"
+    ]
+  },
+  "arms": [
+    "hum_measure",
+    "stateless_argmax",
+    "one_step_memory",
+    "majority_k3"
+  ],
+  "crossover_cites_thold_65": true,
+  "crossover_doc_exists": true,
+  "crossover_sha256": "eee4fd552abfb6a4d3feebdd778a68aefe01693f80658a3eef03c055c6a8189a",
+  "freeze": "HELD (G9+G10 scaffold; no PREREG.sha256)",
+  "gap_g10_self_check": {
+    "flip_nonzero": true,
+    "flip_t": 14,
+    "mask_sum": 6,
+    "start": 11,
+    "surrounding_zero": true,
+    "wrong_spec_index": 1
+  },
+  "gap_lengths": [
+    3,
+    6,
+    12,
+    24
+  ],
+  "hum_gap_episode": {
+    "gap_len": 12,
+    "gap_start": 24,
+    "hp_every_drive": true,
+    "hp_period": 64.0,
+    "hum_class": "HumMeasureArm",
+    "one_step_latched_lure": true,
+    "pred_at_flip": {
+      "hum_measure": "Browser",
+      "majority_k3": "Browser",
+      "one_step_memory": "Structured",
+      "stateless_argmax": "Structured"
+    },
+    "pred_post_flip_gap": {
+      "hum_measure": "Browser",
+      "majority_k3": "Browser",
+      "one_step_memory": "Structured",
+      "stateless_argmax": null
+    },
+    "pred_pre_gap": {
+      "hum_measure": "Browser",
+      "majority_k3": "Browser",
+      "one_step_memory": "Browser",
+      "stateless_argmax": "Browser"
+    },
+    "t_flip": 30,
+    "wrong_spec_index": 1
+  },
+  "hum_measure_class": "HumMeasureArm",
+  "hum_measure_is_stub": false,
+  "hum_path_blocker": null,
+  "hum_path_ok": true,
+  "lag_lengths": [
+    2,
+    4,
+    8
+  ],
+  "lag_self_check": {
+    "head_zero": true,
+    "lag": 4
+  },
+  "mode": "dry-run",
+  "ok": true,
+  "one_step_memory_present": true,
+  "primary": "NOT_RUN",
+  "pt": "2026-09-23 19:44:30 PT",
+  "sealed_is_symlink": true,
+  "sealed_resolve": "/workspace/scp/experiments/phase-routing/t11_3/generators/sealed",
+  "seeds": [
+    20260923,
+    20260924,
+    20260925,
+    20260926,
+    20260927
+  ],
+  "status": "DRAFT",
+  "t11_3_prereg_sha256": "27ab4a9573ec8c01ed043d72ef6c83ba47fdd4a764a373acb7453381bb9bd442",
+  "t11_3_untouched": true,
+  "ticket": "t12b"
+}

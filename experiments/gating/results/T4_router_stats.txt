@@ -1,0 +1,18 @@
+T4 — Learned top-k router stats
+================================
+feature_dim:        32  (24-bin phase hist + 8-dim goal one-hot)
+hidden:             64
+n_patches:          8
+param_count:        2632
+MACs_per_decision:  2560
+train_symbols:      2000
+train_routing_acc:  1.000000
+eval_symbols:       500
+clean_ACC:          0.996000
+clean_routing_acc:  1.000000
+weights_path:       /workspace/oscillatory-gating/results/router_weights.npz
+weights_sha256:     8658947a7f868434dfe30b603e5ca8ffe9d5feae490ca3cdbbdc8456b83df668
+readouts_path:      /workspace/oscillatory-gating/results/router_readouts.npz
+readouts_sha256:    3bd2d211fe1ec03c7589a2b1c380961c83d7b6b1c500c7730ba28acd23ce73fc
+gain_mode:          fixed (g=1)
+seed:               20260921

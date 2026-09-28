@@ -1,0 +1,95 @@
+{
+  "a_coeffs": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "b_coeffs": [
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2
+  ],
+  "c_coeffs": [
+    1,
+    1,
+    2,
+    2,
+    1,
+    1,
+    2,
+    2
+  ],
+  "calibration_note": "p_flip default 0.0 after single-arm smoke: p_flip=0.15 left LR heldout stuck \u22732.2 nats on this backbone; order-3 + C-tier coeffs provide hardness vs primary (~0.0013). See PREREG disclosure.",
+  "config": {
+    "heldout_per_task": 64,
+    "p_flip": 0.0,
+    "seed": 20260921,
+    "seq_len": 128,
+    "switching_sequences": 512,
+    "train_per_task": 256
+  },
+  "content_tokens": [
+    8,
+    63
+  ],
+  "d_coeffs": [
+    1,
+    5,
+    9,
+    13,
+    17,
+    23,
+    29,
+    37
+  ],
+  "experiment": "T7",
+  "flip_offsets": [
+    7,
+    11,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31
+  ],
+  "marker_tokens": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "order": 3,
+  "p_flip": 0.0,
+  "rng": "numpy.random.PCG64",
+  "rule": "x_{t+1} = (a[t]*x_t + b[t]*x_{t-1} + c[t]*x_{t-2} + d[t]) mod 56; with probability p_flip=0.0 replace det with (det + flip_offset[t]) mod 56",
+  "split_shapes": {
+    "heldout": [
+      512,
+      128
+    ],
+    "switching": [
+      512,
+      128
+    ],
+    "train": [
+      2048,
+      128
+    ]
+  },
+  "vocab_size": 64
+}

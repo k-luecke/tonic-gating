@@ -1,0 +1,26 @@
+{
+  "ticket": "t13",
+  "status": "FROZEN",
+  "frozen_at_pt": "2026-09-24 08:30:30 PT",
+  "prereg_path": "/workspace/scp/experiments/phase-routing/t13/PREREG.md",
+  "prereg_sha256": "3176eb5ea3458047b820ff5511644d20a697a7a9485d5118560ff7b71e1f981d",
+  "draft_content_sha_at_freeze": "1e3f7fe80c4763b827e1bb9cb566adf83551255c5bd4aad11073b91639ea0119",
+  "supersedes_prereg_sha256": "123059126c9013009cf70e0319d6809d5a63b87840320e778b97d23a9858837d",
+  "gate_defect": "G13 measurement procedure (\u0394\u03c6 sampling pairwise+N=36, max-deviation not RMS, manipulation-check role)",
+  "rule19": "PASS",
+  "rule19_script": "/workspace/scp/experiments/phase-routing/t13/scripts/rule19_freeze_gates.py",
+  "affinity_untouched": "7dae877a3975c1ba4ca264f03f572d6749cce39a114ea3adbcffc010c7852c50",
+  "parent_preregs_untouched": {
+    "t11_2": "593762c4c19e85d1720f6b46edbb93869258c4047ad023e42e144416aaed20d1",
+    "t11_3": "27ab4a9573ec8c01ed043d72ef6c83ba47fdd4a764a373acb7453381bb9bd442",
+    "t12": "bf757ee4fc01e5c40b45f035150e7b716d12f7d8b30d745b9a7669f79bbf307c",
+    "t12b": "851124b3c4bc66cb8e7c96c4f501084f4de186574f4f8d9446cac5879f62a3f0"
+  },
+  "deferred_post_train": [
+    "G13_Acc",
+    "G17_Acc",
+    "G9_train_instability_check"
+  ],
+  "pass_at_emit": "G1\u2013G18 docs/procedure (G13 Acc + G17 Acc deferred)",
+  "note": "Gate-defect re-freeze. G13 procedure locked (manipulation check; pairwise+N=36; max-dev<=0.1 not RMS). Acc + G17 + G9 run post-train before primary."
+}

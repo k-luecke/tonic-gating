@@ -1,0 +1,318 @@
+{
+  "affinity_c3_hum": "UNTOUCHED",
+  "calibration_ref": {
+    "C_bar_target": 7.0,
+    "primary_C_bar": 7.0,
+    "within_tol": true
+  },
+  "freeze": false,
+  "measures": {
+    "ACC": 0.966724537037037,
+    "BP": {
+      "easy": {
+        "hist": {
+          "4": 1
+        },
+        "mean": 4.0,
+        "n": 1,
+        "std": 0.0
+      },
+      "hard": {
+        "hist": {
+          "10": 1
+        },
+        "mean": 10.0,
+        "n": 1,
+        "std": 0.0
+      },
+      "separation": {
+        "easy_mean": 4.0,
+        "gap": 6.0,
+        "hard_mean": 10.0,
+        "separates": true
+      }
+    },
+    "C_bar": 7.0,
+    "LPC": 0.1381035052910053,
+    "OT_T": {
+      "by_regime": {
+        "easy": {
+          "1": {
+            "acc": 0.9089912280701754,
+            "depth": 1.0,
+            "n_tokens": 1824.0,
+            "nll": 0.42431644280023895
+          },
+          "10": {
+            "acc": 0.987390350877193,
+            "depth": 10.0,
+            "n_tokens": 1824.0,
+            "nll": 0.13731385800150187
+          },
+          "11": {
+            "acc": 0.9435307017543859,
+            "depth": 11.0,
+            "n_tokens": 1824.0,
+            "nll": 0.5041210202630585
+          },
+          "12": {
+            "acc": 0.9183114035087719,
+            "depth": 12.0,
+            "n_tokens": 1824.0,
+            "nll": 0.5141803814741188
+          },
+          "2": {
+            "acc": 1.0,
+            "depth": 2.0,
+            "n_tokens": 1824.0,
+            "nll": 0.052231409494892495
+          },
+          "3": {
+            "acc": 1.0,
+            "depth": 3.0,
+            "n_tokens": 1824.0,
+            "nll": 0.01630752784020176
+          },
+          "4": {
+            "acc": 1.0,
+            "depth": 4.0,
+            "n_tokens": 1824.0,
+            "nll": 0.01259819469509127
+          },
+          "5": {
+            "acc": 1.0,
+            "depth": 5.0,
+            "n_tokens": 1824.0,
+            "nll": 0.013561387446290575
+          },
+          "6": {
+            "acc": 1.0,
+            "depth": 6.0,
+            "n_tokens": 1824.0,
+            "nll": 0.01686987586660847
+          },
+          "7": {
+            "acc": 1.0,
+            "depth": 7.0,
+            "n_tokens": 1824.0,
+            "nll": 0.02304156835048112
+          },
+          "8": {
+            "acc": 0.9994517543859649,
+            "depth": 8.0,
+            "n_tokens": 1824.0,
+            "nll": 0.034451016804744376
+          },
+          "9": {
+            "acc": 0.9961622807017544,
+            "depth": 9.0,
+            "n_tokens": 1824.0,
+            "nll": 0.06500728696471575
+          },
+          "_ot": {
+            "T_star": 4,
+            "degrades_past": true
+          }
+        },
+        "hard": {
+          "1": {
+            "acc": 0.7390046296296297,
+            "depth": 1.0,
+            "n_tokens": 1728.0,
+            "nll": 1.748416296943032
+          },
+          "10": {
+            "acc": 0.9334490740740741,
+            "depth": 10.0,
+            "n_tokens": 1728.0,
+            "nll": 0.8101267760900699
+          },
+          "11": {
+            "acc": 0.9334490740740741,
+            "depth": 11.0,
+            "n_tokens": 1728.0,
+            "nll": 0.8042096716366395
+          },
+          "12": {
+            "acc": 0.9334490740740741,
+            "depth": 12.0,
+            "n_tokens": 1728.0,
+            "nll": 0.803085926202082
+          },
+          "2": {
+            "acc": 0.9241898148148148,
+            "depth": 2.0,
+            "n_tokens": 1728.0,
+            "nll": 1.5190802064258315
+          },
+          "3": {
+            "acc": 0.9299768518518519,
+            "depth": 3.0,
+            "n_tokens": 1728.0,
+            "nll": 1.3251479171603127
+          },
+          "4": {
+            "acc": 0.9334490740740741,
+            "depth": 4.0,
+            "n_tokens": 1728.0,
+            "nll": 1.1683094644054575
+          },
+          "5": {
+            "acc": 0.9334490740740741,
+            "depth": 5.0,
+            "n_tokens": 1728.0,
+            "nll": 1.047039523674738
+          },
+          "6": {
+            "acc": 0.9334490740740741,
+            "depth": 6.0,
+            "n_tokens": 1728.0,
+            "nll": 0.9553014131466382
+          },
+          "7": {
+            "acc": 0.9334490740740741,
+            "depth": 7.0,
+            "n_tokens": 1728.0,
+            "nll": 0.8914549281241633
+          },
+          "8": {
+            "acc": 0.9334490740740741,
+            "depth": 8.0,
+            "n_tokens": 1728.0,
+            "nll": 0.8492833987635743
+          },
+          "9": {
+            "acc": 0.9334490740740741,
+            "depth": 9.0,
+            "n_tokens": 1728.0,
+            "nll": 0.8239107606733161
+          },
+          "_ot": {
+            "T_star": 12,
+            "degrades_past": false
+          }
+        }
+      },
+      "depths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "SD": {
+      "coord_C": 7.0,
+      "coord_acc": 0.966724537037037,
+      "coord_beats_stateless_acc": false,
+      "delta_C": 0.0,
+      "delta_acc": 0.0,
+      "stateless_C": 7.0,
+      "stateless_acc": 0.966724537037037
+    },
+    "T_b": {
+      "by_regime_means": {
+        "easy": 4.0,
+        "hard": 10.0
+      },
+      "mean": 7.0,
+      "values_head": [
+        4,
+        10
+      ]
+    },
+    "extra": {},
+    "nll": 0.4113624853925806
+  },
+  "n_per_task": 6,
+  "per_arm": {
+    "act": {
+      "ACC": 0.966724537037037,
+      "C_bar": 7.0,
+      "NLL": 0.4113624853925806,
+      "T_b_easy": 4.0,
+      "T_b_hard": 10.0,
+      "depths_by_regime": {
+        "easy": [
+          4
+        ],
+        "hard": [
+          10
+        ]
+      }
+    },
+    "coordinator_regime": {
+      "ACC": 0.966724537037037,
+      "C_bar": 7.0,
+      "NLL": 0.4113624853925806,
+      "T_b_easy": 4.0,
+      "T_b_hard": 10.0,
+      "depths_by_regime": {
+        "easy": [
+          4
+        ],
+        "hard": [
+          10
+        ]
+      }
+    },
+    "fixed_t7": {
+      "ACC": 0.966724537037037,
+      "C_bar": 7.0,
+      "NLL": 0.4572482482373222,
+      "T_b_easy": 7.0,
+      "T_b_hard": 7.0,
+      "depths_by_regime": {
+        "easy": [
+          7
+        ],
+        "hard": [
+          7
+        ]
+      }
+    },
+    "stateless_regime": {
+      "ACC": 0.966724537037037,
+      "C_bar": 7.0,
+      "NLL": 0.4113624853925806,
+      "T_b_easy": 4.0,
+      "T_b_hard": 10.0,
+      "depths_by_regime": {
+        "easy": [
+          4
+        ],
+        "hard": [
+          10
+        ]
+      }
+    }
+  },
+  "prereg": "DRAFT \u2014 no PREREG.sha256 emit",
+  "primary_arm": "coordinator_regime",
+  "pt": "2026-09-23 19:16:00 PT",
+  "regression_locks": {
+    "available": true,
+    "detail_tail": "T8 rerun persistence check: PASS\n  [PASS] artifacts_present: PRIMARY=/workspace/scp/experiments/phase-routing/t8/results/primary\n  [PASS] prereg_sha: got prereg_sha256=d975d96cf281badd2c0a6fc3986518b6338511cfcb7a9a9bf18be6b5e060b395\n  [PASS] hum_T_hold_seed_mean: got 26.846875 ref 26.846875\n  [PASS] hum_delta_L_shift_0.3: got 0.01707748666642206 (T8 shift regression lock reference)\n  [PASS] H2_verdict: verdicts=supported H2.verdict=supported\n  [PASS] H2_lambda_monotone_means: lambda_means={'0.012740234375': 28.461328125, '0.02548046875': 26.846875, '0.0509609375': 24.23359375}\n  [PASS] dynamics_acceptance_T_hold: got 39.0 (ref homog 39 \u2248 1/\u03bb)\n  [PASS] dynamics_acceptance_verdict: verdict=PASS\nWrote /workspace/scp/experiments/phase-routing/t12/results/t0/T8_RERUN_PERSISTENCE_CHECK.json\n",
+    "note": "T8 shift \u0394L + hum persistence regression lock",
+    "pass": true,
+    "returncode": 0
+  },
+  "run_cmd": "python3 scripts/run_t4_measures.py",
+  "seed_used": 20260921,
+  "seq_len": 40,
+  "smoke_seeds": [
+    20260921,
+    20260922
+  ],
+  "status": "PASS",
+  "ticket": "T4",
+  "train": false,
+  "width": 64
+}

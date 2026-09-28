@@ -1,0 +1,441 @@
+{
+  "affinity_c3_hum": "UNTOUCHED",
+  "aggregate": {
+    "BP_separation": {
+      "easy_mean": 4.0,
+      "gap_mean": 6.0,
+      "hard_mean": 10.0,
+      "n_seeds": 5,
+      "separates_n": 5
+    },
+    "OT_summary": {
+      "easy_degrades_past_n": 5,
+      "hard_degrades_past_n": 0,
+      "n_seeds": 5
+    },
+    "SD": {
+      "coord_beats_stateless_acc_n": 0,
+      "delta_acc_mean": 0.0,
+      "delta_acc_std": 0.0,
+      "per_seed": [
+        {
+          "coord_C": 7.0,
+          "coord_acc": 0.971791625494071,
+          "coord_beats_stateless_acc": false,
+          "delta_C": 0.0,
+          "delta_acc": 0.0,
+          "stateless_C": 7.0,
+          "stateless_acc": 0.971791625494071
+        },
+        {
+          "coord_C": 7.0,
+          "coord_acc": 0.9708806818181819,
+          "coord_beats_stateless_acc": false,
+          "delta_C": 0.0,
+          "delta_acc": 0.0,
+          "stateless_C": 7.0,
+          "stateless_acc": 0.9708806818181819
+        },
+        {
+          "coord_C": 7.0,
+          "coord_acc": 0.9653609807312253,
+          "coord_beats_stateless_acc": false,
+          "delta_C": 0.0,
+          "delta_acc": 0.0,
+          "stateless_C": 7.0,
+          "stateless_acc": 0.9653609807312253
+        },
+        {
+          "coord_C": 7.0,
+          "coord_acc": 0.9730113636363636,
+          "coord_beats_stateless_acc": false,
+          "delta_C": 0.0,
+          "delta_acc": 0.0,
+          "stateless_C": 7.0,
+          "stateless_acc": 0.9730113636363636
+        },
+        {
+          "coord_C": 7.0,
+          "coord_acc": 0.9737215909090908,
+          "coord_beats_stateless_acc": false,
+          "delta_C": 0.0,
+          "delta_acc": 0.0,
+          "stateless_C": 7.0,
+          "stateless_acc": 0.9737215909090908
+        }
+      ]
+    },
+    "comparisons_numeric": {
+      "H1_coord_vs_fixed": {
+        "coord_C": 7.0,
+        "dACC": 0.0008152173913043015,
+        "dLPC": 0.00011645962732920179,
+        "fixed_C": 7.0
+      },
+      "H2_traj_vs_act": {
+        "dACC": 0.0,
+        "dLPC": 0.0
+      },
+      "H2_traj_vs_convergence": {
+        "dACC": 0.0,
+        "dLPC": 0.0
+      },
+      "note": "Numeric deltas only \u2014 no support/null verdict (T7\u2013T8 later)"
+    },
+    "per_arm": {
+      "act": {
+        "ACC_mean": 0.971768465909091,
+        "ACC_std": 0.0017030651716308932,
+        "C_bar_mean": 7.0,
+        "C_bar_std": 0.0,
+        "LPC_mean": 0.13882406655844154,
+        "LPC_std": 0.00024329502451870606,
+        "NLL_mean": 0.355462428529054,
+        "T_b_easy_mean": 4.0,
+        "T_b_hard_mean": 10.0,
+        "n_seeds": 5,
+        "per_seed": {
+          "ACC": [
+            0.9723011363636364,
+            0.9708806818181819,
+            0.9689275568181819,
+            0.9730113636363636,
+            0.9737215909090908
+          ],
+          "C_bar": [
+            7.0,
+            7.0,
+            7.0,
+            7.0,
+            7.0
+          ],
+          "LPC": [
+            0.13890016233766234,
+            0.13869724025974026,
+            0.1384182224025974,
+            0.1390016233766234,
+            0.13910308441558442
+          ]
+        }
+      },
+      "convergence": {
+        "ACC_mean": 0.971768465909091,
+        "ACC_std": 0.0017030651716308932,
+        "C_bar_mean": 7.0,
+        "C_bar_std": 0.0,
+        "LPC_mean": 0.13882406655844154,
+        "LPC_std": 0.00024329502451870606,
+        "NLL_mean": 0.355462428529054,
+        "T_b_easy_mean": 4.0,
+        "T_b_hard_mean": 10.0,
+        "n_seeds": 5,
+        "per_seed": {
+          "ACC": [
+            0.9723011363636364,
+            0.9708806818181819,
+            0.9689275568181819,
+            0.9730113636363636,
+            0.9737215909090908
+          ],
+          "C_bar": [
+            7.0,
+            7.0,
+            7.0,
+            7.0,
+            7.0
+          ],
+          "LPC": [
+            0.13890016233766234,
+            0.13869724025974026,
+            0.1384182224025974,
+            0.1390016233766234,
+            0.13910308441558442
+          ]
+        }
+      },
+      "coordinator_regime": {
+        "ACC_mean": 0.971768465909091,
+        "ACC_std": 0.0017030651716308932,
+        "C_bar_mean": 7.0,
+        "C_bar_std": 0.0,
+        "LPC_mean": 0.13882406655844154,
+        "LPC_std": 0.00024329502451870606,
+        "NLL_mean": 0.355462428529054,
+        "T_b_easy_mean": 4.0,
+        "T_b_hard_mean": 10.0,
+        "n_seeds": 5,
+        "per_seed": {
+          "ACC": [
+            0.9723011363636364,
+            0.9708806818181819,
+            0.9689275568181819,
+            0.9730113636363636,
+            0.9737215909090908
+          ],
+          "C_bar": [
+            7.0,
+            7.0,
+            7.0,
+            7.0,
+            7.0
+          ],
+          "LPC": [
+            0.13890016233766234,
+            0.13869724025974026,
+            0.1384182224025974,
+            0.1390016233766234,
+            0.13910308441558442
+          ]
+        }
+      },
+      "coordinator_regime_traj": {
+        "ACC_mean": 0.971768465909091,
+        "ACC_std": 0.0017030651716308932,
+        "C_bar_mean": 7.0,
+        "C_bar_std": 0.0,
+        "LPC_mean": 0.13882406655844154,
+        "LPC_std": 0.00024329502451870606,
+        "NLL_mean": 0.355462428529054,
+        "T_b_easy_mean": 4.0,
+        "T_b_hard_mean": 10.0,
+        "n_seeds": 5,
+        "per_seed": {
+          "ACC": [
+            0.9723011363636364,
+            0.9708806818181819,
+            0.9689275568181819,
+            0.9730113636363636,
+            0.9737215909090908
+          ],
+          "C_bar": [
+            7.0,
+            7.0,
+            7.0,
+            7.0,
+            7.0
+          ],
+          "LPC": [
+            0.13890016233766234,
+            0.13869724025974026,
+            0.1384182224025974,
+            0.1390016233766234,
+            0.13910308441558442
+          ]
+        }
+      },
+      "fixed_t7": {
+        "ACC_mean": 0.9709532485177867,
+        "ACC_std": 0.002962470533648347,
+        "C_bar_mean": 7.0,
+        "C_bar_std": 0.0,
+        "LPC_mean": 0.13870760693111234,
+        "LPC_std": 0.0004232100762354816,
+        "NLL_mean": 0.42311965330190404,
+        "T_b_easy_mean": 7.0,
+        "T_b_hard_mean": 7.0,
+        "n_seeds": 5,
+        "per_seed": {
+          "ACC": [
+            0.971791625494071,
+            0.9708806818181819,
+            0.9653609807312253,
+            0.9730113636363636,
+            0.9737215909090908
+          ],
+          "C_bar": [
+            7.0,
+            7.0,
+            7.0,
+            7.0,
+            7.0
+          ],
+          "LPC": [
+            0.13882737507058157,
+            0.13869724025974026,
+            0.1379087115330322,
+            0.1390016233766234,
+            0.13910308441558442
+          ]
+        }
+      },
+      "oracle": {
+        "ACC_mean": 0.971768465909091,
+        "ACC_std": 0.0017030651716308932,
+        "C_bar_mean": 7.0,
+        "C_bar_std": 0.0,
+        "LPC_mean": 0.13882406655844154,
+        "LPC_std": 0.00024329502451870606,
+        "NLL_mean": 0.355462428529054,
+        "T_b_easy_mean": 4.0,
+        "T_b_hard_mean": 10.0,
+        "n_seeds": 5,
+        "per_seed": {
+          "ACC": [
+            0.9723011363636364,
+            0.9708806818181819,
+            0.9689275568181819,
+            0.9730113636363636,
+            0.9737215909090908
+          ],
+          "C_bar": [
+            7.0,
+            7.0,
+            7.0,
+            7.0,
+            7.0
+          ],
+          "LPC": [
+            0.13890016233766234,
+            0.13869724025974026,
+            0.1384182224025974,
+            0.1390016233766234,
+            0.13910308441558442
+          ]
+        }
+      },
+      "stateless_regime": {
+        "ACC_mean": 0.971768465909091,
+        "ACC_std": 0.0017030651716308932,
+        "C_bar_mean": 7.0,
+        "C_bar_std": 0.0,
+        "LPC_mean": 0.13882406655844154,
+        "LPC_std": 0.00024329502451870606,
+        "NLL_mean": 0.355462428529054,
+        "T_b_easy_mean": 4.0,
+        "T_b_hard_mean": 10.0,
+        "n_seeds": 5,
+        "per_seed": {
+          "ACC": [
+            0.9723011363636364,
+            0.9708806818181819,
+            0.9689275568181819,
+            0.9730113636363636,
+            0.9737215909090908
+          ],
+          "C_bar": [
+            7.0,
+            7.0,
+            7.0,
+            7.0,
+            7.0
+          ],
+          "LPC": [
+            0.13890016233766234,
+            0.13869724025974026,
+            0.1384182224025974,
+            0.1390016233766234,
+            0.13910308441558442
+          ]
+        }
+      }
+    },
+    "primary": {
+      "ACC_mean": 0.971768465909091,
+      "ACC_std": 0.0017030651716308932,
+      "C_bar_mean": 7.0,
+      "C_bar_std": 0.0,
+      "LPC_mean": 0.13882406655844154,
+      "LPC_std": 0.00024329502451870606,
+      "NLL_mean": 0.355462428529054,
+      "T_b_easy_mean": 4.0,
+      "T_b_hard_mean": 10.0,
+      "n_seeds": 5,
+      "per_seed": {
+        "ACC": [
+          0.9723011363636364,
+          0.9708806818181819,
+          0.9689275568181819,
+          0.9730113636363636,
+          0.9737215909090908
+        ],
+        "C_bar": [
+          7.0,
+          7.0,
+          7.0,
+          7.0,
+          7.0
+        ],
+        "LPC": [
+          0.13890016233766234,
+          0.13869724025974026,
+          0.1384182224025974,
+          0.1390016233766234,
+          0.13910308441558442
+        ]
+      }
+    },
+    "primary_arm": "coordinator_regime"
+  },
+  "arms": [
+    "fixed_t7",
+    "act",
+    "convergence",
+    "coordinator_regime",
+    "coordinator_regime_traj",
+    "oracle",
+    "stateless_regime"
+  ],
+  "init_family": "pcg64_t12_v1",
+  "n_per_task": 8,
+  "option1_locks": {
+    "C_bar": "7\u00b10.25",
+    "act_bp_centers": [
+      4,
+      10
+    ],
+    "fixed_t": 7
+  },
+  "per_seed_receipts": [
+    "T6_SEED_20260921.json",
+    "T6_SEED_20260922.json",
+    "T6_SEED_20260923.json",
+    "T6_SEED_20260924.json",
+    "T6_SEED_20260925.json"
+  ],
+  "pins": {
+    "affinity_path": "/workspace/scp/experiments/phase-routing/t12/imports/hum_measure/affinity_inputs.py",
+    "affinity_sha256": "7dae877a3975c1ba4ca264f03f572d6749cce39a114ea3adbcffc010c7852c50",
+    "affinity_sha256_locked": "7dae877a3975c1ba4ca264f03f572d6749cce39a114ea3adbcffc010c7852c50",
+    "affinity_untouched": true,
+    "gate_defect": false,
+    "note": "Gate defect \u2192 T12.2 only if freeze pin broken; Affinity/C3/hum must stay untouched",
+    "pass": true,
+    "prereg_sha256": "bf757ee4fc01e5c40b45f035150e7b716d12f7d8b30d745b9a7669f79bbf307c",
+    "prereg_sha256_locked": "bf757ee4fc01e5c40b45f035150e7b716d12f7d8b30d745b9a7669f79bbf307c",
+    "prereg_sha_file": "bf757ee4fc01e5c40b45f035150e7b716d12f7d8b30d745b9a7669f79bbf307c"
+  },
+  "prereg_sha256": "bf757ee4fc01e5c40b45f035150e7b716d12f7d8b30d745b9a7669f79bbf307c",
+  "primary_arm": "coordinator_regime",
+  "pt": "2026-09-23 19:34:57 PT",
+  "regression_locks": {
+    "available": true,
+    "detail_tail": "T8 rerun persistence check: PASS\n  [PASS] artifacts_present: PRIMARY=/workspace/scp/experiments/phase-routing/t8/results/primary\n  [PASS] prereg_sha: got prereg_sha256=d975d96cf281badd2c0a6fc3986518b6338511cfcb7a9a9bf18be6b5e060b395\n  [PASS] hum_T_hold_seed_mean: got 26.846875 ref 26.846875\n  [PASS] hum_delta_L_shift_0.3: got 0.01707748666642206 (T8 shift regression lock reference)\n  [PASS] H2_verdict: verdicts=supported H2.verdict=supported\n  [PASS] H2_lambda_monotone_means: lambda_means={'0.012740234375': 28.461328125, '0.02548046875': 26.846875, '0.0509609375': 24.23359375}\n  [PASS] dynamics_acceptance_T_hold: got 39.0 (ref homog 39 \u2248 1/\u03bb)\n  [PASS] dynamics_acceptance_verdict: verdict=PASS\nWrote /workspace/scp/experiments/phase-routing/t12/results/t0/T8_RERUN_PERSISTENCE_CHECK.json\n",
+    "note": "T8 shift \u0394L + hum persistence regression lock",
+    "pass": true,
+    "returncode": 0
+  },
+  "run_cmd": "python3 scripts/run_t6_primary.py",
+  "seeds": [
+    20260921,
+    20260922,
+    20260923,
+    20260924,
+    20260925
+  ],
+  "seeds_source": "harness.parity.DRAFT_SEEDS (T8/T11 family); FREEZE_META listed none",
+  "seq_len": 48,
+  "status": "COMPLETE",
+  "stopping": {
+    "gate_defect": false,
+    "note": "No T12.2 \u2014 pins OK; Affinity untouched",
+    "primary_runs": 1,
+    "seeds": 5,
+    "t12_2": false
+  },
+  "t12b_touched": false,
+  "ticket": "T6",
+  "train": false,
+  "verdict": null,
+  "verdict_note": "No closing verdict beyond numbers (T7\u2013T8 later)",
+  "width": 128
+}

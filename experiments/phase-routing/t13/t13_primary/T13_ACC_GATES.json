@@ -1,0 +1,108 @@
+{
+  "G13": {
+    "aggregation": "max_deviation",
+    "formula": "|X(dphi)-max(0,cos dphi)| <= 0.1",
+    "max_deviation": 1.000088900582341e-12,
+    "n_delta_phi": 42,
+    "n_grid": 36,
+    "n_pairwise": 6,
+    "n_rows": 42,
+    "not_rms": true,
+    "phases": [
+      0.27570203917807695,
+      5.575338229183298,
+      2.3248925223835366,
+      2.5202677785657106
+    ],
+    "role": "manipulation_check_not_hint_evidence",
+    "rows_head": [
+      {
+        "X": 1.0,
+        "X_mixture": 0.9999999999989999,
+        "abs_dev": 0.0,
+        "abs_dev_mixture": 1.000088900582341e-12,
+        "delta_phi": 0.0,
+        "max0_cos": 1.0
+      },
+      {
+        "X": 0.984807753012208,
+        "X_mixture": 0.984807753011223,
+        "abs_dev": 0.0,
+        "abs_dev_mixture": 9.849898674474389e-13,
+        "delta_phi": 0.17453292519943295,
+        "max0_cos": 0.984807753012208
+      },
+      {
+        "X": 0.9809748883869475,
+        "X_mixture": 0.9809748883859662,
+        "abs_dev": 0.0,
+        "abs_dev_mixture": 9.812151091637134e-13,
+        "delta_phi": 0.195375256182174,
+        "max0_cos": 0.9809748883869475
+      },
+      {
+        "X": 0.9396926207859084,
+        "X_mixture": 0.9396926207849685,
+        "abs_dev": 0.0,
+        "abs_dev_mixture": 9.399148126476575e-13,
+        "delta_phi": 0.3490658503988659,
+        "max0_cos": 0.9396926207859084
+      },
+      {
+        "X": 0.8660254037844387,
+        "X_mixture": 0.8660254037835728,
+        "abs_dev": 0.0,
+        "abs_dev_mixture": 8.658629369051596e-13,
+        "delta_phi": 0.5235987755982988,
+        "max0_cos": 0.8660254037844387
+      },
+      {
+        "X": 0.766044443118978,
+        "X_mixture": 0.7660444431182123,
+        "abs_dev": 0.0,
+        "abs_dev_mixture": 7.657208200839705e-13,
+        "delta_phi": 0.6981317007977318,
+        "max0_cos": 0.766044443118978
+      },
+      {
+        "X": 0.6427876096865394,
+        "X_mixture": 0.6427876096858965,
+        "abs_dev": 0.0,
+        "abs_dev_mixture": 6.428191312579656e-13,
+        "delta_phi": 0.8726646259971648,
+        "max0_cos": 0.6427876096865394
+      },
+      {
+        "X": 0.5000000000000001,
+        "X_mixture": 0.49999999999950007,
+        "abs_dev": 0.0,
+        "abs_dev_mixture": 5.000444502911705e-13,
+        "delta_phi": 1.0471975511965976,
+        "max0_cos": 0.5000000000000001
+      }
+    ],
+    "status": "PASS",
+    "tolerance": 0.1
+  },
+  "G17": {
+    "acc": 0.235,
+    "content": "removed",
+    "n": 1000,
+    "n_eval": 1000,
+    "n_fit": 2000,
+    "note": "T10 side-channel: Acc must stay \u22640.273 at n=1000; G12\u2013G15 do not cover",
+    "p0": 0.25,
+    "probe": "ridge_ovr_linear_on_placement_alone_content_removed",
+    "status": "PASS",
+    "threshold": 0.273,
+    "threshold_is_binomial_ub": true
+  },
+  "affinity_sha256": "7dae877a3975c1ba4ca264f03f572d6749cce39a114ea3adbcffc010c7852c50",
+  "blocks_primary_if_fail": true,
+  "checkpoint": "/workspace/scp/experiments/phase-routing/t13/results/checkpoints/mixture_seed20260928.npz",
+  "gates_pass": true,
+  "hint_evidence": false,
+  "prereg_sha256": "3176eb5ea3458047b820ff5511644d20a697a7a9485d5118560ff7b71e1f981d",
+  "ticket": "t13",
+  "when_pt": "2026-09-24 08:37:17 PT"
+}

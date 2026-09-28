@@ -1,0 +1,60 @@
+{
+  "config": {
+    "heldout_per_task": 64,
+    "seed": 20260921,
+    "seq_len": 128,
+    "switching_sequences": 512,
+    "train_per_task": 256
+  },
+  "content_tokens": [
+    8,
+    63
+  ],
+  "marker_tokens": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "multipliers": [
+    1,
+    3,
+    5,
+    9,
+    11,
+    13,
+    15,
+    17
+  ],
+  "offsets": [
+    1,
+    5,
+    9,
+    13,
+    17,
+    23,
+    29,
+    37
+  ],
+  "rng": "numpy.random.PCG64",
+  "rule": "x_next = (multiplier[task] * x + offset[task]) mod 56",
+  "split_shapes": {
+    "heldout": [
+      512,
+      128
+    ],
+    "switching": [
+      512,
+      128
+    ],
+    "train": [
+      2048,
+      128
+    ]
+  },
+  "vocab_size": 64
+}

@@ -1,0 +1,100 @@
+{
+  "architecture": {
+    "activation": "ReLU",
+    "first_n_tokens": 32,
+    "hidden": 24,
+    "in_dim": 95,
+    "labels": [
+      "Browser",
+      "Structured",
+      "General"
+    ],
+    "loss": "softmax cross-entropy + L2",
+    "optimizer": "Adam (numpy)",
+    "out_dim": 3,
+    "temperature": 0.5,
+    "type": "2-layer MLP"
+  },
+  "created": "2026-09-23T14:49:26 PT",
+  "metrics": {
+    "abstentions": {
+      "eval": 0,
+      "train": 0,
+      "val": 0
+    },
+    "eval_smoke_seed": {
+      "acc": 1.0,
+      "n": 49,
+      "per_label": {
+        "Browser": {
+          "acc": 1.0,
+          "n": 22
+        },
+        "General": {
+          "acc": 1.0,
+          "n": 13
+        },
+        "Structured": {
+          "acc": 1.0,
+          "n": 14
+        }
+      }
+    },
+    "temperature": 0.5,
+    "train": {
+      "acc": 1.0,
+      "n": 156,
+      "per_label": {
+        "Browser": {
+          "acc": 1.0,
+          "n": 66
+        },
+        "General": {
+          "acc": 1.0,
+          "n": 47
+        },
+        "Structured": {
+          "acc": 1.0,
+          "n": 43
+        }
+      }
+    },
+    "val": {
+      "acc": 1.0,
+      "n": 52,
+      "per_label": {
+        "Browser": {
+          "acc": 1.0,
+          "n": 23
+        },
+        "General": {
+          "acc": 1.0,
+          "n": 14
+        },
+        "Structured": {
+          "acc": 1.0,
+          "n": 15
+        }
+      }
+    }
+  },
+  "split": {
+    "ALL_SEQUENCES_sha256": "305c446f4e773bafe6c77d4224e7ba3978cb354cd7f2f9dbfa2e18156eca8da1",
+    "batch": "t11-counting-sealed-v1",
+    "eval_seed": 20260923,
+    "n_eval_segments_scored": 49,
+    "n_train_segments_scored": 156,
+    "n_val_segments_scored": 52,
+    "rule": "Train on seeds 20260924\u201326; val=20260927 for early-stop + temperature; eval/smoke seed 20260923 held out entirely (never fit).",
+    "train_seeds": [
+      20260924,
+      20260925,
+      20260926
+    ],
+    "val_seed": 20260927
+  },
+  "weights_json": "/workspace/scp/experiments/phase-routing/t11/routing/artifacts/classifier_mlp_v1.json",
+  "weights_json_sha256": "d482216ce91423658851529cf78653cbebb034abe516d1a4d9c0402c0e490a59",
+  "weights_npz": "/workspace/scp/experiments/phase-routing/t11/routing/artifacts/classifier_mlp_v1.npz",
+  "weights_npz_sha256": "74568238625fcaf34057de335a3917b51499d50eedf5a1816e9a6624328aed3b"
+}

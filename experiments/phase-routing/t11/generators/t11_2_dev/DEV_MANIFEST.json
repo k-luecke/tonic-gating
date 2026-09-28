@@ -1,0 +1,35 @@
+{
+  "batch_id": "t11-2-dev-v0",
+  "status": "dev_candidate_not_sealed",
+  "note": "Does not overwrite sealed-v1. typed_goal_family is harness typed state (H5); not an oracle column promote.",
+  "n_sequences": 60,
+  "files_sha256": {
+    "clean.jsonl": "34d010214b60736f9c47bb40acc1538ec091736cb41bbb4db36ac7a1f0556422",
+    "ambiguous.jsonl": "a29978cb602688e421c40e8f6325448103d046c64571805dcbf347f77ea92f09",
+    "distraction.jsonl": "8fc5df70b8631206ab43ce7ceae6f52e04ea8914f8d3b02a8aa9d14af1be9af5",
+    "renewal.jsonl": "b86e62b7a09fa62a0beeced4f257a44d5b113ee1e5d2bb3d919a6634e4d1d86e",
+    "window_break.jsonl": "1e33384dee28379376e8b8647cf340a1d283c1d75f6f262ccbba69509feb172d",
+    "ALL_SEQUENCES.jsonl": "fb5af293d38c03e863804e2b96f6f3e864e749180048ce3a03b647d250896ea2"
+  },
+  "hand_rule_ambiguous_first32_csr": 0.375,
+  "hand_rule_ambiguous_gate1_target_max": 0.45,
+  "hand_rule_ambiguous_self_check_pass": true,
+  "distraction_other_family_spans": 24,
+  "distraction_total_spans": 24,
+  "typed_goal_family_active": true,
+  "typed_goal_family_identity_lock": {
+    "source": "harness_emit_task_slot",
+    "never_from": [
+      "oracle_specialist"
+    ],
+    "browser_episode_implies": "browser",
+    "observation_gate_strips": [
+      "family",
+      "oracle_specialist"
+    ],
+    "planted_from_oracle_exact_eq": 0,
+    "mismatch_vs_family_non_browser": 0
+  },
+  "segments_typed_goal_family": 257,
+  "n_segments": 257
+}

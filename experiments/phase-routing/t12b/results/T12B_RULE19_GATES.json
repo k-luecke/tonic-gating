@@ -1,0 +1,144 @@
+{
+  "all_pass": true,
+  "constraints": {
+    "affinity_c3_hum": "UNTOUCHED",
+    "affinity_sha": "7dae877a3975c1ba4ca264f03f572d6749cce39a114ea3adbcffc010c7852c50",
+    "counted_arm": "HumMeasureArm (HumState path)",
+    "labeled_secondary": "majority_k3",
+    "no_t12b_freeze_emit": false,
+    "primary_contrast": "hum_measure vs one_step_memory"
+  },
+  "draft_content_sha256": "408eaaaca59d0c210e1b1ef50d2494213662da1059b3542c38ce866651801b21",
+  "draft_status_is_draft": true,
+  "emit_attempted": true,
+  "gates": [
+    {
+      "detail": "gap_inject --self-test rc=0",
+      "metrics": {
+        "stderr_tail": "",
+        "stdout_tail": "gap_inject self-test PASS (incl. G10 mid-gap spurious flip)\n  sample gap start=23 len=6 flip_t=26 wrong_spec=1\n  GAP_LENGTHS=(3, 6, 12, 24) LAG_LENGTHS=(2, 4, 8)\n"
+      },
+      "name": "G1_gaps_zero_affinity",
+      "passed": true
+    },
+    {
+      "detail": "arms=['hum_measure', 'stateless_argmax', 'one_step_memory', 'majority_k3']; PRIMARY_ARMS=['hum_measure', 'stateless_argmax', 'one_step_memory']",
+      "metrics": {
+        "arms": [
+          "hum_measure",
+          "stateless_argmax",
+          "one_step_memory",
+          "majority_k3"
+        ],
+        "primary_arms": [
+          "hum_measure",
+          "stateless_argmax",
+          "one_step_memory"
+        ]
+      },
+      "name": "G2_one_step_memory_present",
+      "passed": true
+    },
+    {
+      "detail": "cites_thold_65=True; no_primary_outputs=True",
+      "metrics": {
+        "primary_hits": [],
+        "sha256": "eee4fd552abfb6a4d3feebdd778a68aefe01693f80658a3eef03c055c6a8189a"
+      },
+      "name": "G3_crossover_prediction_prerun",
+      "passed": true
+    },
+    {
+      "detail": "Affinity/C\u2083/hum shas match frozen baseline",
+      "metrics": {
+        "mismatches": {},
+        "shas": {
+          "C_n3": "40e3c0c95849ad67af6738e7842c1a4d24783dafa742ed247d03391db37a1493",
+          "hum_measure/COUPLING_HASHES.json": "482fb1b53bfddc0e771145a0783f3b65104231d537cbba507d4783d13a27902b",
+          "hum_measure/__init__.py": "b51cda27b48e7ce29c801b5a86bb8f613a38cb4ba261e40459dbdb842b56721a",
+          "hum_measure/affinity_inputs.py": "7dae877a3975c1ba4ca264f03f572d6749cce39a114ea3adbcffc010c7852c50",
+          "hum_state.py": "03ab651db94e87e99e9d560b2e374ccc9dd6e90251422b2364b007089cfd0637"
+        }
+      },
+      "name": "G4_no_c3_hum_affinity_retune",
+      "passed": true
+    },
+    {
+      "detail": "got=27ab4a9573ec8c01\u2026 want=27ab4a9573ec8c01\u2026",
+      "metrics": {
+        "expected": "27ab4a9573ec8c01ed043d72ef6c83ba47fdd4a764a373acb7453381bb9bd442",
+        "got": "27ab4a9573ec8c01ed043d72ef6c83ba47fdd4a764a373acb7453381bb9bd442"
+      },
+      "name": "G5_t11_3_hash_untouched",
+      "passed": true
+    },
+    {
+      "detail": "got=593762c4c19e85d1\u2026 want=593762c4c19e85d1\u2026",
+      "metrics": {
+        "expected": "593762c4c19e85d1720f6b46edbb93869258c4047ad023e42e144416aaed20d1",
+        "got": "593762c4c19e85d1720f6b46edbb93869258c4047ad023e42e144416aaed20d1"
+      },
+      "name": "G6_t11_2_hash_untouched",
+      "passed": true
+    },
+    {
+      "detail": "symlink=True; target_ok=True; all_sha=646df30bbeacdc77\u2026",
+      "metrics": {
+        "all_sha": "646df30bbeacdc77432e9cb1daa366640ca0cfeb2e01216d4cb5f03a9df404c6",
+        "resolve": "/workspace/scp/experiments/phase-routing/t11_3/generators/sealed",
+        "symlink": true
+      },
+      "name": "G7_sealed_reuse_not_rewritten",
+      "passed": true
+    },
+    {
+      "detail": "forbidden_hits=[]; routing_claimed=True",
+      "metrics": {
+        "hits": []
+      },
+      "name": "G8_routing_only",
+      "passed": true
+    },
+    {
+      "detail": "class=HumMeasureArm; counted=True; stub_refused=True",
+      "metrics": {
+        "counted": true,
+        "hum_class": "HumMeasureArm",
+        "hum_state_path": true
+      },
+      "name": "G9_stub_ne_counted_arm",
+      "passed": true
+    },
+    {
+      "detail": "flip_nz=True; surrounding_zero=True; mid_offset=3",
+      "metrics": {
+        "offset": 3,
+        "t_flip": 13,
+        "wrong_spec_index": 1
+      },
+      "name": "G10_in_gap_scoreaffinity_lure",
+      "passed": true
+    },
+    {
+      "detail": "present=True; labeled=True; k=3; not_primary=True; draft_docs=True",
+      "metrics": {
+        "draft_docs": true,
+        "primary_arms": [
+          "hum_measure",
+          "stateless_argmax",
+          "one_step_memory"
+        ],
+        "secondary_arms": [
+          "majority_k3"
+        ]
+      },
+      "name": "G11_majority_k3_labeled_secondary",
+      "passed": true
+    }
+  ],
+  "prereg_sha256_emitted": true,
+  "prereg_sha256_path_exists": true,
+  "pt": "2026-09-23 20:00:23 PT",
+  "rule19": "PASS",
+  "ticket": "t12b"
+}

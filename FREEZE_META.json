@@ -1,0 +1,151 @@
+{
+  "version": 1,
+  "description": "Rule-19 Freeze Metadata & OpenTimestamps Anchor Registry",
+  "last_updated": "2026-09-28T16:06:55.524938+00:00",
+  "records": {
+    "PREREG_GATING_SHEET.md": {
+      "file_path": "prereg/PREREG_GATING_SHEET.md",
+      "sha256": "c81851b03cf5920c5f34a5fe6ea81411b6cef73012d2fc99561ad155df1fef10",
+      "raw_sha256": "c81851b03cf5920c5f34a5fe6ea81411b6cef73012d2fc99561ad155df1fef10",
+      "sidecar_path": "prereg/PREREG_GATING_SHEET.md.sha256",
+      "ots_path": "prereg/PREREG_GATING_SHEET.md.ots",
+      "stamped_at": "2026-09-24T18:03:05.946563+00:00",
+      "status": "confirmed",
+      "status_note": "Anchored retroactively on 2026-09-24 via OpenTimestamps. Original freeze verified via git/Drive records; proves existence as of 2026-09-24 only.",
+      "bitcoin_block_height": 968437,
+      "confirmed_at": "2026-09-28T16:06:22.580775+00:00"
+    },
+    "PREREG_T5_T6.md": {
+      "file_path": "prereg/PREREG_T5_T6.md",
+      "sha256": "eff56961dae44b24e10f2e329b6069be098894de2d44cdd381e6529f86cb538a",
+      "raw_sha256": "eff56961dae44b24e10f2e329b6069be098894de2d44cdd381e6529f86cb538a",
+      "sidecar_path": "prereg/PREREG_T5_T6.md.sha256",
+      "ots_path": "prereg/PREREG_T5_T6.md.ots",
+      "stamped_at": "2026-09-24T18:03:08.166556+00:00",
+      "status": "confirmed",
+      "status_note": "Anchored retroactively on 2026-09-24 via OpenTimestamps. Original freeze verified via git/Drive records; proves existence as of 2026-09-24 only.",
+      "bitcoin_block_height": 968437,
+      "confirmed_at": "2026-09-28T16:06:26.078976+00:00"
+    },
+    "PREREG_T7.md": {
+      "file_path": "prereg/PREREG_T7.md",
+      "sha256": "6d79f794da600c2790d2ee62d1d390275dd1103cf6f42ede182cae83fc371625",
+      "raw_sha256": "6d79f794da600c2790d2ee62d1d390275dd1103cf6f42ede182cae83fc371625",
+      "sidecar_path": "prereg/PREREG_T7.md.sha256",
+      "ots_path": "prereg/PREREG_T7.md.ots",
+      "stamped_at": "2026-09-24T18:03:09.960452+00:00",
+      "status": "confirmed",
+      "status_note": "Anchored retroactively on 2026-09-24 via OpenTimestamps. Original freeze verified via git/Drive records; proves existence as of 2026-09-24 only.",
+      "bitcoin_block_height": 968437,
+      "confirmed_at": "2026-09-28T16:06:28.795959+00:00"
+    },
+    "PREREG_T8.md": {
+      "file_path": "prereg/PREREG_T8.md",
+      "sha256": "d975d96cf281badd2c0a6fc3986518b6338511cfcb7a9a9bf18be6b5e060b395",
+      "raw_sha256": "d975d96cf281badd2c0a6fc3986518b6338511cfcb7a9a9bf18be6b5e060b395",
+      "sidecar_path": "prereg/PREREG_T8.md.sha256",
+      "ots_path": "prereg/PREREG_T8.md.ots",
+      "stamped_at": "2026-09-24T18:03:11.972453+00:00",
+      "status": "confirmed",
+      "status_note": "Anchored retroactively on 2026-09-24 via OpenTimestamps. Original freeze verified via git/Drive records; proves existence as of 2026-09-24 only.",
+      "bitcoin_block_height": 968437,
+      "confirmed_at": "2026-09-28T16:06:31.500438+00:00"
+    },
+    "PREREG_T9.md": {
+      "file_path": "prereg/PREREG_T9.md",
+      "sha256": "1c6a486726302a68ddb4ca818a89e56fb430f1a9e6ef2ba330364085b4e6289d",
+      "raw_sha256": "1c6a486726302a68ddb4ca818a89e56fb430f1a9e6ef2ba330364085b4e6289d",
+      "sidecar_path": "prereg/PREREG_T9.md.sha256",
+      "ots_path": "prereg/PREREG_T9.md.ots",
+      "stamped_at": "2026-09-24T18:03:13.992337+00:00",
+      "status": "confirmed",
+      "status_note": "Anchored retroactively on 2026-09-24 via OpenTimestamps. Original freeze verified via git/Drive records; proves existence as of 2026-09-24 only.",
+      "bitcoin_block_height": 968448,
+      "confirmed_at": "2026-09-28T16:06:34.569623+00:00"
+    },
+    "PREREG_T10.md": {
+      "file_path": "prereg/PREREG_T10.md",
+      "sha256": "fd4cb718dbbb86288246972cadac2a086081577cb63575b384f707c0506c3319",
+      "raw_sha256": "fd4cb718dbbb86288246972cadac2a086081577cb63575b384f707c0506c3319",
+      "sidecar_path": "prereg/PREREG_T10.md.sha256",
+      "ots_path": "prereg/PREREG_T10.md.ots",
+      "stamped_at": "2026-09-24T18:03:15.996342+00:00",
+      "status": "confirmed",
+      "status_note": "Anchored retroactively on 2026-09-24 via OpenTimestamps. Original freeze verified via git/Drive records; proves existence as of 2026-09-24 only.",
+      "bitcoin_block_height": 968437,
+      "confirmed_at": "2026-09-28T16:06:37.414176+00:00"
+    },
+    "PREREG_T11_1.md": {
+      "file_path": "prereg/PREREG_T11_1.md",
+      "sha256": "c62bfda8bab88df14677e47e20f28c99ba20595bc0f9273050484d4ae92e079a",
+      "raw_sha256": "c62bfda8bab88df14677e47e20f28c99ba20595bc0f9273050484d4ae92e079a",
+      "sidecar_path": "prereg/PREREG_T11_1.md.sha256",
+      "ots_path": "prereg/PREREG_T11_1.md.ots",
+      "stamped_at": "2026-09-24T18:03:17.995934+00:00",
+      "status": "confirmed",
+      "status_note": "Anchored retroactively on 2026-09-24 via OpenTimestamps. Original freeze verified via git/Drive records; proves existence as of 2026-09-24 only.",
+      "bitcoin_block_height": 968448,
+      "confirmed_at": "2026-09-28T16:06:40.048490+00:00"
+    },
+    "PREREG_T11_2.md": {
+      "file_path": "prereg/PREREG_T11_2.md",
+      "sha256": "593762c4c19e85d1720f6b46edbb93869258c4047ad023e42e144416aaed20d1",
+      "raw_sha256": "593762c4c19e85d1720f6b46edbb93869258c4047ad023e42e144416aaed20d1",
+      "sidecar_path": "prereg/PREREG_T11_2.md.sha256",
+      "ots_path": "prereg/PREREG_T11_2.md.ots",
+      "stamped_at": "2026-09-24T18:03:20.003902+00:00",
+      "status": "confirmed",
+      "status_note": "Anchored retroactively on 2026-09-24 via OpenTimestamps. Original freeze verified via git/Drive records; proves existence as of 2026-09-24 only.",
+      "bitcoin_block_height": 968453,
+      "confirmed_at": "2026-09-28T16:06:43.325358+00:00"
+    },
+    "PREREG_T11_3.md": {
+      "file_path": "prereg/PREREG_T11_3.md",
+      "sha256": "27ab4a9573ec8c01ed043d72ef6c83ba47fdd4a764a373acb7453381bb9bd442",
+      "raw_sha256": "27ab4a9573ec8c01ed043d72ef6c83ba47fdd4a764a373acb7453381bb9bd442",
+      "sidecar_path": "prereg/PREREG_T11_3.md.sha256",
+      "ots_path": "prereg/PREREG_T11_3.md.ots",
+      "stamped_at": "2026-09-24T18:03:22.010337+00:00",
+      "status": "confirmed",
+      "status_note": "Anchored retroactively on 2026-09-24 via OpenTimestamps. Original freeze verified via git/Drive records; proves existence as of 2026-09-24 only.",
+      "bitcoin_block_height": 968437,
+      "confirmed_at": "2026-09-28T16:06:46.000533+00:00"
+    },
+    "PREREG_T12.md": {
+      "file_path": "prereg/PREREG_T12.md",
+      "sha256": "bf757ee4fc01e5c40b45f035150e7b716d12f7d8b30d745b9a7669f79bbf307c",
+      "raw_sha256": "bf757ee4fc01e5c40b45f035150e7b716d12f7d8b30d745b9a7669f79bbf307c",
+      "sidecar_path": "prereg/PREREG_T12.md.sha256",
+      "ots_path": "prereg/PREREG_T12.md.ots",
+      "stamped_at": "2026-09-24T18:03:24.040967+00:00",
+      "status": "confirmed",
+      "status_note": "Anchored retroactively on 2026-09-24 via OpenTimestamps. Original freeze verified via git/Drive records; proves existence as of 2026-09-24 only.",
+      "bitcoin_block_height": 968437,
+      "confirmed_at": "2026-09-28T16:06:49.263581+00:00"
+    },
+    "PREREG_T12B.md": {
+      "file_path": "prereg/PREREG_T12B.md",
+      "sha256": "851124b3c4bc66cb8e7c96c4f501084f4de186574f4f8d9446cac5879f62a3f0",
+      "raw_sha256": "851124b3c4bc66cb8e7c96c4f501084f4de186574f4f8d9446cac5879f62a3f0",
+      "sidecar_path": "prereg/PREREG_T12B.md.sha256",
+      "ots_path": "prereg/PREREG_T12B.md.ots",
+      "stamped_at": "2026-09-24T18:03:26.024031+00:00",
+      "status": "confirmed",
+      "status_note": "Anchored retroactively on 2026-09-24 via OpenTimestamps. Original freeze verified via git/Drive records; proves existence as of 2026-09-24 only.",
+      "bitcoin_block_height": 968437,
+      "confirmed_at": "2026-09-28T16:06:52.622067+00:00"
+    },
+    "PREREG_T13.md": {
+      "file_path": "prereg/PREREG_T13.md",
+      "sha256": "3176eb5ea3458047b820ff5511644d20a697a7a9485d5118560ff7b71e1f981d",
+      "raw_sha256": "3176eb5ea3458047b820ff5511644d20a697a7a9485d5118560ff7b71e1f981d",
+      "sidecar_path": "prereg/PREREG_T13.md.sha256",
+      "ots_path": "prereg/PREREG_T13.md.ots",
+      "stamped_at": "2026-09-24T18:03:28.022641+00:00",
+      "status": "confirmed",
+      "status_note": "Anchored retroactively on 2026-09-24 via OpenTimestamps. Original freeze verified via git/Drive records; proves existence as of 2026-09-24 only.",
+      "bitcoin_block_height": 968453,
+      "confirmed_at": "2026-09-28T16:06:55.524910+00:00"
+    }
+  }
+}

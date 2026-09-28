@@ -1,0 +1,241 @@
+{
+  "constraints": {
+    "affinity_c3_hum": "FROZEN / UNTOUCHED",
+    "affinity_sha": "7dae877a3975c1ba4ca264f03f572d6749cce39a114ea3adbcffc010c7852c50",
+    "g13_acc_deferred_post_train": true,
+    "g13_criterion_locked": true,
+    "g17_acc_deferred_post_train": true,
+    "g17_n": 1000,
+    "g17_threshold": 0.273,
+    "g17_threshold_is_binomial_ub": true,
+    "g9_runs_at_train": true,
+    "no_prereg_emit": false,
+    "no_primary": true,
+    "post_freeze_sequence": "train mixture (G9) \u2192 G13 Acc + G17 Acc \u2192 primary \u00d7 seeds",
+    "status": "FROZEN"
+  },
+  "draft_content_sha256": "1e3f7fe80c4763b827e1bb9cb566adf83551255c5bd4aad11073b91639ea0119",
+  "draft_status_is_draft": true,
+  "emit_attempted": true,
+  "gates": [
+    {
+      "detail": "draft_exists=True; is_draft=True; emit via --emit-hash promotes separate PREREG.md",
+      "metrics": {
+        "draft_path": "/workspace/scp/experiments/phase-routing/t13/docs/T13_PREREG_DRAFT.md",
+        "is_draft": true
+      },
+      "name": "G1_draft_detected_blocks_emit",
+      "passed": true,
+      "status": "PASS"
+    },
+    {
+      "detail": "markers=(True, True, True)",
+      "metrics": {
+        "markers": [
+          true,
+          true,
+          true
+        ]
+      },
+      "name": "G2_matched_compute_formula",
+      "passed": true,
+      "status": "PASS"
+    },
+    {
+      "detail": "H_int algebra before arms",
+      "metrics": {},
+      "name": "G3_intelligibility_primary",
+      "passed": true,
+      "status": "PASS"
+    },
+    {
+      "detail": "MoD=True; MoR=True; context_slice=True",
+      "metrics": {},
+      "name": "G4_related_work_delta",
+      "passed": true,
+      "status": "PASS"
+    },
+    {
+      "detail": "hum allocator expected-null clause present",
+      "metrics": {},
+      "name": "G5_hum_allocator_expected_null",
+      "passed": true,
+      "status": "PASS"
+    },
+    {
+      "detail": "sha_match=True; no_local_affinity_copy=True; got=7dae877a3975\u2026",
+      "metrics": {
+        "expected": "7dae877a3975c1ba4ca264f03f572d6749cce39a114ea3adbcffc010c7852c50",
+        "no_local_copy": true,
+        "sha256": "7dae877a3975c1ba4ca264f03f572d6749cce39a114ea3adbcffc010c7852c50"
+      },
+      "name": "G6_affinity_frozen",
+      "passed": true,
+      "status": "PASS"
+    },
+    {
+      "detail": "all parent PREREG.sha256 match pins",
+      "metrics": {
+        "t11_2": {
+          "expected": "593762c4c19e85d1720f6b46edbb93869258c4047ad023e42e144416aaed20d1",
+          "got": "593762c4c19e85d1720f6b46edbb93869258c4047ad023e42e144416aaed20d1",
+          "match": true,
+          "path": "/workspace/scp/experiments/phase-routing/t11_2/PREREG.sha256"
+        },
+        "t11_3": {
+          "expected": "27ab4a9573ec8c01ed043d72ef6c83ba47fdd4a764a373acb7453381bb9bd442",
+          "got": "27ab4a9573ec8c01ed043d72ef6c83ba47fdd4a764a373acb7453381bb9bd442",
+          "match": true,
+          "path": "/workspace/scp/experiments/phase-routing/t11_3/PREREG.sha256"
+        },
+        "t12": {
+          "expected": "bf757ee4fc01e5c40b45f035150e7b716d12f7d8b30d745b9a7669f79bbf307c",
+          "got": "bf757ee4fc01e5c40b45f035150e7b716d12f7d8b30d745b9a7669f79bbf307c",
+          "match": true,
+          "path": "/workspace/scp/experiments/phase-routing/t12/PREREG.sha256"
+        },
+        "t12b": {
+          "expected": "851124b3c4bc66cb8e7c96c4f501084f4de186574f4f8d9446cac5879f62a3f0",
+          "got": "851124b3c4bc66cb8e7c96c4f501084f4de186574f4f8d9446cac5879f62a3f0",
+          "match": true,
+          "path": "/workspace/scp/experiments/phase-routing/t12b/PREREG.sha256"
+        }
+      },
+      "name": "G7_parent_preregs_untouched",
+      "passed": true,
+      "status": "PASS"
+    },
+    {
+      "detail": "mythos_tiny numeric locks present; checks={'mythos_tiny': True, 'K=4': True, 'W=64': True, 'L_max=4': True, 'S_full=64': True, 'S_e=16': True, 'vocab_256': True, 'steps_2000': True, 'seeds': True, 'C_match_numeric': True}",
+      "metrics": {
+        "C_match_numeric": true,
+        "K=4": true,
+        "L_max=4": true,
+        "S_e=16": true,
+        "S_full=64": true,
+        "W=64": true,
+        "mythos_tiny": true,
+        "seeds": true,
+        "steps_2000": true,
+        "vocab_256": true
+      },
+      "name": "G8_scale_mythos_tiny",
+      "passed": true,
+      "status": "PASS"
+    },
+    {
+      "detail": "instability language locked; runs at train; refuse primary if FAIL",
+      "metrics": {},
+      "name": "G9_training_instability",
+      "passed": true,
+      "status": "PASS"
+    },
+    {
+      "detail": "stopping + null/support vocabulary present",
+      "metrics": {},
+      "name": "G10_stopping_rule",
+      "passed": true,
+      "status": "PASS"
+    },
+    {
+      "detail": "doc_ok=True; no_local_hum_measure=True",
+      "metrics": {},
+      "name": "G11_affinity_surface_default_off",
+      "passed": true,
+      "status": "PASS"
+    },
+    {
+      "detail": "random-tag / plain-sum / oracle / no-medium named",
+      "metrics": {},
+      "name": "G12_hint_controls_named",
+      "passed": true,
+      "status": "PASS"
+    },
+    {
+      "detail": "procedure LOCKED (manipulation check; pairwise+N=36; max-dev\u22640.1 not RMS); Acc PENDING post-train (does not block freeze; do not fake Acc)",
+      "metrics": {
+        "acc_status": "PENDING_POST_TRAIN",
+        "aggregation": "max_deviation",
+        "blocks_freeze": false,
+        "blocks_primary_if_fail_after_train": true,
+        "criterion_locked": true,
+        "delta_phi_grid_n": 36,
+        "doc_mentions_bound": true,
+        "formula": "|X(dphi)-max(0,cos dphi)| <= 0.1",
+        "procedure_aggregation_maxdev_not_rms": true,
+        "procedure_manipulation_check_role": true,
+        "procedure_sampling": true,
+        "role": "manipulation_check_not_hint_evidence",
+        "threshold": 0.1,
+        "timing_post_train": true,
+        "trained_mixture": false
+      },
+      "name": "G13_crosstalk_bound_assert",
+      "passed": true,
+      "status": "PASS"
+    },
+    {
+      "detail": "draft K=4 + phases hash language present; K=True; phases=True",
+      "metrics": {
+        "K4": true,
+        "phases_mentioned": true,
+        "prereg_emitted": true
+      },
+      "name": "G14_k_phases_hashed",
+      "passed": true,
+      "status": "PASS"
+    },
+    {
+      "detail": "\u00a73.2 numeric C_match lines present; ref=True; shared=True",
+      "metrics": {
+        "ref_4210688": true,
+        "shared_4259840": true
+      },
+      "name": "G15_cmatch_per_arm",
+      "passed": true,
+      "status": "PASS"
+    },
+    {
+      "detail": "no-medium inside H_int support verdict",
+      "metrics": {},
+      "name": "G16_no_medium_inside_verdict",
+      "passed": true,
+      "status": "PASS"
+    },
+    {
+      "detail": "docs pin n=1000, p0=0.25, Acc\u22640.273 (= one-sided 95% binomial UB \u22480.273); docs-assert PASS OK for freeze; probe Acc PENDING post-train (blocks primary if FAIL)",
+      "metrics": {
+        "acc_status": "PENDING_POST_TRAIN",
+        "binomial_ub_approx": 0.272525,
+        "blocks_freeze": false,
+        "blocks_primary_if_fail_after_train": true,
+        "docs_ok": true,
+        "n": 1000,
+        "p0": 0.25,
+        "probe_measured": false,
+        "threshold": 0.273
+      },
+      "name": "G17_tag_placement_decodability",
+      "passed": true,
+      "status": "PASS"
+    },
+    {
+      "detail": "primary=per-slice attn; secondary=full-context-equivalent; \u00a73.0 locked",
+      "metrics": {},
+      "name": "G18_attention_accounting_locked",
+      "passed": true,
+      "status": "PASS"
+    }
+  ],
+  "prereg_sha256": "3176eb5ea3458047b820ff5511644d20a697a7a9485d5118560ff7b71e1f981d",
+  "prereg_sha256_emitted": true,
+  "prereg_sha256_path_exists": true,
+  "pt": "2026-09-24 08:30:27 PT",
+  "rule19_freeze_ready": true,
+  "summary": {
+    "FAIL": 0,
+    "PASS": 18,
+    "PENDING": 0
+  },
+  "ticket": "t13"
+}

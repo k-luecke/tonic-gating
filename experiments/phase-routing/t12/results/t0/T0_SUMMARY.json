@@ -1,0 +1,62 @@
+{
+  "verdict": "PASS",
+  "created_pt": "2026-09-23T18:28:54 PT",
+  "bullets": {
+    "hum_measure_import": {
+      "pass": true,
+      "path": "/workspace/scp/t11/imports/hum_measure",
+      "symlink_ok": true
+    },
+    "frozen_packages_untouched": {
+      "pass": true,
+      "shas": {
+        "hum_measure/__init__.py": "b51cda27b48e7ce29c801b5a86bb8f613a38cb4ba261e40459dbdb842b56721a",
+        "hum_measure/affinity_inputs.py": "7dae877a3975c1ba4ca264f03f572d6749cce39a114ea3adbcffc010c7852c50",
+        "hum_measure/COUPLING_HASHES.json": "482fb1b53bfddc0e771145a0783f3b65104231d537cbba507d4783d13a27902b",
+        "C_n3": "40e3c0c95849ad67af6738e7842c1a4d24783dafa742ed247d03391db37a1493",
+        "hum_state.py": "03ab651db94e87e99e9d560b2e374ccc9dd6e90251422b2364b007089cfd0637"
+      },
+      "expected": {
+        "hum_measure/__init__.py": "b51cda27b48e7ce29c801b5a86bb8f613a38cb4ba261e40459dbdb842b56721a",
+        "hum_measure/affinity_inputs.py": "7dae877a3975c1ba4ca264f03f572d6749cce39a114ea3adbcffc010c7852c50",
+        "hum_measure/COUPLING_HASHES.json": "482fb1b53bfddc0e771145a0783f3b65104231d537cbba507d4783d13a27902b",
+        "C_n3": "40e3c0c95849ad67af6738e7842c1a4d24783dafa742ed247d03391db37a1493",
+        "hum_state.py": "03ab651db94e87e99e9d560b2e374ccc9dd6e90251422b2364b007089cfd0637"
+      }
+    },
+    "t8_hum_unit_tests": {
+      "pass": true,
+      "T_hold": 39.0,
+      "T_hold_target": 41.0,
+      "inv_lambda": 39.245745822474326,
+      "scaling_pass": true,
+      "command": "python3 scripts/run_t8_acceptance.py"
+    },
+    "t8_rerun_persistence": {
+      "pass": true,
+      "primary": "/workspace/scp/experiments/phase-routing/t8/results/primary",
+      "hum_T_hold_seed_mean": 26.846875,
+      "shift_lock_delta_L": 0.01707748666642206,
+      "command": "python3 scripts/check_t8_rerun_persistence.py"
+    },
+    "locks_n2_hp_amp": {
+      "pass": true,
+      "hum_n": 2,
+      "high_pass_every_drive": true,
+      "amplitude_readout_never_phase_gated": true,
+      "homogeneous_T_hold": 39.0,
+      "coupled_T_hold": 62.0,
+      "operating_hp_easy": 9.0,
+      "operating_hp_hard": 9.0,
+      "C_n2_sha": "c7bf348a38fffc30217cd657ff00f2fb3ab6cf316ea4cbfc0ea01f46b87a545f",
+      "command": "python3 scripts/smoke_hum_n2.py"
+    }
+  },
+  "frozen_shas": {
+    "hum_measure/__init__.py": "b51cda27b48e7ce29c801b5a86bb8f613a38cb4ba261e40459dbdb842b56721a",
+    "hum_measure/affinity_inputs.py": "7dae877a3975c1ba4ca264f03f572d6749cce39a114ea3adbcffc010c7852c50",
+    "hum_measure/COUPLING_HASHES.json": "482fb1b53bfddc0e771145a0783f3b65104231d537cbba507d4783d13a27902b",
+    "C_n3": "40e3c0c95849ad67af6738e7842c1a4d24783dafa742ed247d03391db37a1493",
+    "hum_state.py": "03ab651db94e87e99e9d560b2e374ccc9dd6e90251422b2364b007089cfd0637"
+  }
+}

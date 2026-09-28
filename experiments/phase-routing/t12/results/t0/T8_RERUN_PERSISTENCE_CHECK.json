@@ -1,0 +1,78 @@
+{
+  "verdict": "PASS",
+  "primary_path": "/workspace/scp/experiments/phase-routing/t8/results/primary",
+  "reference": {
+    "prereg_sha256": "d975d96cf281badd2c0a6fc3986518b6338511cfcb7a9a9bf18be6b5e060b395",
+    "hum_T_hold_seed_mean": 26.846875,
+    "hum_L_seed_mean": 1.3402504453583368,
+    "hum_delta_L_shift_0.3": 0.01707748666642206,
+    "H2_verdict": "supported",
+    "lambda_means": {
+      "0.012740234375": 28.461328125,
+      "0.02548046875": 26.846875,
+      "0.0509609375": 24.23359375
+    },
+    "dynamics_T_hold_homog": 39.0,
+    "dynamics_inv_lambda": 39.245745822474326
+  },
+  "checks": [
+    {
+      "name": "artifacts_present",
+      "pass": true,
+      "detail": "PRIMARY=/workspace/scp/experiments/phase-routing/t8/results/primary"
+    },
+    {
+      "name": "prereg_sha",
+      "pass": true,
+      "detail": "got prereg_sha256=d975d96cf281badd2c0a6fc3986518b6338511cfcb7a9a9bf18be6b5e060b395"
+    },
+    {
+      "name": "hum_T_hold_seed_mean",
+      "pass": true,
+      "detail": "got 26.846875 ref 26.846875"
+    },
+    {
+      "name": "hum_delta_L_shift_0.3",
+      "pass": true,
+      "detail": "got 0.01707748666642206 (T8 shift regression lock reference)"
+    },
+    {
+      "name": "H2_verdict",
+      "pass": true,
+      "detail": "verdicts=supported H2.verdict=supported"
+    },
+    {
+      "name": "H2_lambda_monotone_means",
+      "pass": true,
+      "detail": "lambda_means={'0.012740234375': 28.461328125, '0.02548046875': 26.846875, '0.0509609375': 24.23359375}"
+    },
+    {
+      "name": "dynamics_acceptance_T_hold",
+      "pass": true,
+      "detail": "got 39.0 (ref homog 39 \u2248 1/\u03bb)"
+    },
+    {
+      "name": "dynamics_acceptance_verdict",
+      "pass": true,
+      "detail": "verdict=PASS"
+    }
+  ],
+  "hum_seed_mean": {
+    "L": 1.3402504453583368,
+    "T_hold": 26.846875,
+    "T_hold_lambda": {
+      "0.012740234375": 28.461328125,
+      "0.02548046875": 26.846875,
+      "0.0509609375": 24.23359375
+    },
+    "delta_L_noise_0.3": 0.0012147941286602126,
+    "delta_L_shift_0.3": 0.01707748666642206,
+    "dominant_tasks_min": 5
+  },
+  "verdicts": {
+    "H1": "mixed",
+    "H2": "supported",
+    "H2_lambda": "supported",
+    "H3": "not tested"
+  }
+}

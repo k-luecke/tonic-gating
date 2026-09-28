@@ -1,0 +1,121 @@
+{
+  "C_bar_by_arm": {
+    "act": 7.0,
+    "convergence": 7.0,
+    "coordinator_regime": 7.0,
+    "fixed_t7": 7.0
+  },
+  "affinity_c3_hum": "UNTOUCHED",
+  "checks": {
+    "act_C_bar": true,
+    "conv_C_bar": true,
+    "coord_C_bar": true,
+    "easy_hard_separation_retained": true,
+    "fixed_C_bar": true
+  },
+  "freeze": false,
+  "locks": {
+    "act_easy_center": 4.0,
+    "act_hard_center": 10.0,
+    "act_prior_mean": 7.0,
+    "act_t_max": 12,
+    "c_bar_target": 7.0,
+    "c_bar_tol": 0.25,
+    "conv_eps": 0.05,
+    "conv_t_max": 12,
+    "conv_tau_default": 2.336,
+    "conv_tau_easy": 1.335,
+    "conv_tau_hard": 3.337,
+    "fixed_t": 7,
+    "note": "T3 lock amended 2026-09-23 PT: C\u0304=7\u00b10.25; ACT easy/hard centers 4/10 (T1 T*); CONV \u03b5=0.05 tau_e/h=1.335/3.337; Fixed T=7. Soft-hard-to-8 removed. Affinity/C\u2083/hum untouched.",
+    "t_star_easy": 4,
+    "t_star_gap": 6,
+    "t_star_hard": 10
+  },
+  "prereg": "DRAFT \u2014 no PREREG.sha256 emit; locks recorded in receipt only",
+  "primary_mean_C_bar": 7.0,
+  "primary_within_tol": true,
+  "profiles": {
+    "act": {
+      "easy": {
+        "depth": 4,
+        "mean": 4.0
+      },
+      "hard": {
+        "depth": 10,
+        "mean": 10.0
+      }
+    },
+    "convergence": {
+      "easy": {
+        "depth": 4,
+        "mean": 4.0
+      },
+      "hard": {
+        "depth": 10,
+        "mean": 10.0
+      }
+    },
+    "coordinator_regime": {
+      "easy": {
+        "depth": 4,
+        "mean": 4.0
+      },
+      "hard": {
+        "depth": 10,
+        "mean": 10.0
+      }
+    },
+    "fixed_t7": {
+      "easy": {
+        "depth": 7,
+        "mean": 7.0
+      },
+      "hard": {
+        "depth": 7,
+        "mean": 7.0
+      }
+    }
+  },
+  "pt": "2026-09-23 19:15:51 PT",
+  "separation": {
+    "act": {
+      "easy": 4.0,
+      "easy_near_4": true,
+      "gap": 6.0,
+      "hard": 10.0,
+      "hard_near_10": true,
+      "separates": true
+    },
+    "convergence": {
+      "easy": 4.0,
+      "easy_near_4": true,
+      "gap": 6.0,
+      "hard": 10.0,
+      "hard_near_10": true,
+      "separates": true
+    },
+    "coordinator_regime": {
+      "easy": 4.0,
+      "easy_near_4": true,
+      "gap": 6.0,
+      "hard": 10.0,
+      "hard_near_10": true,
+      "separates": true
+    }
+  },
+  "smoke_seeds_documented": [
+    20260921,
+    20260922
+  ],
+  "status": "PASS",
+  "t1_reference": {
+    "T_star_easy": 4,
+    "T_star_hard": 10,
+    "gap": 6
+  },
+  "target_C_bar": 7.0,
+  "ticket": "T3",
+  "tol": 0.25,
+  "train": false
+}

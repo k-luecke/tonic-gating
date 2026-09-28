@@ -1,0 +1,17 @@
+2026-09-21 T1 initial design (seed 20260921)
+- Chose eight affine modular recurrences over the shared 56-token content alphabet.
+- Every task uses all content tokens; task identity cannot be recovered from token support.
+
+2026-09-21 pre-freeze specialization repair (single-seed exploratory)
+- The original LR interface trained for 600 steps to heldout loss 0.0015 but had 0/8
+  tasks at the >=0.25 top-1 dominant-share criterion. Routing was nearly task-independent.
+- Diagnosis: a marker only at sequence position zero did not reliably preserve known task
+  identity at the layer-3 router after two attention blocks.
+- Added a learned 8 x 128 most-recent-marker/task embedding to token representations,
+  broadcast at every position and shared identically by LR, HR1, HR2, and PG. Switching
+  markers update the embedding at their own position. Routing-arm definitions are unchanged.
+- Reused the existing data without changing its rules, splits, RNG, or bytes.
+- Retained the Switch-style LR auxiliary loss and its original weight 0.01; no arm
+  comparisons were used to tune it.
+- The repaired 600-step LR run passed at 8/8 dominant tasks. All runs remain exploratory;
+  no preregistration has been written or frozen.

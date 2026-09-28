@@ -1,0 +1,20 @@
+{
+  "title": "Phase Selects; It Does Not Amplify (Tonic Gating): Code, Preregistrations, and Verification Receipts",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Luecke, Kyle",
+      "affiliation": "Driftbound Labs",
+      "orcid": "0009-0008-0202-7852"
+    }
+  ],
+  "description": "Preregistrations, OpenTimestamps proofs, experimental simulation harnesses, and results for 'Phase selects; it does not amplify: a preregistered test of oscillatory control as expert selection'.",
+  "license": "MIT",
+  "keywords": [
+    "neuromorphic computing",
+    "oscillatory gating",
+    "mixture of experts",
+    "computational neuroscience",
+    "preregistration"
+  ]
+}
