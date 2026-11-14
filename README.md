@@ -1,19 +1,20 @@
 # Phase Selects; It Does Not Amplify (Tonic Gating)
 
-**Repository**: `driftbound-labs/tonic-gating`  
-**Author**: Kyle Luecke (ORCID: [0009-0008-0202-7852](https://orcid.org/0009-0008-0202-7852)), Driftbound Labs  
-**Paper Link**: [Preprint PDF](paper/Paper_2_LaTeX.pdf) · DOI: `10.5281/zenodo.pending`  
+**Repository**: [`k-luecke/tonic-gating`](https://github.com/k-luecke/tonic-gating)  
+**Author**: Kyle W. Luecke (ORCID: [0009-0008-0202-7852](https://orcid.org/0009-0008-0202-7852)), Driftbound Labs  
+**Paper Link**: [Preprint PDF](paper/Paper_2_Tonic_Gating.pdf) · DOI: `10.5281/zenodo.pending`  
 **Status**: `v1 preprint. Replication pending; results may be revised in v2.`
 
 ---
 
 ## 1. Summary
 
-Recordings of prefrontal cortex describe a division of labor in which slow rhythms coordinate which information is active while synapses store it: beta as a spatial "stencil" of inhibition that holds a task set and is interrupted by gamma bursts carrying content. We asked whether this division of labor does useful work when built from arithmetic inside a small mixture-of-experts transformer, and we preregistered every test. Across twelve experimental stages on a synthetic rule-following task, three confirmatory findings survive:
+Recordings of prefrontal cortex describe a division of labor in which slow rhythms coordinate which information is active while synapses store it: beta as a spatial "stencil" of inhibition that holds a task set and is interrupted by gamma bursts carrying content. We asked whether this division of labor does useful work when built from arithmetic inside a small mixture-of-experts transformer, and we preregistered every test. Across twelve experimental stages on a synthetic rule-following task, four results survive:
 
-1. **Persistent Coordination**: An always-on selection state with fixed dynamics holds an expert-selection regime after control input stops ($T_\text{hold} = 26.8$ tokens at $n=8$ and $65.0$ tokens at $n=3$, effective spectral radius $\rho_\text{eff} = 0.989$), compared to under 2 tokens for a stateless controller. Hold time is insensitive to intrinsic unit leak alone (flat at 28.5 / 26.8 / 24.2), indicating competitive survival under drive.
+1. **Persistent Coordination**: An always-on selection state with fixed dynamics holds an expert-selection regime after control input stops ($T_\text{hold} = 26.8$ tokens at $n=8$; $65.0$ tokens at $n=3$ with effective spectral radius $\rho_\text{eff} = 0.989$), compared to under 2 tokens for a stateless controller. Hold time is insensitive to intrinsic unit leak alone (flat at 28.5 / 26.8 / 24.2), indicating competitive survival under drive.
 2. **Selective Physical Law**: When experts write into a shared complex-valued buffer tagged by phase and a reference demodulates it, selection follows the predicted cosine law: crosstalk scales as $X(\Delta \varphi) \approx \max(0, \cos \Delta \varphi)$, drifting references maintain selection, and usable phase separation follows the slot law. Coherent experts do not, however, amplify or add ($G_\text{medium} = 0.044$ vs $G_\text{sum} = 0.251$).
-3. **Lookup Dominance under Continuous Evidence**: When evidence is continuously available, persistent coordination provides no benefit over lookup. In looped depth budgeting (T12), stateless ACT matched the oracle budget ($\Delta \text{ACC} = 0$), leaving the persistent coordinator nothing to add; and under mid-gap lures (T12b), held state beat one-step memory (0.6525 vs 0.2987) but fell into the preregistered smoothing class tied by $k=3$ majority lookup (0.6390). In looped architectures (T13), phase superposition provides a positive payoff as an interpretability and attribution medium ($r_\varphi = 0.87$ vs $0.80$ random tags).
+3. **Lookup Dominance under Continuous Evidence**: When evidence is continuously available, persistent coordination provides no benefit over lookup. In looped depth budgeting (T12), stateless ACT matched the oracle budget ($\Delta \text{ACC} = 0$), leaving the persistent coordinator nothing to add; and under mid-gap lures (T12b), held state beat one-step memory (0.6525 vs 0.2987) but fell into the preregistered smoothing class tied by $k=3$ majority lookup (0.6390).
+4. **Attribution Medium in Looped Architectures (T13)**: Under matched compute, tagged superposition works as an interpretability and attribution medium ($r_\varphi = 0.869$ vs $0.80$ random tags, $-0.70$ plain sum, $0.41$ no-medium attribution), while context-slice stratification was null.
 
 ---
 
@@ -29,7 +30,7 @@ All twelve stages are accounted for in this repository:
 | **T7** | Phase gate, task inferred (`LR-smoothed`) | **YES** (Frozen harness) | `experiments/phase-routing/t7/` (`t7_routing/`, `train.py`, `harness.py`, `costs.py`) |
 | **T8** | Always-on state persistence ($T_\text{hold}$) | **YES** (Verified acceptance rerun harness) | `experiments/phase-routing/t11/hum/acceptance_t8.py`, `t12/scripts/run_t8_acceptance.py` |
 | **T9** | Phase medium / ensemble test | Recipe, scoreboards, and summary data | `experiments/phase-routing/t9/` (Recipe and disclosures bundled; training script was hosted on external box) |
-| **T10** | Coherence as classifier (Retracted) | Evaluation scoreboards & calibration | `experiments/phase-routing/t10/` (Scoreboards and diagnosis bundled; training script was on external box) |
+| **T10** | Coherence as classifier (Not informatively tested) | Evaluation scoreboards & calibration | `experiments/phase-routing/t10/` (Scoreboards and diagnosis bundled; training script was on external box) |
 | **T11** | Specialist execution & ambiguity | **YES** (Full harness) | `experiments/phase-routing/t11/` (`generators/`, `hum/`, `routing/`, `scripts/`) |
 | **T12** | Looped depth budgeting & overthinking | **YES** (Full harness) | `experiments/phase-routing/t12/` (`controllers/`, `generators/`, `harness/`, `run_t6_primary.py`) |
 | **T12b** | Evidence gaps & mid-gap lures | **YES** (Full harness) | `experiments/phase-routing/t12b/` (`scripts/arms.py`, `gap_inject.py`, `primary_run.py`) |

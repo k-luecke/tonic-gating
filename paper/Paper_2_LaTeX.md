@@ -1,32 +1,34 @@
-# Paper 2 (draft): Tonic Gating — Persistence, Its Costs, and What Phase Does
-*Sep 23, 2026 · @ZetaZero*
-
-## Title (working)
-**Phase selects; it does not amplify: a preregistered test of oscillatory control as expert selection**  
-*Alternate*: Tonic gating: what an always-on selection state buys, what it costs, and where a lookup wins.
-
+---
+title: "Phase selects; it does not amplify: a preregistered test of oscillatory control as expert selection"
+author: |
+  Kyle W. Luecke \
+  Driftbound Labs \
+  ORCID: [0009-0008-0202-7852](https://orcid.org/0009-0008-0202-7852)
+affiliation: "Driftbound Labs"
+orcid: "0009-0008-0202-7852"
+date: "September 2026"
 ---
 
-## Abstract (draft)
-Recordings of prefrontal cortex describe a division of labor in which slow rhythms coordinate which information is active while synapses store it: beta as a spatial "stencil" of inhibition that holds a task set and is interrupted by gamma bursts carrying content. We asked whether this division of labor does useful work when built from arithmetic inside a small mixture-of-experts transformer, and we preregistered every test. Across twelve preregistered experimental stages on a synthetic rule-following task, three confirmatory results survive.
+## Abstract
+Recordings of prefrontal cortex describe a division of labor in which slow rhythms coordinate which information is active while synapses store it: beta as a spatial "stencil" of inhibition that holds a task set and is interrupted by gamma bursts carrying content. We asked whether this division of labor does useful work when built from arithmetic inside a small mixture-of-experts transformer, and we preregistered every test. Across twelve preregistered experimental stages on a synthetic rule-following task, four results survive.
 
 First, an always-on selection state with fixed dynamics (one leaky, weakly coupled unit per expert) holds an expert-selection regime after control input stops: $T_\mathrm{hold} = 26.8$ tokens at $n=8$ and $65.0$ tokens at $n=3$ (effective spectral radius $\rho_\mathrm{eff} = 0.989$), compared to under 2 tokens for a stateless controller. The hold time is insensitive to intrinsic unit leak alone (the fourfold $\lambda$ sweep is nearly flat at 28.5 / 26.8 / 24.2), indicating that persistence reflects competitive survival under drive rather than isolated single-unit decay. The same persistent property costs offset sensitivity and suppression of rarely used experts, demonstrating a single mechanism with three faces.
 
 Second, when experts write into a shared complex-valued buffer tagged by phase and a reference demodulates it, selection follows the predicted physical law: crosstalk scales as $X(\Delta\varphi) \approx \max(0, \cos\Delta\varphi)$ (an opposed expert contributes zero), a reference drifting with the tags maintains selection while a fixed reference collapses (PLV 0.84 vs 0.10), and usable phase separation under jitter follows the slot law measured earlier at a physical receiver. Coherent experts do not, however, amplify or add: a preregistered ensemble-gain test was null ($G_\mathrm{medium} = 0.044$ vs $G_\mathrm{sum} = 0.251$).
 
-Third, at the model level, persistent coordination provides no benefit over lookup when evidence is continuous: on clean task sequences, the held state paid a 0.42-segment switch lag and a 29% deficit; in looped depth budgeting (T12, closing mixed), the stateless ACT controller matched the oracle budget, so the persistent coordinator had nothing to add ($\Delta\mathrm{ACC} = 0$), though overthinking was regime-dependent with extra depth degrading easy tasks across 5 of 5 seeds ($T=12$ vs $T^*=4$, $\Delta\mathrm{ACC} = -0.3418$); and under evidence gaps with mid-gap lures (T12b), held state beat one-step memory (0.6525 vs 0.2987) but did not beat simple $k=3$ majority smoothing (0.6390), falling into the preregistered smoothing-class. However, in looped mixture-of-experts architectures under matched compute (T13), phase superposition provides a positive payoff as an interpretability and attribution medium: expert removal effects are decodable from the aggregate alone ($H_\mathrm{int}$ supported: $r_\varphi = 0.87$ vs $0.80$ for random tags, $-0.70$ for plain sum, and $0.41$ for no-medium attribution), though the context-slice ablation was null (shared context tied slicing, closing T13 as mixed).
+Third, at the model level, persistent coordination provides no benefit over lookup when evidence is continuous: on clean task sequences, the held state paid a 0.42-segment switch lag and a 29% deficit; in looped depth budgeting (T12, closing mixed), the stateless ACT controller matched the oracle budget, so the persistent coordinator had nothing to add ($\Delta\mathrm{ACC} = 0$), though overthinking was regime-dependent with extra depth degrading easy tasks across 5 of 5 seeds ($T=12$ vs $T^*=4$, $\Delta\mathrm{ACC} = -0.3418$); and under evidence gaps with mid-gap lures (T12b), held state beat one-step memory (0.6525 vs 0.2987) but did not beat simple $k=3$ majority smoothing (0.6390), falling into the preregistered smoothing-class. Fourth, in looped mixture-of-experts architectures under matched compute (T13), tagged superposition works as an attribution medium: expert removal effects are decodable from the aggregate alone ($H_\mathrm{int}$ supported: $r_\varphi = 0.87$ for phase tags vs $0.80$ for random tags, $-0.70$ for plain sum, and $0.41$ for no-medium attribution), so most of the attribution comes from tagging itself, with phase adding a small margin; the context-slice ablation was null (shared context tied slicing, closing T13 as mixed).
 
-In post-hoc exploratory analyses, earlier apparent phase advantages were explained by simpler non-oscillatory mechanisms: noise robustness in T7 was matched by input smoothing (`LR-smoothed`), the 0.47-nat clean loss gap in T9 disappeared under matched training of surrounding layers, and on ambiguous sequences in T11.3, where the counted hum arm failed (0.308 vs classifier 0.351) and the preregistered provider-parity arm scored 0.789 (hum_measure), a post-hoc exploratory stateless argmax over the observation window scored 1.000. One experiment evaluating coherence as a classifier of plastic learning consistency was uninformative by construction and is reported as retracted. We conclude that the oscillatory division of labor selects and attributes without storing or amplifying, and functions as an interpretability medium and smoothing integrator among equals rather than a privileged execution decider. Preregistrations, hashes, results, a from-frozen-commit rerun of the persistence experiment after its original artifacts were lost, and a process account of two freezes that went through with a required check undone are released with the code.
+In post-hoc exploratory analyses, earlier apparent phase advantages were explained by simpler non-oscillatory mechanisms: noise robustness in T7 was matched by input smoothing (`LR-smoothed`), the 0.47-nat clean loss gap in T9 disappeared under matched training of surrounding layers, and on ambiguous sequences in T11.3, where the counted hum arm failed (0.308 vs classifier 0.351) and the preregistered provider-parity arm scored 0.789 (hum_measure), a post-hoc exploratory stateless argmax over the observation window scored 1.000. One experiment evaluating coherence as a classifier of plastic learning consistency (T10) was not informatively tested due to a tag-placement side-channel, with the classifier claim withdrawn. We conclude that the oscillatory division of labor selects and attributes without storing or amplifying, and functions as an interpretability medium and smoothing integrator among equals rather than a privileged execution decider. Preregistrations, hashes, results, a from-frozen-commit rerun of the persistence experiment after its original artifacts were lost, and a process account of two freezes that went through with a required check undone are released with the code (T9 and T10 training scripts excepted).
 
 ---
 
 ## Contributions
 1. **Preregistered persistence and its governing mechanics**: A demonstrated persistence result for a fixed-dynamics selection state ($T_\mathrm{hold} = 26.8$ tokens at $n=8$; $65.0$ tokens at $n=3$, $\rho_\mathrm{eff} = 0.989$), with evidence that hold duration is governed by coupled competitive survival under incoming drive rather than isolated single-unit decay, alongside three measured costs (offset sensitivity, minority suppression, and switch lag).
 2. **Network confirmation of receiver selection laws and ensemble null**: Confirmation inside a transformer of the physical selection law ($X(\Delta\varphi) \approx \max(0, \cos\Delta\varphi)$), slot capacity under jitter, and drift robustness with a shared reference; paired with a preregistered null on ensemble gain ($G_\mathrm{medium} = 0.044$ vs $G_\mathrm{sum} = 0.251$).
-3. **Interpretability payoff in looped architectures (T13)**: Demonstration that phase superposition in a looped Mixture-of-Loops enables decodable expert attribution under strict matched compute ($H_\mathrm{int}$ supported across all 5 seeds: $r_\varphi = 0.869 \pm 0.014$ vs $0.801$ for random tags, $-0.695$ for plain sum, and $0.412$ for no-medium attribution), though context-slice stratification added no benefit over shared context (null).
+3. **Interpretability payoff in looped architectures (T13)**: Demonstration that tagged superposition in a looped Mixture-of-Loops enables decodable expert attribution under strict matched compute ($H_\mathrm{int}$ supported across all 5 seeds: $r_\varphi = 0.869$ vs $0.801$ for random tags, $-0.695$ for plain sum, and $0.412$ for no-medium attribution); random tags reach $0.801$, so phase contributes a $+0.068$ margin over tagging alone, though context-slice stratification added no benefit over shared context (null).
 4. **Model-level boundaries and falsification of coordinator oracles**: Evidence that persistent gating confers no advantage over lookup when evidence is continuous (0.42-segment switch lag, 29% deficit in T11.2); in looped depth budgeting (T12), the stateless ACT controller matched the oracle budget, leaving nothing for the persistent coordinator to add ($\Delta\mathrm{ACC} = 0$), while overthinking was regime-dependent (easy tasks degraded across 5 of 5 seeds, closing T12 as mixed); and under evidence gaps (T12b), held state beat one-step memory but failed to beat $k=3$ majority smoothing, falling into the preregistered smoothing-class.
 5. **Exploratory attribution of apparent phase advantages**: Ablation accounts attributing apparent phase benefits to classical mechanisms: noise robustness to input smoothing, clean loss gaps to surrounding layer training, and sequence disambiguation to observation window length.
-6. **Scientific and operational integrity**: Full disclosure of a retracted experiment (T10) with root-cause diagnosis; cryptographic pre-commitment verification across all 12 experimental stages under Rule-19 standards; and replication from frozen commit after artifact loss.
+6. **Process record**: Full disclosure of an experiment closed as not informatively tested (T10, with the classifier claim withdrawn due to a tag-placement side-channel) and its root-cause diagnosis; an account of two freezes (T10, T11.1) that went through with a required check undone, before the gated freeze script existed, and the rule they produced (a freeze script that emits a hash only when every required gate passes); and a rerun of T8 from its frozen preregistration after the original artifacts were lost.
 
 ## Introduction
 
@@ -36,10 +38,10 @@ In contemporary deep learning, by contrast, the dominant paradigms for condition
 
 In this work, we ask a foundational architectural question: **Can an oscillatory division of labor, constructed from elementary fixed-dynamics arithmetic and phase-tagged superposition, perform useful computational work inside a transformer?**
 
-To answer this question without hindsight bias, we conducted twelve successive experimental stages (T5 through T13, alongside physical receiver and oscillator sheet validations), pre-committing every hypothesis, metric, and decision rule to cryptographically hashed preregistrations before inspecting outcome data. Our findings across these twelve stages yield three robust confirmatory findings alongside definitive negative results:
-1. **Persistence set by the effective spectral radius**: An always-on, fixed-dynamics selection state (one leaky, weakly coupled unit per expert) sustains an expert regime across tens of tokens after incoming control drive ceases ($T_\mathrm{hold} = 26.8$ tokens at $n=8$ with $\rho_\mathrm{eff} = 0.989$; $65.0$ tokens at $n=3$ under the rebuilt coupling assembly), whereas a standard feedforward router collapses in under 2 tokens. A fourfold sweep over the intrinsic decay parameter $\lambda$ produces a nearly flat hold response (28.5 / 26.8 / 24.2 tokens), demonstrating that intrinsic decay does not govern hold time; to explain this divergence, a competitive survival model is proposed as a mechanistic hypothesis for future testing.
+To answer this question without hindsight bias, we conducted twelve successive experimental stages (T5 through T13, alongside physical receiver and oscillator sheet validations), pre-committing every hypothesis, metric, and decision rule to cryptographically hashed preregistrations before inspecting outcome data. Our findings across these twelve stages yield four findings, including definitive negative results:
+1. **Persistence set by the effective spectral radius**: An always-on, fixed-dynamics selection state (one leaky, weakly coupled unit per expert) sustains an expert regime across tens of tokens after incoming control drive ceases ($T_\mathrm{hold} = 26.8$ tokens at $n=8$; $65.0$ tokens at $n=3$ with $\rho_\mathrm{eff} = 0.989$ under the rebuilt coupling assembly), whereas a standard feedforward router collapses in under 2 tokens. A fourfold sweep over the intrinsic decay parameter $\lambda$ produces a nearly flat hold response (28.5 / 26.8 / 24.2 tokens), demonstrating that intrinsic decay does not govern hold time; to explain this divergence, a competitive survival model is proposed as a mechanistic hypothesis for future testing.
 2. **Phase selects and separates, but does not amplify**: When expert outputs write into a shared complex-valued medium tagged by distinct phase angles and a reference receiver demodulates the superposition, the channel obeys classical physical demodulation laws: crosstalk scales as $X(\Delta\varphi) \approx \max(0, \cos\Delta\varphi)$, an opposed expert contributes zero, and a drifting shared reference maintains coherent selection (PLV 0.84 vs 0.10 for a static reference). However, coherent superposition yields zero constructive ensemble gain ($G_\mathrm{medium} = 0.044$ vs $G_\mathrm{sum} = 0.251$; null). Phase superposition provides a selective projection filter, not an additive amplifier.
-3. **Interpretability payoff in looped architectures**: In looped Mixture-of-Loops architectures evaluated under matched compute budgets ($C_\mathrm{match} = 4,210,688$), phase superposition serves as a transparent attribution medium: the contribution of individual experts is directly decodable from the aggregate state alone ($H_\mathrm{int}$ supported across all 5 seeds: correlation $r_\varphi = 0.869 \pm 0.014$ vs $0.801$ for random orthogonal tags, $-0.695$ for plain sum, and $0.412$ for unmediated baseline).
+3. **Tagged superposition as an attribution medium in looped architectures**: In looped Mixture-of-Loops architectures evaluated under matched compute budgets ($C_\mathrm{match} = 4,210,688$), phase superposition serves as a transparent attribution medium: the contribution of individual experts is directly decodable from the aggregate state alone ($H_\mathrm{int}$ supported across all 5 seeds: correlation $r_\varphi = 0.869$ vs $0.801$ for random orthogonal tags, $-0.695$ for plain sum, and $0.412$ for unmediated baseline). Random tags recover most of this ($0.801$), so the capability belongs mainly to tagging, with phase contributing a $+0.068$ margin.
 4. **Where a lookup wins**: When input evidence is continuous, persistent coordination imposes severe penalties: a 0.42-segment switch lag and a 29% performance penalty compared to stateless lookup (T11.2); in looped depth budgeting (T12), an Adaptive Computation Time (ACT) controller matches the oracle budget, leaving nothing for persistent coordination to add ($\Delta\mathrm{ACC} = 0$); and across evidence gaps with deceptive lures (T12b), the held state beats one-step memory (0.6525 vs 0.2987) but fails to beat simple 3-step majority smoothing (0.6390), categorizing the mechanism squarely into the preregistered `smoothing-class`.
 
 Through systematic post-hoc ablations, we further show that earlier apparent phase benefits—such as noise robustness and loss margins—are explained by conventional non-oscillatory mechanisms: moving-average input filtering and matched training of surrounding layers. We conclude that the oscillatory division of labor acts as a robust smoothing integrator and interpretability medium among equals, rather than an oracle execution controller.
@@ -71,7 +73,7 @@ The oscillatory division of labor is formalized into three modular substrates:
 2. **Substrate 2: The Tonic Hum State (Persistent Selection)**  
    To sustain expert selection across token intervals without continuous feedforward drive, the gating state evolves as a coupled linear dynamical system with resting baseline $a_0 = 0.1$:
    $$h_{t+1} = (1 - \lambda)(I + C) h_t + \lambda a_0 \mathbf{1} + g_\mathrm{tonic} \cdot u_t$$
-   where $h_t \in \mathbb{R}^n$ represents the activation vector across $n$ candidate experts, $\lambda \approx 0.0255$ is the intrinsic unit leak, $a_0 = 0.1$ is the resting baseline amplitude, $C$ is a fixed, non-learned coupling matrix with spectral radius $\rho(C) \approx 0.015$ (yielding an effective linear spectral radius $\rho_\mathrm{eff} = \rho((1 - \lambda)(I + C)) \approx 0.989$ in T8 at $n=8$, recalibrated in T11 for $n=3$), and $u_t$ is the incoming token-level evidence drive modulated by gain $g_\mathrm{tonic}$. When drive ceases ($u_t = 0$), the active expert regime persists until incoming competition or decay alters top-1 rank.
+   where $h_t \in \mathbb{R}^n$ represents the activation vector across $n$ candidate experts, $\lambda \approx 0.0255$ is the intrinsic unit leak, $a_0 = 0.1$ is the resting baseline amplitude, $C$ is a fixed, non-learned coupling matrix with spectral radius $< 1$ (characterizing T8 at $n=8$ by its measured hold time $T_\mathrm{hold} = 26.8$ tokens, and rebuilt in T11 at $n=3$ with effective linear spectral radius $\rho_\mathrm{eff} = \rho((1 - \lambda)(I + C_3)) = 0.989$ and $T_\mathrm{hold} = 65.0$ tokens), and $u_t$ is the incoming token-level evidence drive modulated by gain $g_\mathrm{tonic}$. When drive ceases ($u_t = 0$), the active expert regime persists until incoming competition or decay alters top-1 rank.
 
 3. **Substrate 3: The Phase Medium (Superposition and Demodulation)**  
    Instead of concatenating or independently executing experts, candidate experts write into a shared complex-valued aggregation buffer $z_t \in \mathbb{C}^d$:
@@ -82,6 +84,45 @@ The oscillatory division of labor is formalized into three modular substrates:
 
 ---
 
+## Method
+
+### 1. The receiver and the sheet (motivating experiments)
+
+A lock-in receiver simulation (positive-only pulsed senders, phase-multiplexed streams, a PLL locked to a control pilot) measured slot capacity under jitter (9–18 usable slots at $\sigma_j \approx 0$, falling toward 4–8 near $\sigma_j \approx 0.1$ cycle), showed that signed carriers produce a U-shaped crosstalk curve while rectified ones reject anti-phase, and that a reference locked to the pilot holds BER $\approx 0$ under drift while content-locked and fixed references fail. A $16\times16$ phase-oscillator sheet with a spatial stencil and pilot was then compared to a learned top-$k$ router on eight multiplexed streams, with the readout referenced to pilot phase (an absolute-time readout bug was found and fixed pre-primary and disclosed).
+
+### 2. The toy transformer and task
+
+Four layers, width 128, eight experts ($128\to256\to128$ feed-forward) at layer 3, trained from scratch. Task: eight rule systems over a 64-token vocabulary with regime markers and mid-sequence rule flips; T5/T6 used an order-1 task (losses $\approx 0.0013$ nats, at ceiling), T7 onward an order-3 task (learned-router loss $\approx 1.27$ nats; the generator's entropy floor reported beside it). Five seeds; controller parameters fixed from single-system tests before each freeze.
+
+### 3. Controllers
+
+- Learned router (top-$k$ linear over the hidden state; the standard).
+- Hash router (Roller et al.).
+- Smoothed learned router (32-token running mean of its input; the T7 addendum arm).
+- Phase gate, supplied: fixed expert phases, reference from the task label (T5/T6).
+- Phase gate, inferred: reference from a smoothed hidden-state projection (T7).
+- The hum (T8): one leaky unit per expert with a nonzero resting amplitude, weak symmetric coupling with spectral radius $< 1$, tonic gain, drives from named inputs (regime probe, token evidence, affinities, surprise); gate readout by amplitude; width by arousal. Reimplemented from the frozen preregistration for the rerun after the original tree was lost; parameters $\lambda \approx 0.0255$, $a_0 = 0.1$; effective spectral radius recorded.
+- Stateless neuromodulator (same inputs and readout, no state).
+- Phase medium (T9): experts write $f_e\cdot e^{i\varphi_e}$ into a complex buffer; readout $\mathrm{ReLU}(\mathrm{Re}(B\cdot e^{-i\varphi_\mathrm{ref}}))$; random-tag mirror arm; hum, fixed, and high-passed-hum reference sources.
+
+### 4. Model-level harness, loop budget, and evidence gaps (T11–T12b)
+
+**T11 series (model-level orchestration).** Three specialists behind the SCP boundary (A3-Qwen3.5-2B text-only; Qwen2.5-Coder-1.5B; Qwen2.5-1.5B under the reference prompt), task families with exact-match oracles, sequences of segments with clean, ambiguous, distraction, renewal, and window-break types; orchestrators: hum ($n = 3$, rebuilt coupling $C_3$, $\rho_\mathrm{eff} = 0.989$, $T_\mathrm{hold}(n=3) = 65$ tokens), trained context classifier, hand rule (human-signed before generation), and (T11.3 addendum) stateless argmax of the per-step ScoreAffinity signal. Rule-19 freeze script: gates for ambiguity, distraction, disjoint classifier seeds, real execution (no stubs), per-arm retry logs; the hash is emitted only when all gates pass. Affinity `affinity_inputs.py` remained frozen at sha `7dae877a3975c1ba4ca264f03f572d6749cce39a114ea3adbcffc010c7852c50` (no C₃ / hum retune).
+
+**T12 (the loop budget).** Prelude → recurrent block → coda at width 128 with $T_\mathrm{max}=12$; arms Fixed $T=7$, Fixed sweep, ACT, Convergence threshold, coordinator regime, coordinator regime+traj, oracle, and Stateless regime. Calibration locks: mean compute $\bar C = 7\pm0.25$; ACT/BP centers easy$=4$ / hard$=10$. H4 operational silencing zeros or holds the regime estimate at the controller input (estimate may still be computed for receipts). One preregistered primary × five seeds under PREREG sha `bf757ee4…`; Affinity / C₃ / hum untouched; no T12.2 (gate defect false).
+
+**T12b (persistence under evidence gaps).** Routing-only; sealed T11.3 generators reused. Arms: counted primary `hum_measure`, null baseline `one_step_memory`, labeled secondary `majority_k3`, gap control `stateless_argmax`. Evidence gaps $G\in\{3,6,12,24\}$ with a locked single-frame mid-gap ScoreAffinity lure; orthogonal lags $L\in\{2,4,8\}$. Primary decision rule: $\mathrm{CSR}_\mathrm{gap}(\mathrm{hum})-\mathrm{CSR}_\mathrm{gap}(\mathrm{one\_step\_memory}) >$ seed interval $0.05$ (null fail ⇒ support); if hum beats one-step but not majority ⇒ smoothing-class (PREREG §4). One primary × five seeds under PREREG sha `851124b3…`; Affinity frozen; no T12b.2.
+
+### 5. MoE-of-loops / $H_\mathrm{int}$ (T13) and statistics / provenance
+
+**T13 (looped architectures).** New line after T11–T12b close: MoE-of-loops with per-expert depth and optional context-slice stratification at matched compute on `mythos_tiny` ($K=4$, $W=64$, $S_\mathrm{full}=64$, $L_\mathrm{max}=4$). Primary iso-cost reference $C_\mathrm{match} = 4{,}210{,}688$ (per-slice attention counted; ±5% per arm before hash). Primary metric $H_\mathrm{int}$: Pearson $r$ between predicted and actual expert-removal loss deltas recovered from the phase-medium aggregate alone, scored against plain-sum, random-tag, oracle, and no-medium attribution controls (three-clause support rule; seed interval $0.05$). Context-slice arm (`moe_of_loops_slices`) vs shared-context (`moe_of_loops_shared_ctx`) tested whether slicing buys intelligibility over shared context. Acc gates G9/G13/G17 before primary; one primary × five seeds under PREREG sha `3176eb5e…`; Affinity `7dae877a…` untouched; no T13.2.
+
+**Statistics and provenance.** Bootstrap over seeds; dual rule for a pass (point estimate exceeds the interval width and the interval excludes zero) on early tickets; by-construction clauses named in each report; effect sizes reported beside base loss; preregistration hashes and Drive anchors; artifact inventories with hashes at every close; agent-executed runs with human-signed freezes; a rerun from the frozen preregistration for T8 after artifact loss. OpenTimestamps for the twelve Paper 2 preregistrations were backfilled `anchored_retroactively` on 2026-09-24 (Disclosure #9).
+
+### 6. What the method does not do
+
+No biological claim is tested; the recordings motivate the designs and are cited as such. No claim at scale; the toy is a mechanism instrument. Affinity / C₃ / hum were not retuned after freeze (`7dae877a…`).
+
 ## Preregistered Hypotheses and Verdicts
 *Quoted in preregistration terms; hashes in the appendix. Confirmatory verdicts are agent-drafted, pending human sign-off.*
 
@@ -90,7 +131,7 @@ The oscillatory division of labor is formalized into three modular substrates:
 * **T7 (phase gate, task inferred; PREREG sha `6d79f794…`)**: H1 **mixed**: clean, specialization, and noise passed; shift failed the dual rule. H2 **H0 (not supported)**: PG-inferred did not switch faster than the learned router (3.87 vs 3.29 tokens).
 * **T8 (always-on state; PREREG sha `d975d96c…`; rerun after artifact loss)**: H1 **mixed** (clean and specialization pass; noise and shift vs prespecified comparator LR-smoothed fail the dual bootstrap rule). H2 (persistence) **supported**: $T_\mathrm{hold} = 26.8$ (hum, $n=8$) vs 2.1 (stateless) vs 1.6 (learned), dual rule; $\lambda$ clause monotone directionally (28.5 / 26.8 / 24.2 for a fourfold $\lambda$ change), but the near-flat slope shows the leak is not the dominant time constant. H3 (salience) not tested. H4 (capacity) $K_\mathrm{max} = 8$ at $E = 8$, unobservable ceiling.
 * **T9 (phase medium; PREREG sha `1c6a4867…`; RESULTS sha `d1c70486…`)**: H1 (ensemble gain) **H0**: $G_\mathrm{medium} = 0.044$ vs $G_\mathrm{sum} = 0.251$. H2 (crosstalk within $\pm 0.1$ of $\max(0, \cos\Delta\varphi)$) **supported**. H3 (shared-reference drift robustness; slot law under jitter) **supported**. H4 (rare-expert reach) **H0**: $\min\mathrm{Rec}_e = 0.333$ vs LR-smoothed 0.3647.
-* **T10 (coherence as reconciliation classifier; PREREG sha `fd4cb718…`)**: **Uninformative / Retracted**: oracle decodable from tag placement (three tag-based arms at 1.000, zero variance); loss baseline failed to generalize out-of-domain. Reported as retracted.
+* **T10 (coherence as reconciliation classifier; PREREG sha `fd4cb718…`; RESULTS sha `9a10d0ee…`)**: **Not informatively tested**: oracle decodable from tag placement (three tag-based arms at 1.000, zero variance); loss baseline failed to generalize out-of-domain. Closed as not informatively tested, with the classifier claim withdrawn.
 * **T11 series (model-level orchestration)**:
   * T11.1 (PREREG sha `c62bfda8…`): routing-only dry run; H1/H2 not informatively tested; H3 supported; H5 not run.
   * T11.2 (PREREG sha `593762c4…`): specialists executing with operating $T_\mathrm{hold}(n=3) = 65$ ($\rho_\mathrm{eff} = 0.989$); H1 untested; H2 uninformative; **H3 supported with the bill** (0.42-segment lag; clean CSR 0.708 vs 1.000); **H4 null** (0.6 on return, 0.2 on trailing content); H5 not run.
@@ -108,7 +149,7 @@ The oscillatory division of labor is formalized into three modular substrates:
     - **Prespecified Labeled Secondary Control (`majority_k3`)**: $\mathrm{CSR}_\mathrm{gap}$ was $0.6390$ ($\Delta = +0.0135$ vs hum), failing to clear the seed interval (hum did not beat majority).
   * **Verdict**: **Primary supported; per the preregistered interpretation rule, smoothing-class.**
 * **T13 (MoE-of-loops / context slices; PREREG sha `3176eb5e…`)**: **Mixed**.
-  * **$H_\mathrm{int}$ (intelligibility metric under matched compute $C_\mathrm{match} = 4,210,688$)**: **Supported across all 5 seeds** under all three clauses ($r_\varphi = 0.869 \pm 0.014$ vs $0.801$ random tags [margin $+0.068$], $-0.695$ plain sum, and $0.412$ no-medium attribution).
+  * **$H_\mathrm{int}$ (intelligibility metric under matched compute $C_\mathrm{match} = 4,210,688$)**: **Supported across all 5 seeds** under all three clauses ($r_\varphi = 0.869$ vs $0.801$ random tags [margin $+0.068$], $-0.695$ plain sum, and $0.412$ no-medium attribution).
   * **Context-slice ablation**: **Null** — context-slice stratification (`moe_of_loops_slices`) tied shared context (`moe_of_loops_shared_ctx`), showing that context slicing does not improve intelligibility over a shared context at matched compute.
   * *(Nonlinear crosstalk suppression is PROPOSED as a mechanistic hypothesis rather than an independently scored endpoint).*
 
@@ -151,14 +192,75 @@ Slot capacity 9–18 at sigma_j approx 0 with positive pulsed senders; jitter at
 ### 4. T9 (The Medium)
 Crosstalk X(Delta_phi) within the ±0.1 band of max(0, cos Delta_phi) at every sweep point; selective accuracy under sigma_c = 0.05: hum reference within 0.05 of clean (PLV 0.84), fixed reference below (PLV 0.10); usable separation grows with jitter per the slot law. Ensemble gain G_medium = 0.044 vs G_sum = 0.251 (H0); min Rec_e = 0.333 (H0). Clean L medium 0.833 vs plain sum 1.30: dense sum 1.301 (density ruled out); matched-surface retrain closes the gap (training explains it).
 
----
+### 5. T10 (Not Informatively Tested)
+
+Agree $1.000 \pm 0.000$ for `coh_hum`, `coh_fixed`, `random_tag`; loss-delta $0.333$; identical learning outcomes across the three tag arms. Oracle decodable from tag placement; closed as not informatively tested with the classifier claim withdrawn (PREREG sha `fd4cb718…`; RESULTS sha `9a10d0ee…`).
+
+### 6. T11 series (model level)
+
+| Measure | hand | classifier | hum | hum_measure | stateless argmax |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| T11.2 clean CSR | 1.000 | 1.000 | 0.708 | 0.708 | — |
+| T11.2 switch lag (segments) | 0.0 | 0.0 | 0.42 | 0.42 | — |
+| T11.2 renewal, A returns | 1.0 | 1.0 | 0.6 | 0.6 | — |
+| T11.2 trailing unrelated | 1.0 | 1.0 | 0.2 | 0.2 | — |
+| T11.3 ambiguous step-CSR after evidence | 0.348 | 0.351 | 0.308 | 0.789 | **1.000** |
+
+Token-level thrash ≈ 0–0.04 for all arms (uninformative). T11.2 PREREG `593762c4…`; T11.3 PREREG `27ab4a95…`. Operating $T_\mathrm{hold}(n=3)=65$ with $\rho_\mathrm{eff}=0.989$.
+
+### 7. T12 (the loop budget)
+
+Overall **mixed** (PREREG `bf757ee4…`). Arm aggregates (seed-mean ACC̄ / C̄ / LPC̄): coordinator_regime, coordinator_regime_traj, ACT, convergence, oracle, and stateless_regime all **0.9718 / 7.0 / 0.1388**; fixed_t7 **0.9710 / 7.0 / 0.1387**.
+
+| H | Verdict | Key numbers |
+| :--- | :--- | :--- |
+| H1 Regime budgeting | **null** | ACT = oracle ($\Delta\mathrm{ACC}=0$); Fixed $\Delta\mathrm{ACC}=+0.0008$ |
+| H2 Trajectory budgeting | **null** | traj vs ACT/CONV $\Delta\mathrm{ACC}=\Delta\mathrm{LPC}=0$ |
+| H3 Overthinking regime-dependent | **supported** | Easy degrades past $T^*$ **5/5** seeds; $\Delta\mathrm{ACC}(T=12$ vs $T^*=4)=-0.3418$, $\Delta\mathrm{NLL}=+1.5982$; hard **0/5** |
+| H4 Persistence under silencing | **null** | SD $\Delta\mathrm{ACC}=0$; coordinator beats Stateless **0/5** |
+
+Seeds `[20260921…20260925]`. Affinity `7dae877a…` untouched; no T12.2.
+
+### 8. T12b (evidence gaps)
+
+Overall **mixed** — primary **supported** vs `one_step_memory`; secondary ≈ `majority_k3` ⇒ **smoothing-class** (PREREG `851124b3…`).
+
+| Arm | CSR_gap | Role |
+| :--- | ---: | :--- |
+| `hum_measure` | 0.6525 | primary counted |
+| `one_step_memory` | 0.2987 | primary null baseline |
+| `majority_k3` | 0.6390 | labeled secondary |
+| `stateless_argmax` | 0.0000 | gap control |
+
+$\Delta(\mathrm{hum}-\mathrm{one\_step})=+0.3538$ (> seed interval $0.05$); $\Delta(\mathrm{hum}-\mathrm{majority})=+0.0135$ (≤ $0.05$). Seeds `[20260923…20260927]`. Affinity `7dae877a…` untouched; no T12b.2.
+
+### 9. T13 (MoE-of-loops / $H_\mathrm{int}$)
+
+Overall **mixed** (PREREG `3176eb5e…`). Matched compute $C_\mathrm{match}=4{,}210{,}688$. Seed-mean $H_\mathrm{int}$:
+
+| Metric | Value |
+| :--- | ---: |
+| $r_\varphi$ (slice) | 0.8686 |
+| $r_\mathrm{plain}$ | −0.6945 |
+| $r_\mathrm{random}$ | 0.8014 |
+| $r_\mathrm{no\_medium}$ | 0.4124 |
+| $r_\mathrm{oracle}$ | 0.9604 |
+| $r_\varphi$ (shared_ctx) | 0.8663 |
+| slice beats shared ($>0.05$) | **False** |
+
+$H_\mathrm{int}$ **supported** on every seed (slice and shared_ctx both clear the three-clause rule); context-slice stratification **null** vs shared context. Acc gates G9/G13/G17 **PASS**. Seeds `[20260928…20261002]`. Affinity `7dae877a…` untouched; no T13.2.
+
+### 10. Replication note
+
+T8 is the only early ticket with a from-preregistration rerun forced by artifact loss. Later tickets (T11.2–T13) release frozen PREREG hashes, RESULTS, and closings under `experiments/phase-routing/`.
+
 
 ---
 
 ## Discussion: Boundary of the Claim & Proposed Mechanisms
 
 ### 1. Persistence, Spectral Radius, and the Competitive Survival Hypothesis (PROPOSED)
-Persistence is real, tunable through the coupled system's effective spectral radius ($\rho_\mathrm{eff} = 0.989$), and represents the identical physical property as offset memory and minority suppression. However, the empirical hold-time response under parameter sweeps reveals that persistence is not governed by single-unit exponential relaxation: a fourfold sweep over the intrinsic unit leak $\lambda$ produced a nearly flat hold response (28.5 / 26.8 / 24.2 tokens), directly contradicting an isolated decay model of the form $T \propto 1/(\lambda + c)$. Furthermore, network coupling produced opposing effects across system sizes: coupled $n=8$ shortened hold time relative to uncoupled diagonal decay (26.8 vs. 39 tokens), whereas coupled $n=3$ lengthened it (65.0 tokens).
+Persistence is real, tunable through the coupled system's effective spectral radius ($\rho_\mathrm{eff} = 0.989$ in the $n=3$ T11 assembly), and represents the identical physical property as offset memory and minority suppression. However, the empirical hold-time response under parameter sweeps reveals that persistence is not governed by single-unit exponential relaxation: a fourfold sweep over the intrinsic unit leak $\lambda$ produced a nearly flat hold response (28.5 / 26.8 / 24.2 tokens), directly contradicting an isolated decay model of the form $T \propto 1/(\lambda + c)$. Furthermore, network coupling produced opposing effects across system sizes: coupled $n=8$ shortened hold time relative to uncoupled diagonal decay (26.8 vs. 39 tokens), whereas coupled $n=3$ lengthened it (65.0 tokens).
 
 We propose a competitive survival model to explain this divergence: $T_\mathrm{hold}$ does not measure the passive decay of the selected unit toward baseline, but rather its duration of survival against competing units rising under incoming drive. In an un-driven system where all units decay at the same rate $\lambda$ toward a common resting baseline $a_0$, the active unit's rank advantage would persist indefinitely. In execution, the state transition is governed by competition under drive, where the flip time depends on input drive gain and coupling sign (inhibitory vs. excitatory). Because T8 (coupled $n=8$, hold 26.8) and T11 (coupled $n=3$, hold 65.0, diagonal-only hold 39) evaluated different coupling matrices and architectures across experiments rather than a controlled size sweep, we propose competitive survival as a mechanistic hypothesis for future controlled testing rather than an established empirical reversal.
 
@@ -171,10 +273,10 @@ However, phase coherence failed completely to deliver constructive ensemble gain
 $$G_\mathrm{medium} = 0.044 \quad \text{vs} \quad G_\mathrm{sum} = 0.251$$
 Coherent superposition in a shared channel does not synthesize new functional representations or amplify weak signals; it acts purely as a linear selective projection filter. Phase selects; it does not amplify.
 
-### 3. The Interpretability Payoff in Looped Architectures (T13)
-While phase superposition provides no ensemble advantage, it confers a decisive capability in model transparency and attribution. In looped Mixture-of-Loops architectures evaluated under strict compute parity ($C_\mathrm{match} = 4,210,688$), phase tagging enabled individual expert contributions to be directly decoded from the unpartitioned aggregate state vector. Hypothesis $H_\mathrm{int}$ was supported across all 5 random seeds ($r_\varphi = 0.869 \pm 0.014$ vs $0.801$ for random orthogonal tags, $-0.695$ for plain summation, and $0.412$ for unmediated baseline). 
+### 3. The Attribution Payoff of Tagged Superposition (T13)
+While phase superposition provides no ensemble advantage, tagging it makes expert contributions attributable. In looped Mixture-of-Loops architectures evaluated under strict compute parity ($C_\mathrm{match} = 4,210,688$), phase tagging enabled individual expert contributions to be directly decoded from the unpartitioned aggregate state vector. Hypothesis $H_\mathrm{int}$ was supported across all 5 random seeds ($r_\varphi = 0.869$ vs $0.801$ for random orthogonal tags, $-0.695$ for plain summation, and $0.412$ for unmediated baseline). 
 
-By contrast, the accompanying context-slice ablation was null: partitioning input sequences into distinct context slices (`moe_of_loops_slices`) tied a shared context (`moe_of_loops_shared_ctx`), demonstrating that context slicing confers no intelligibility or performance benefit over a shared context under matched compute. Phase tagging functions effectively as an intrinsic attribution coordinate system, allowing researchers to monitor individual expert trajectories within a single shared superposition without requiring multi-head parameter fan-out.
+By contrast, the accompanying context-slice ablation was null: partitioning input sequences into distinct context slices (`moe_of_loops_slices`) tied a shared context (`moe_of_loops_shared_ctx`), demonstrating that context slicing confers no intelligibility or performance benefit over a shared context under matched compute. Tags, phase or random, function as an attribution coordinate system, allowing individual expert contributions to be monitored within a single shared superposition without multi-head parameter fan-out; phase tags add a $+0.068$ margin over random tags.
 
 ### 4. Where Lookup Beats Persistence: The Operational Cost of Always-On Coordination
 Our model-level evaluations establish clear operational boundaries where persistent coordination is actively detrimental compared to stateless feedforward lookup:
@@ -187,7 +289,7 @@ A core contribution of our preregistered ablation methodology is identifying whe
 - **Noise Robustness in T7**: Initial tests showed the phase gate outperforming learned routers under input noise. However, an exploratory addendum providing the learned router with a 32-token moving average (`LR-smoothed`) matched or exceeded the phase gate ($\Delta L = 0.0005$ vs $0.0026$), attributing the advantage to low-pass filtering.
 - **Clean Loss Advantage in T9**: An initial 0.47-nat clean loss gap favoring the phase medium over plain sum was eliminated once surrounding layers were retrained with a matched training surface (`matched_train`), attributing the gap to training discrepancies.
 - **Observation Window Artifact in T11.3**: Apparent coordinator gains on ambiguous sequences were matched or beaten by a stateless argmax over the post-evidence window (1.000 vs 0.789), showing that windowed evidence integration explains the advantage rather than recurrent memory.
-- **Retraction of T10**: Experiment T10 (coherence as a plastic learning classifier) proved uninformative because the target signal was trivially leaked by label positioning, resulting in a formal retraction.
+- **T10 Not Informatively Tested**: Experiment T10 (coherence as a plastic learning classifier) proved not informatively tested because the target signal was trivially leaked by tag placement, resulting in withdrawal of the classifier claim.
 
 ---
 
@@ -197,7 +299,7 @@ A core contribution of our preregistered ablation methodology is identifying whe
 2. **Fixed Coupling Topologies**: Coupling matrices were constructed with fixed mathematical spectral radii rather than learned end-to-end via gradient optimization, potentially under-utilizing task-specific adaptive dynamics.
 3. **Expert Scaling Envelope**: Our experiments evaluated expert counts between $n=3$ and $n=8$. Scaling to dozens of experts is constrained by the physical slot capacity measured under phase jitter (7.65–8.35 usable slots at $\sigma_j = 0.05$).
 4. **Historical Artifact Recovery**: Due to early disk corruption, historical hold-time figures (~41 tokens) from early reports were irrecoverable and replaced by verified from-scratch reruns under frozen commit `d975d96c` ($T_\mathrm{hold} = 26.8$ tokens).
-5. **OpenTimestamps Backfill**: While all twelve stages were locked before execution via git commits, Drive timestamps, and Rule-19 gate logs, Bitcoin blockchain anchoring was conducted as a one-time backfill on 2026-09-24 (`anchored_retroactively`).
+5. **Freeze provenance**: Preregistrations were fixed before execution by git commit blobs and Drive timestamps. Two freezes (T10, T11.1) went through with a required check undone, before the gated freeze script existed; a mechanical gate record exists from T11.2 onward (all four: T11.3 `T11_3_RULE19_GATES.md` + `receipts/t11_3/RULE19_FULL.json`; T12 `results/t5/T5_RULE19_GATES.json` + `FREEZE_META` rule19 PASS; T12b `T12B_RULE19_GATES.json/md`; T13 `T13_RULE19_GATES.json/md`). OpenTimestamps anchoring was a one-time backfill on 2026-09-24 (`anchored_retroactively`) and proves document existence as of that date, not at the original freeze.
 
 ---
 
@@ -222,5 +324,23 @@ To prevent over-interpretation of our results, we explicitly state what this wor
 7. **Depth Extrapolation in T12**: The observed performance degradation ('overthinking') at $T=12$ in looped blocks may represent out-of-distribution depth extrapolation rather than an inherent architectural boundary, as training utilized fixed iteration depths.
 8. **Arm-5 Scope**: Tagged superposition comparisons (Arm-5) were exploratory; phase-based routing is not shown to outperform random orthogonal keying on capacity.
 9. **Provenance and Retroactive OpenTimestamps Anchoring**: Cryptographic pre-commitments across T5 through T13 were originally established via git commit blobs, Drive timestamps, and Rule-19 gate logs. A one-time OpenTimestamps backfill conducted on 2026-09-24 anchored all twelve Paper 2 preregistration files to the Bitcoin blockchain. In compliance with Rule-19 provenance standards, these anchors are cataloged as `anchored_retroactively` with the 2026-09-24 date and attest to document existence as of that stamping date, not the original historical freeze times. All subsequent pre-commitments are anchored directly at freeze time prior to executor outcome-data access.
-10. **External Training Infrastructure (T9 and T10)**: Training runs for experiments T9 (matched-surface comparison) and T10 (coherence learning classifier) were executed on an external workstation environment and were not retained in the primary local repository. Consequently, while all evaluation protocols, frozen outcome logs, and analysis scripts are fully published, the raw training pipeline scripts for T9 and T10 are omitted from the initial public release (v1).
+10. **External Training Infrastructure (T9 and T10)**: Training runs for experiments T9 (phase medium) and T10 (coherence learning classifier) were executed on an external workstation environment and were not retained in the primary local repository. Consequently, while all evaluation protocols, frozen outcome logs, and analysis scripts are fully published, the raw training pipeline scripts for T9 and T10 are omitted from the initial public release (v1).
+11. **T10 freeze with a known side-channel**: A side-channel through tag placement was known before the T10 freeze, and the freeze went through without the check that would have caught it. The three tag-based arms scored 1.000 with zero variance; the experiment is closed as not informatively tested (`not_informatively_tested` in `t10/CLOSING.md`), with the classifier claim withdrawn.
+12. **T11.1 skipped check**: T11.1 froze with a required check skipped (Ambiguous near-chance validation: handoff required first-32 classifier near chance on Ambiguous before hash; skipped — `t11/routing/results/primary/CLOSING.md`); the hand rule scored 1.0 on sequences labeled ambiguous, so H1 and H2 were not informatively tested.
+
+---
+
+## Reproducibility
+
+Preregistrations, `PREREG.sha256` files, RESULTS / PRIMARY aggregates, closing documents, artifact inventories, and Rule-19 freeze logs are released in the public repository (`https://github.com/k-luecke/tonic-gating`) under `experiments/phase-routing/` for each ticket. Affinity `affinity_inputs.py` is locked at sha `7dae877a3975c1ba4ca264f03f572d6749cce39a114ea3adbcffc010c7852c50` through T13 (verified across the T11→T12→T12b handoff and T13 Rule-19 G6 PASS). Human-signed freezes emit the preregistration hash only after gate scripts pass. Hardware: Linux CPU for T11 series SCP cells; looped tickets disclose CPU/GPU as run. T8 is the forced from-frozen-commit rerun after artifact loss; OpenTimestamps for the twelve Paper 2 preregistration files were backfilled on 2026-09-24 as `anchored_retroactively` (Disclosure #9). External training pipelines for T9 matched-surface and T10 were not retained in the primary local repository (Disclosure #10). No Affinity / C₃ / hum retune is authorized by any closing in this series.
+
+Frozen PREREG sha256 (full):
+
+| Ticket | PREREG.sha256 |
+| :--- | :--- |
+| T11.2 | `593762c4c19e85d1720f6b46edbb93869258c4047ad023e42e144416aaed20d1` |
+| T11.3 | `27ab4a9573ec8c01ed043d72ef6c83ba47fdd4a764a373acb7453381bb9bd442` |
+| T12 | `bf757ee4fc01e5c40b45f035150e7b716d12f7d8b30d745b9a7669f79bbf307c` |
+| T12b | `851124b3c4bc66cb8e7c96c4f501084f4de186574f4f8d9446cac5879f62a3f0` |
+| T13 | `3176eb5ea3458047b820ff5511644d20a697a7a9485d5118560ff7b71e1f981d` |
 

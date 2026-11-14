@@ -2,13 +2,13 @@ cff-version: 1.2.0
 message: "If you use this software or benchmark data, please cite it as below."
 authors:
   - family-names: "Luecke"
-    given-names: "Kyle"
+    given-names: "Kyle W."
     orcid: "https://orcid.org/0009-0008-0202-7852"
     affiliation: "Driftbound Labs"
 title: "Phase Selects; It Does Not Amplify: Preregistrations, Harnesses, and Results for Tonic Gating"
 version: 1.0.0
 date-released: 2026-09-28
-repository-code: "https://github.com/driftbound-labs/tonic-gating"
+repository-code: "https://github.com/k-luecke/tonic-gating"
 keywords:
   - neuromorphic-systems
   - oscillatory-gating
